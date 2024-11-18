@@ -1,69 +1,117 @@
-import Image from "next/image";
-import localFont from "next/font/local";
+import Image from 'next/image';
+import localFont from 'next/font/local';
+import { PragueIcon } from '../../public/icon/prague';
+import { PlumberIcon } from '../../public/icon/plumber';
+import { RationgIcon } from '../../public/icon/rating';
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+  src: './fonts/GeistVF.woff',
+  variable: '--font-geist-sans',
+  weight: '100 900',
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+  src: './fonts/GeistMonoVF.woff',
+  variable: '--font-geist-mono',
+  weight: '100 900',
 });
 
 export default function Home() {
   return (
     <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
+      className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto items-center pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
     >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/pages/index.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl">
+        <div>PLUMBER</div>
+        <div>PRAGUE</div>
+      </header>
+      <main className="grid gap-8 items-left lg:items-center">
+        <div>
+          <div
+            className="px-4 py-4"
+            style={{
+              backgroundImage: `url("img/hero/mobile.webp")`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <div className="justify-center flex text-2xl font-bold text-white py-4">
+              Ověřený pražský instalatér
+            </div>
+            `
+            <div className="text-xl grid gap-8">
+              <div className="flex gap-8 items-center">
+                <Image
+                  aria-hidden
+                  src="/globe.svg"
+                  alt="Globe icon"
+                  width={32}
+                  height={32}
+                />
+                <div>Kvalifikování instalatéři</div>
+              </div>
+              <div className="flex gap-8 items-center">
+                <Image
+                  aria-hidden
+                  src="/globe.svg"
+                  alt="Globe icon"
+                  width={32}
+                  height={32}
+                />
+                <div>Dostupnost do 1 hodiny od objednání</div>
+              </div>
+              <div className="flex gap-8 items-center">
+                <Image
+                  aria-hidden
+                  src="/globe.svg"
+                  alt="Globe icon"
+                  width={32}
+                  height={32}
+                />
+                <div>Cenová kalkulace zdarma</div>
+              </div>
+            </div>
+            <div className="flex items-center justify-center py-24">
+              <button className="backdrop-blur-sm text-white font-bold text-2xl py-4 px-16 rounded-xl ring-2 ring-orange-300 hover:ring-4 hover:ring-lime-400 hover:uppercase">
+                Zjistit cenu
+              </button>
+            </div>
+          </div>
+          <div className="px-4 py-8 grid gap-4">
+            <div className="flex gap-8 items-center">
+              <PragueIcon />
+              <div className="flex flex-col gap-2">
+                <div className="text-lg font-medium">Úspěšná místní služba</div>
+                <div className="text-sm font-extralight">
+                  Působíme v celé Praze.
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-8 items-center">
+              <PlumberIcon />
+              <div className="flex flex-col gap-2">
+                <div className="text-lg font-medium">
+                  Tisíce hodin odborné práce
+                </div>
+                <div className="text-sm font-extralight">
+                  Neustále posouváme standardy kvality výš.
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-8 items-center">
+              <RationgIcon />
+              <div className="flex flex-col gap-2">
+                <div className="text-lg font-medium">
+                  Stovky spokojených zákazníků
+                </div>
+                <div className="text-sm font-extralight">
+                  Řešíme vaše potřeby přesně na míru.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center px-4">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
