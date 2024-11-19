@@ -19,6 +19,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { BulpIcon } from '../../public/icon/bulp';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -34,7 +35,7 @@ const geistMono = localFont({
 export default function Home() {
   return (
     <div
-      className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto items-center pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
+      className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto items-center pb-4 font-[family-name:var(--font-geist-sans)]`}
     >
       <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl">
         <div>PLUMBER</div>
@@ -55,39 +56,29 @@ export default function Home() {
             </div>
             `
             <div className="text-xl grid gap-8 px-4">
-              <div className="flex gap-8 items-center">
-                <Image
-                  aria-hidden
-                  src="/globe.svg"
-                  alt="Globe icon"
-                  width={32}
-                  height={32}
-                />
-                <div>Kvalifikování instalatéři</div>
+              <div className="flex gap-4 items-center">
+                <BulpIcon />
+
+                <div className="text-black">Kvalifikování instalatéři</div>
               </div>
-              <div className="flex gap-8 items-center">
-                <Image
-                  aria-hidden
-                  src="/globe.svg"
-                  alt="Globe icon"
-                  width={32}
-                  height={32}
-                />
-                <div>Dostupnost do 1 hodiny od objednání</div>
+
+              <div className="flex gap-4 items-center">
+                <BulpIcon />
+
+                <div className="text-black text-wrap">
+                  Dostupnost do 1 hodiny <br />
+                  od objednání
+                </div>
               </div>
-              <div className="flex gap-8 items-center">
-                <Image
-                  aria-hidden
-                  src="/globe.svg"
-                  alt="Globe icon"
-                  width={32}
-                  height={32}
-                />
-                <div>Cenová kalkulace zdarma</div>
+
+              <div className="flex gap-4 items-center">
+                <BulpIcon />
+
+                <div className="text-black">Cenová kalkulace zdarma</div>
               </div>
             </div>
             <div className="flex items-center justify-center py-24">
-              <button className="backdrop-blur-sm text-white font-bold text-2xl py-4 px-16 rounded-xl ring-2 ring-orange-300 hover:ring-4 hover:ring-lime-400 hover:uppercase">
+              <button className="backdrop-blur-sm text-white font-bold text-2xl py-4 px-16 rounded-xl ring-2 ring-[#FFE31A] hover:scale-125">
                 Zjistit cenu
               </button>
             </div>
@@ -131,7 +122,7 @@ export default function Home() {
                   Vámi ověření instalatéři
                 </div>
                 <div className="text-sm font-extralight">
-                  Doporučují spokojení zákazníci
+                  Doporučují spokojení zákazníci.
                 </div>
               </div>
             </div>
@@ -226,8 +217,7 @@ export default function Home() {
               </div>
             </div>
             <Swiper
-              className="lg:hidden w-full"
-              style={{ width: '', maxWidth: '360px' }}
+              className="lg:hidden max-w-[360px]"
               spaceBetween={0}
               slidesPerView={1}
               modules={[Navigation]}
@@ -297,7 +287,7 @@ export default function Home() {
                     Bezpečnost
                   </div>
                 </div>
-                <div className="text-lg text-left font-extralight text-ellipsis">
+                <div className="text-lg text-center font-extralight text-ellipsis">
                   Všichni instalatéři jsou ověřeni a hodnoceni zákazníky.
                   Garantujeme, že platíte jen za kvalitně odvedenou práci.
                 </div>
@@ -311,7 +301,7 @@ export default function Home() {
                     Rychlost
                   </div>
                 </div>
-                <div className="text-lg text-left font-extralight text-ellipsis">
+                <div className="text-lg text-center font-extralight text-ellipsis">
                   Šetříme váš čas. Objednejte dnes, práce může začít už zítra.
                 </div>
               </div>
@@ -324,7 +314,7 @@ export default function Home() {
                     Podpora
                   </div>
                 </div>
-                <div className="text-lg text-left font-extralight text-ellipsis">
+                <div className="text-lg text-center font-extralight text-ellipsis">
                   Náš manažer vás provede celým procesem a je vám k dispozici od
                   zadání objednávky až po dokončení práce.
                 </div>
@@ -332,7 +322,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="px-8 pb-4 grid gap-4">
+        <div className="px-8 grid gap-4">
           <div className="justify-center flex text-2xl font-bold pb-4">
             Kde působíme
           </div>
@@ -342,7 +332,11 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className="flex gap-8 flex-wrap items-center justify-center px-4 border-t border-t-[#D1CFC5]">
+      <footer className="px-8 grid gap-2 items-center justify-center border-t border-t-[#D1CFC5]">
+        <div className="flex justify-between bg-white py-4 items-center text-black font-bold text-3xl">
+          <div>PLUMBER</div>
+          <div>PRAGUE</div>
+        </div>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
@@ -371,23 +365,11 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Examples
+          + 420 123 456 789
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <div className="text-xs">
+          Copyright © 2024 Plumber Prague s.r.o. — všechna práva vyhrazena.
+        </div>
       </footer>
     </div>
   );
