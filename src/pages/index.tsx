@@ -15,7 +15,7 @@ import { ShakingHandsIcon } from '../../public/icon/shaking-hands';
 import { TimeIcon } from '../../public/icon/time';
 import { SupportIcon } from '../../public/icon/support';
 import 'swiper/css';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -41,31 +41,32 @@ export default function Home() {
         <div>PLUMBER</div>
         <div>PRAGUE</div>
       </header>
-      <main className="grid gap-4 items-left lg:items-center">
+      <main className="grid gap-4 lg:gap-8 items-left lg:items-center">
         <div>
           <div
-            className="px-4 py-4"
+            className="px-4 py-4 lg:py-8 bg-[url('/img/hero/mobile.webp')] md:bg-[url('/img/hero/desktop.webp')] lg:bg-bottom"
             style={{
-              backgroundImage: `url("img/hero/mobile.webp")`,
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
             }}
           >
-            <div className="justify-center flex text-2xl font-bold text-white py-4">
+            <div className="justify-center flex text-2xl md:text-4xl lg:text-6xl font-bold text-white py-4 lg:py-8">
               Ověřený pražský instalatér
             </div>
             `
-            <div className="text-xl grid gap-8 px-4">
+            <div className="text-xl grid gap-8 lg:gap-12 px-4">
               <div className="flex gap-4 items-center">
                 <BulpIcon />
 
-                <div className="text-black">Kvalifikování instalatéři</div>
+                <div className="text-black font-semibold lg:text-2xl">
+                  Kvalifikovaní instalatéři
+                </div>
               </div>
 
               <div className="flex gap-4 items-center">
                 <BulpIcon />
 
-                <div className="text-black text-wrap">
+                <div className="text-black font-semibold lg:text-2xl">
                   Dostupnost do 1 hodiny <br />
                   od objednání
                 </div>
@@ -74,16 +75,18 @@ export default function Home() {
               <div className="flex gap-4 items-center">
                 <BulpIcon />
 
-                <div className="text-black">Cenová kalkulace zdarma</div>
+                <div className="text-black font-semibold lg:text-2xl">
+                  Cenová kalkulace zdarma
+                </div>
               </div>
             </div>
             <div className="flex items-center justify-center py-24">
-              <button className="backdrop-blur-sm text-white font-bold text-2xl py-4 px-16 rounded-xl ring-2 ring-[#FFE31A] hover:scale-125">
+              <button className="backdrop-blur-sm text-white font-bold text-2xl lg:text-4xl py-4 px-16 lg:py-8 lg:px-32 rounded-xl ring-2 ring-[#FFE31A] hover:scale-110">
                 Zjistit cenu
               </button>
             </div>
           </div>
-          <div className="px-8 py-8 grid gap-4">
+          <div className="px-8 py-8 grid md:grid-cols-3 gap-4">
             <div className="flex gap-8 items-center">
               <PragueIcon />
               <div className="flex flex-col gap-2">
@@ -127,11 +130,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bg-[#D1CFC5]">
+          <div className="bg-[#D1CFC5] md:bg-white md:border-[#D1CFC5] md:border-4">
             <div className="justify-center flex text-2xl font-bold py-4">
               Ověřený pražský instalatér
             </div>
-            <div className="px-8 pb-4 grid gap-4">
+            <div className="px-8 pb-4 grid md:grid-cols-3 gap-4">
               <div className="flex gap-4 items-center">
                 <PipeIcon />
                 <div className="flex flex-col gap-2">
@@ -172,7 +175,7 @@ export default function Home() {
             Jak to funguje
           </div>
           <>
-            <div className="px-8 pb-4 gap-4 hidden lg:grid">
+            <div className="px-8 pb-4 gap-4 hidden md:grid md:grid-cols-3">
               <div className="flex flex-col gap-4 items-center">
                 <NumberOneIcon />
                 <div className="flex flex-col gap-2">
@@ -206,7 +209,7 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <div className="text-lg text-ellipsis">
                     <div className="text-lg text-center font-semibold text-ellipsis">
-                      Hodnodnoťte a užívejte si
+                      Hodnoťte a užívejte si
                     </div>
                   </div>
                   <div className="text-lg text-center font-extralight text-ellipsis">
@@ -216,65 +219,67 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Swiper
-              className="lg:hidden max-w-[360px]"
-              spaceBetween={0}
-              slidesPerView={1}
-              modules={[Navigation]}
-              navigation
-            >
-              <SwiperSlide>
-                <div className="flex flex-col gap-4 items-center">
-                  <NumberOneIcon />
-                  <div className="flex flex-col gap-2">
-                    <div className="text-lg text-ellipsis">
-                      <div className="text-lg text-center font-semibold text-ellipsis">
-                        Zadejte objednávku
+            <div className="md:hidden">
+              <Swiper
+                className="max-w-[360px]"
+                spaceBetween={0}
+                slidesPerView={1}
+                modules={[Navigation]}
+                navigation
+              >
+                <SwiperSlide>
+                  <div className="flex flex-col gap-4 items-center">
+                    <NumberOneIcon />
+                    <div className="flex flex-col gap-2">
+                      <div className="text-lg text-ellipsis">
+                        <div className="text-lg text-center font-semibold text-ellipsis">
+                          Zadejte objednávku
+                        </div>
+                      </div>
+                      <div className="text-lg text-center font-extralight text-ellipsis">
+                        Vyplňte náš jednoduchý online formulář. Následně vás
+                        kontaktujeme pro potvrzení objednávky.
                       </div>
                     </div>
-                    <div className="text-lg text-center font-extralight text-ellipsis">
-                      Vyplňte náš jednoduchý online formulář. Následně vás
-                      kontaktujeme pro potvrzení objednávky.
-                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex flex-col gap-4 items-center">
-                  <NumberTwoIcon />
-                  <div className="flex flex-col gap-2">
-                    <div className="text-lg text-ellipsis">
-                      <div className="text-lg text-center font-semibold text-ellipsis">
-                        Zadejte objednávku
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex flex-col gap-4 items-center">
+                    <NumberTwoIcon />
+                    <div className="flex flex-col gap-2">
+                      <div className="text-lg text-ellipsis">
+                        <div className="text-lg text-center font-semibold text-ellipsis">
+                          Zadejte objednávku
+                        </div>
+                      </div>
+                      <div className="text-lg text-center font-extralight text-ellipsis">
+                        Ověřený instalatér dorazí ve vámi zvolený termín a
+                        profesionálně provede požadovanou práci.
                       </div>
                     </div>
-                    <div className="text-lg text-center font-extralight text-ellipsis">
-                      Ověřený instalatér dorazí ve vámi zvolený termín a
-                      profesionálně provede požadovanou práci.
-                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex flex-col gap-4 items-center">
-                  <NumberThreeIcon />
-                  <div className="flex flex-col gap-2">
-                    <div className="text-lg text-ellipsis">
-                      <div className="text-lg text-center font-semibold text-ellipsis">
-                        Hodnodnoťte a užívejte si
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex flex-col gap-4 items-center">
+                    <NumberThreeIcon />
+                    <div className="flex flex-col gap-2">
+                      <div className="text-lg text-ellipsis">
+                        <div className="text-lg text-center font-semibold text-ellipsis">
+                          Hodnodnoťte a užívejte si
+                        </div>
+                      </div>
+                      <div className="text-lg text-center font-extralight text-ellipsis">
+                        Po dokončení práce jen převezmete a ohodnotíte našeho
+                        odborníka. Platíte až po úspěšném dokončení zakázky.
                       </div>
                     </div>
-                    <div className="text-lg text-center font-extralight text-ellipsis">
-                      Po dokončení práce jen převezmete a ohodnotíte našeho
-                      odborníka. Platíte až po úspěšném dokončení zakázky.
-                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            </Swiper>
+                </SwiperSlide>
+              </Swiper>
+            </div>
           </>
         </div>
-        <div className="bg-[#D1CFC5]">
+        <div className="bg-[#D1CFC5] md:bg-white md:border-[#D1CFC5] md:border-4">
           <div className="justify-center flex text-2xl font-bold py-4">
             Proč s Plumber Prague
           </div>
@@ -332,43 +337,47 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className="px-8 grid gap-2 items-center justify-center border-t border-t-[#D1CFC5]">
+      <footer className="px-8 grid md:block gap-2 items-center justify-center border-t border-t-[#D1CFC5]">
         <div className="flex justify-between bg-white py-4 items-center text-black font-bold text-3xl">
           <div>PLUMBER</div>
           <div>PRAGUE</div>
         </div>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          plumberprague@gmail.com
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          + 420 123 456 789
-        </a>
-        <div className="text-xs">
-          Copyright © 2024 Plumber Prague s.r.o. — všechna práva vyhrazena.
+        <div className="grid gap-4">
+          <div className="flex flex-col gap-2 md:justify-between">
+            <a
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl"
+              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                aria-hidden
+                src="/file.svg"
+                alt="File icon"
+                width={16}
+                height={16}
+              />
+              plumberprague@gmail.com
+            </a>
+            <a
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl"
+              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                aria-hidden
+                src="/window.svg"
+                alt="Window icon"
+                width={16}
+                height={16}
+              />
+              + 420 123 456 789
+            </a>
+          </div>
+          <div className="text-xs text-center">
+            Copyright © 2024 Plumber Prague s.r.o. — všechna práva vyhrazena.
+          </div>
         </div>
       </footer>
     </div>
