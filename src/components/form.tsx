@@ -10,7 +10,9 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
   const [state, handleSubmit] = useForm('YOUR_FORM_ID');
 
   if (state.succeeded) {
-    if (onSuccess) onSuccess();
+    if (onSuccess) {
+      onSuccess();
+    }
     return (
       <div className="text-center p-4">
         <p>Thank you for your submission!</p>

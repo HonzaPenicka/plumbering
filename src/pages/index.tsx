@@ -66,10 +66,10 @@ export default function Home() {
               backgroundRepeat: 'no-repeat',
             }}
           >
-            <div className="justify-center flex text-2xl md:text-4xl lg:text-6xl font-bold text-white py-4 lg:py-8">
+            <div className="justify-center flex text-2xl md:text-4xl lg:text-6xl font-bold text-white pt-4 pb-8 lg:pt-8 lg:pb-16">
               Verified Prague plumber
             </div>
-            `
+
             <div className="text-xl grid gap-8 lg:gap-12 px-4 md:px-8">
               <div className="flex gap-4 items-center">
                 <BulpIcon />
@@ -99,8 +99,8 @@ export default function Home() {
             <div className="flex items-center justify-center py-24">
               <button
                 onClick={scrollToForm}
-                className={`backdrop-blur-sm text-white font-bold text-2xl lg:text-4xl py-4 px-8 lg:py-8 lg:px-32 rounded-xl ring-2 ring-white hover:ring-yellow-300 ${
-                  isClicked ? 'ring-blue-500' : 'bg-red'
+                className={`backdrop-blur-sm text-white font-bold text-2xl lg:text-4xl py-4 px-8 lg:py-8 lg:px-32 rounded-xl ring-2 ring-white hover:ring-blue-500 ${
+                  isClicked ? 'ring-blue-500' : ''
                 } transition duration-300`}
               >
                 Find out the price
@@ -359,7 +359,7 @@ export default function Home() {
           <div className="justify-center flex text-2xl font-bold pb-4 pt-4">
             Where we operate
           </div>
-          <div className="justify-center flex text-lg font-extralight pb-4">
+          <div className="justify-center flex text-lg font-extralight pb-4 text-pretty">
             Prague 1 | Prague 2 | Prague 3 | Prague 4 | Prague 5 | Prague 6 |
             Prague 7 | Prague 8 | Prague 9 | Prague 10
           </div>
