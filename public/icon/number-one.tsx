@@ -17,16 +17,16 @@ export const NumberOneIcon: FunctionComponent = () => {
         rx="3"
         fill="#2F88FF"
         stroke="#000000"
-        stroke-width="4"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M21.2261 18L26.0001 13.0166V34"
         stroke="white"
-        stroke-width="4"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
