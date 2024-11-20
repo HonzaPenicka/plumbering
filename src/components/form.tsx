@@ -24,7 +24,7 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
   return (
     <form
       onSubmit={handleSubmit}
-      className="border-2 p-4 gap-4 mb-8 bg-[#D1CFC5] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:max-w-screen-lg lg:items-center"
+      className="border-2 p-4 gap-4 mb-8 bg-[#D1CFC5] md:bg-white md:border-[#D1CFC5] md:border-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:max-w-screen-lg lg:items-center"
     >
       <div className="col-span-1">
         <label htmlFor="email" className="font-bold text-xl block mb-2">
@@ -35,7 +35,7 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
           type="email"
           name="email"
           placeholder="Enter your email address"
-          className="w-full p-2 border-2 rounded ring-0"
+          className="w-full p-2 md:border-2 md:border-[#D1CFC5] outline-offset-2 outline-blue-500"
           required
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -48,7 +48,7 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
         <select
           id="service"
           name="service"
-          className="w-full p-2 border-2 rounded"
+          className="w-full p-2 md:border-2 md:border-[#D1CFC5] outline-offset-2 outline-blue-500"
           defaultValue=""
           required
         >
@@ -100,7 +100,7 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
         <textarea
           id="message"
           name="message"
-          className="w-full p-2 min-h-[10rem] border-2 rounded resize-none"
+          className="w-full p-2 min-h-[10rem] md:border-2 md:border-[#D1CFC5] outline-offset-2 outline-blue-500 resize-none"
           placeholder="Describe your problem/situation in as much detail as possible:"
           required
         />

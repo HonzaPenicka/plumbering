@@ -103,7 +103,7 @@ export default function Home() {
                   isClicked ? 'ring-blue-500' : ''
                 } transition duration-300`}
               >
-                Find out the price
+                Contact us
               </button>
             </div>
           </div>
