@@ -54,7 +54,7 @@ export default function Home() {
               Verified Prague plumber
             </div>
             `
-            <div className="text-xl grid gap-8 lg:gap-12 px-4">
+            <div className="text-xl grid gap-8 lg:gap-12 px-4 md:px-8">
               <div className="flex gap-4 items-center">
                 <BulpIcon />
 
@@ -86,10 +86,10 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="px-8 py-8 grid md:grid-cols-3 gap-8">
+          <div className="px-8 py-8 grid md:grid-cols-3 gap-8 items-start">
             <div className="flex gap-8 md:gap-4 lg:gap-12 items-center">
               <PragueIcon />
-              <div className="flex flex-col gap-2 md:items-start">
+              <div className="flex flex-col gap-2">
                 <div className="text-lg font-medium">
                   Successful local service
                 </div>
