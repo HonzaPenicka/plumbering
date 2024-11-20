@@ -100,7 +100,7 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
         <textarea
           id="message"
           name="message"
-          className="w-full p-2 min-h-[10rem] md:border-2 md:border-[#D1CFC5] outline-offset-2 outline-blue-500 resize-none"
+          className="w-full p-2 min-h-[10rem] md:border-2 md:border-[#D1CFC5] outline-offset-2 outline-[#3B82F6] resize-none"
           placeholder="Describe your problem/situation in as much detail as possible:"
           required
         />
@@ -115,7 +115,7 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
         <button
           type="submit"
           disabled={state.submitting}
-          className="w-full sm:w-auto px-6 py-3 bg-blue-500 text-white font-bold rounded hover:bg-blue-500 transition duration-300"
+          className="w-full sm:w-auto px-6 py-3 bg-[#3B82F6] focus:scale-125 text-white font-bold rounded transition duration-300"
         >
           Send Message
         </button>

@@ -28,7 +28,7 @@ export const PipeIcon: FunctionComponent = () => {
         d="M21,12V6M9,4H3"
         style={{
           fill: 'none',
-          stroke: 'rgb(44, 169, 188)',
+          stroke: 'rgb(73, 134, 247)',
           strokeLinecap: 'round',
           strokeLinejoin: 'round',
           strokeWidth: 2,

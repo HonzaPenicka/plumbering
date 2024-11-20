@@ -99,8 +99,8 @@ export default function Home() {
             <div className="flex items-center justify-center py-24">
               <button
                 onClick={scrollToForm}
-                className={`backdrop-blur-sm text-white font-bold text-2xl lg:text-4xl py-4 px-8 lg:py-8 lg:px-32 rounded-xl ring-2 ring-white hover:ring-blue-500 ${
-                  isClicked ? 'ring-blue-500' : ''
+                className={`backdrop-blur-sm text-white font-bold text-2xl lg:text-4xl py-4 px-8 lg:py-8 lg:px-32 rounded-xl ring-2 ring-white hover:ring-[#3B82F6] ${
+                  isClicked ? 'ring-[#3B82F6]' : ''
                 } transition duration-300`}
               >
                 Contact us
