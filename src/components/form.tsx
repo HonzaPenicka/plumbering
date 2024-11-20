@@ -4,6 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 interface ContactFormProps {
   onSuccess?: () => void;
 }
+
 export const ContactForm: FunctionComponent<ContactFormProps> = ({
   onSuccess,
 }) => {
@@ -25,6 +26,7 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
     <form
       onSubmit={handleSubmit}
       className="border-2 p-4 gap-4 mb-8 bg-[#D1CFC5] md:bg-white md:border-[#D1CFC5] md:border-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:max-w-screen-lg lg:items-center"
+      aria-labelledby="contact-form-title"
     >
       <div className="col-span-1">
         <label htmlFor="email" className="font-bold text-xl block mb-2">
@@ -37,6 +39,7 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
           placeholder="Enter your email address"
           className="w-full p-2 md:border-2 md:border-[#D1CFC5] outline-offset-2 outline-blue-500"
           required
+          aria-required="true"
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
       </div>
@@ -51,6 +54,7 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
           className="w-full p-2 md:border-2 md:border-[#D1CFC5] outline-offset-2 outline-blue-500"
           defaultValue=""
           required
+          aria-required="true"
         >
           <option value="" disabled className="text-gray-500">
             Select an option
@@ -103,6 +107,7 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
           className="w-full p-2 min-h-[10rem] md:border-2 md:border-[#D1CFC5] outline-offset-2 outline-[#3B82F6] resize-none"
           placeholder="Describe your problem/situation in as much detail as possible:"
           required
+          aria-required="true"
         />
         <ValidationError
           prefix="Message"
@@ -116,6 +121,7 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
           type="submit"
           disabled={state.submitting}
           className="w-full sm:w-auto px-6 py-3 bg-[#3B82F6] focus:scale-125 text-white font-bold rounded transition duration-300"
+          aria-label="Send message"
         >
           Send Message
         </button>
