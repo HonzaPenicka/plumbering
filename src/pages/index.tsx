@@ -133,10 +133,10 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-[#D1CFC5] md:bg-white md:border-[#D1CFC5] md:border-4">
-            <div className="justify-center flex text-2xl font-bold py-4">
+            <div className="justify-center flex text-2xl font-bold pb-4 pt-8">
               Verified Prague plumber
             </div>
-            <div className="px-8 pb-4 grid md:grid-cols-3 gap-4">
+            <div className="px-8 pb-8 grid md:grid-cols-3 gap-4">
               <div className="flex gap-4 items-center">
                 <PipeIcon />
                 <div className="flex flex-col gap-2">
@@ -175,7 +175,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="justify-center flex text-2xl font-bold pb-4">
+          <div className="justify-center flex text-2xl font-bold pb-8 pt-4">
             How it works
           </div>
           <>
@@ -286,10 +286,10 @@ export default function Home() {
           </>
         </div>
         <div className="bg-[#D1CFC5] md:bg-white md:border-[#D1CFC5] md:border-4">
-          <div className="justify-center flex text-2xl font-bold py-4">
+          <div className="justify-center flex text-2xl font-bold py-8">
             Why choose Plumber Prague
           </div>
-          <div className="px-8 pb-4 grid gap-4">
+          <div className="px-8 pb-8 grid gap-4">
             <div className="flex flex-col gap-4 items-center">
               <ShakingHandsIcon />
               <div className="flex flex-col gap-2">
@@ -335,17 +335,17 @@ export default function Home() {
           </div>
         </div>
         <div className="px-8 grid gap-4">
-          <div className="justify-center flex text-2xl font-bold pb-4">
+          <div className="justify-center flex text-2xl font-bold pb-4 pt-4">
             Where we operate
           </div>
-          <div className="justify-center flex text-lg font-extralight pb-4">
+          <div className="justify-center flex text-lg font-extralight pb-8">
             Prague 1 | Prague 2 | Prague 3 | Prague 4 | Prague 5 | Prague 6 |
             Prague 7 | Prague 8 | Prague 9 | Prague 10
           </div>
         </div>
       </main>
       <footer className="px-8 grid md:block gap-2 items-center justify-center border-t border-t-[#D1CFC5]">
-        <div className="flex justify-between bg-white py-4 items-center text-black font-bold text-3xl">
+        <div className="flex justify-between bg-white pt-8 pb-4 items-center text-black font-bold text-3xl">
           <div>PLUMBER</div>
           <div>PRAGUE</div>
         </div>
@@ -382,7 +382,7 @@ export default function Home() {
               + 420 123 456 789
             </a>
           </div>
-          <div className="text-xs text-center">
+          <div className="text-xs text-center py-4">
             Copyright © 2024 Plumber Prague s.r.o. — all rights reserved.
           </div>
         </div>
