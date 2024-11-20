@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
@@ -5,6 +6,8 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body className="antialiased">
+        <Analytics />
+
         <Main />
         <NextScript />
       </body>
