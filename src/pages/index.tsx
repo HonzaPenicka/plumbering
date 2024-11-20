@@ -20,6 +20,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { BulpIcon } from '../../public/icon/bulp';
+import { ContactForm } from '@/components/form';
+import { useRef, useState } from 'react';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -33,6 +35,20 @@ const geistMono = localFont({
 });
 
 export default function Home() {
+  const formRef = useRef<HTMLDivElement>(null);
+  const [isClicked, setIsClicked] = useState(false);
+
+  const scrollToForm = () => {
+    if (formRef.current) {
+      formRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsClicked(true);
+  };
+
+  const handleFormSuccess = () => {
+    setIsClicked(false);
+  };
+
   return (
     <div
       className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto items-center pb-4 font-[family-name:var(--font-geist-sans)]`}
@@ -81,12 +97,17 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center justify-center py-24">
-              <button className="backdrop-blur-sm text-white font-bold text-2xl lg:text-4xl py-4 px-8 lg:py-8 lg:px-32 rounded-xl ring-2 ring-[#FFE31A] hover:scale-110">
+              <button
+                onClick={scrollToForm}
+                className={`backdrop-blur-sm text-white font-bold text-2xl lg:text-4xl py-4 px-8 lg:py-8 lg:px-32 rounded-xl ring-2 ring-white hover:ring-yellow-300 ${
+                  isClicked ? 'ring-blue-500' : 'bg-red'
+                } transition duration-300`}
+              >
                 Find out the price
               </button>
             </div>
           </div>
-          <div className="px-8 py-8 grid md:grid-cols-3 gap-8 items-start">
+          <div className="px-8 py-8 grid md:grid-cols-3 gap-8 items-start text-pretty">
             <div className="flex gap-8 md:gap-4 lg:gap-12 items-center">
               <PragueIcon />
               <div className="flex flex-col gap-2">
@@ -140,7 +161,7 @@ export default function Home() {
               <div className="flex gap-4 items-center">
                 <PipeIcon />
                 <div className="flex flex-col gap-2">
-                  <div className="text-lg text-ellipsis">
+                  <div className="text-lg text-pretty">
                     Repair and maintenance of water pipes, drain cleaning
                   </div>
                 </div>
@@ -179,16 +200,16 @@ export default function Home() {
             How it works
           </div>
           <>
-            <div className="px-8 pb-4 gap-4 hidden md:grid md:grid-cols-3">
+            <div className="px-8 pb-4 gap-4 hidden md:grid md:grid-cols-3 text-pretty">
               <div className="flex flex-col gap-4 items-center">
                 <NumberOneIcon />
                 <div className="flex flex-col gap-2">
                   <div className="text-lg text-ellipsis">
-                    <div className="text-lg text-center font-semibold text-ellipsis">
+                    <div className="text-lg text-center font-semibold">
                       Place an order
                     </div>
                   </div>
-                  <div className="text-lg text-center font-extralight text-ellipsis">
+                  <div className="text-lg text-center font-extralight">
                     Fill out our simple online form. We will contact you to
                     confirm the order.
                   </div>
@@ -198,11 +219,11 @@ export default function Home() {
                 <NumberTwoIcon />
                 <div className="flex flex-col gap-2">
                   <div className="text-lg text-ellipsis">
-                    <div className="text-lg text-center font-semibold text-ellipsis">
+                    <div className="text-lg text-center font-semibold">
                       Place an order
                     </div>
                   </div>
-                  <div className="text-lg text-center font-extralight text-ellipsis">
+                  <div className="text-lg text-center font-extralight">
                     A verified plumber will arrive at your chosen time and
                     professionally perform the requested work.
                   </div>
@@ -212,11 +233,11 @@ export default function Home() {
                 <NumberThreeIcon />
                 <div className="flex flex-col gap-2">
                   <div className="text-lg text-ellipsis">
-                    <div className="text-lg text-center font-semibold text-ellipsis">
+                    <div className="text-lg text-center font-semibold">
                       Rate and enjoy
                     </div>
                   </div>
-                  <div className="text-lg text-center font-extralight text-ellipsis">
+                  <div className="text-lg text-center font-extralight">
                     After the work is completed, simply accept and rate our
                     expert. You pay only after the successful completion of the
                     job.
@@ -285,7 +306,7 @@ export default function Home() {
             </div>
           </>
         </div>
-        <div className="bg-[#D1CFC5] md:bg-white md:border-[#D1CFC5] md:border-4">
+        <div className="bg-[#D1CFC5] md:bg-white md:border-[#D1CFC5] md:border-4 text-pretty">
           <div className="justify-center flex text-2xl font-bold py-8">
             Why choose Plumber Prague
           </div>
@@ -338,9 +359,15 @@ export default function Home() {
           <div className="justify-center flex text-2xl font-bold pb-4 pt-4">
             Where we operate
           </div>
-          <div className="justify-center flex text-lg font-extralight pb-8">
+          <div className="justify-center flex text-lg font-extralight pb-4">
             Prague 1 | Prague 2 | Prague 3 | Prague 4 | Prague 5 | Prague 6 |
             Prague 7 | Prague 8 | Prague 9 | Prague 10
+          </div>
+          <div className="grid justify-center" ref={formRef}>
+            <div className="justify-center flex text-2xl font-bold pb-4">
+              Fill out the form
+            </div>
+            <ContactForm onSuccess={handleFormSuccess} />
           </div>
         </div>
       </main>
