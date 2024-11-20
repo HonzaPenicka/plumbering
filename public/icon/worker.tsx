@@ -4,8 +4,8 @@ export const WorkerIcon: FunctionComponent = () => {
   return (
     <svg
       fill="#000000"
-      width="40"
-      height="40"
+      width="30"
+      height="30"
       viewBox="0 0 100 100"
       id="Layer_1"
       version="1.1"

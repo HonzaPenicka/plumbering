@@ -4,8 +4,8 @@ export const PragueIcon: FunctionComponent = () => {
   return (
     <svg
       fill="#000000"
-      height="40"
-      width="40"
+      height="30"
+      width="30"
       version="1.1"
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"

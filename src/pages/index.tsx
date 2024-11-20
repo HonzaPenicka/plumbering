@@ -51,7 +51,7 @@ export default function Home() {
             }}
           >
             <div className="justify-center flex text-2xl md:text-4xl lg:text-6xl font-bold text-white py-4 lg:py-8">
-              Ověřený pražský instalatér
+              Verified Prague plumber
             </div>
             `
             <div className="text-xl grid gap-8 lg:gap-12 px-4">
@@ -59,7 +59,7 @@ export default function Home() {
                 <BulpIcon />
 
                 <div className="text-black font-semibold lg:text-2xl">
-                  Kvalifikovaní instalatéři
+                  Qualified plumbers
                 </div>
               </div>
 
@@ -67,8 +67,8 @@ export default function Home() {
                 <BulpIcon />
 
                 <div className="text-black font-semibold lg:text-2xl">
-                  Dostupnost do 1 hodiny <br />
-                  od objednání
+                  Availability within 1 hour <br />
+                  from booking
                 </div>
               </div>
 
@@ -76,70 +76,72 @@ export default function Home() {
                 <BulpIcon />
 
                 <div className="text-black font-semibold lg:text-2xl">
-                  Cenová kalkulace zdarma
+                  Free price estimate
                 </div>
               </div>
             </div>
             <div className="flex items-center justify-center py-24">
-              <button className="backdrop-blur-sm text-white font-bold text-2xl lg:text-4xl py-4 px-16 lg:py-8 lg:px-32 rounded-xl ring-2 ring-[#FFE31A] hover:scale-110">
-                Zjistit cenu
+              <button className="backdrop-blur-sm text-white font-bold text-2xl lg:text-4xl py-4 px-8 lg:py-8 lg:px-32 rounded-xl ring-2 ring-[#FFE31A] hover:scale-110">
+                Find out the price
               </button>
             </div>
           </div>
-          <div className="px-8 py-8 grid md:grid-cols-3 gap-4">
-            <div className="flex gap-8 items-center">
+          <div className="px-8 py-8 grid md:grid-cols-3 gap-8">
+            <div className="flex gap-8 md:gap-4 lg:gap-12 items-center">
               <PragueIcon />
-              <div className="flex flex-col gap-2">
-                <div className="text-lg font-medium">Úspěšná místní služba</div>
+              <div className="flex flex-col gap-2 md:items-start">
+                <div className="text-lg font-medium">
+                  Successful local service
+                </div>
                 <div className="text-sm font-extralight">
-                  Působíme v celé Praze.
+                  We operate throughout Prague.
                 </div>
               </div>
             </div>
-            <div className="flex gap-8 items-center">
+            <div className="flex gap-8 md:gap-4 lg:gap-12 items-center">
               <PlumberIcon />
               <div className="flex flex-col gap-2">
                 <div className="text-lg font-medium">
-                  Tisíce hodin odborné práce
+                  Thousands of hours of professional work
                 </div>
                 <div className="text-sm font-extralight">
-                  Neustále posouváme standardy kvality výš.
+                  We continuously raise quality standards.
                 </div>
               </div>
             </div>
-            <div className="flex gap-8 items-center">
+            <div className="flex gap-8 md:gap-4 lg:gap-12 items-center">
               <RationgIcon />
               <div className="flex flex-col gap-2">
                 <div className="text-lg font-medium">
-                  Stovky spokojených zákazníků
+                  Hundreds of satisfied customers
                 </div>
                 <div className="text-sm font-extralight">
-                  Řešíme vaše potřeby přesně na míru.
+                  We solve your needs precisely to measure.
                 </div>
               </div>
             </div>
-            <div className="flex gap-8 items-center">
+            <div className="flex gap-8 md:gap-4 lg:gap-12 items-center">
               <WorkerIcon />
               <div className="flex flex-col gap-2">
                 <div className="text-lg font-medium">
-                  Vámi ověření instalatéři
+                  Plumbers verified by you
                 </div>
                 <div className="text-sm font-extralight">
-                  Doporučují spokojení zákazníci.
+                  Recommended by satisfied customers.
                 </div>
               </div>
             </div>
           </div>
           <div className="bg-[#D1CFC5] md:bg-white md:border-[#D1CFC5] md:border-4">
             <div className="justify-center flex text-2xl font-bold py-4">
-              Ověřený pražský instalatér
+              Verified Prague plumber
             </div>
             <div className="px-8 pb-4 grid md:grid-cols-3 gap-4">
               <div className="flex gap-4 items-center">
                 <PipeIcon />
                 <div className="flex flex-col gap-2">
                   <div className="text-lg text-ellipsis">
-                    Oprava a údržba vodovodního potrubí, čištění odpadu
+                    Repair and maintenance of water pipes, drain cleaning
                   </div>
                 </div>
               </div>
@@ -147,7 +149,7 @@ export default function Home() {
                 <KeyIcon />
                 <div className="flex flex-col gap-2">
                   <div className="text-lg text-ellipsis">
-                    Výměna a instalace bezpečnostních zámků a vložek
+                    Replacement and installation of security locks and inserts
                   </div>
                 </div>
               </div>
@@ -155,7 +157,8 @@ export default function Home() {
                 <FurnitureIcon />
                 <div className="flex flex-col gap-2">
                   <div className="text-lg font-medium">
-                    Instalace domácích doplňků (police, držáky, věšáky, ...)
+                    Installation of home accessories (shelves, holders, hangers,
+                    ...)
                   </div>
                 </div>
               </div>
@@ -163,7 +166,8 @@ export default function Home() {
                 <LampIcon />
                 <div className="flex flex-col gap-2">
                   <div className="text-lg font-medium">
-                    Výměna žárovek a drobná elektroinstalační pomoc
+                    Bulb replacement and minor electrical installation
+                    assistance
                   </div>
                 </div>
               </div>
@@ -172,7 +176,7 @@ export default function Home() {
         </div>
         <div>
           <div className="justify-center flex text-2xl font-bold pb-4">
-            Jak to funguje
+            How it works
           </div>
           <>
             <div className="px-8 pb-4 gap-4 hidden md:grid md:grid-cols-3">
@@ -181,12 +185,12 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <div className="text-lg text-ellipsis">
                     <div className="text-lg text-center font-semibold text-ellipsis">
-                      Zadejte objednávku
+                      Place an order
                     </div>
                   </div>
                   <div className="text-lg text-center font-extralight text-ellipsis">
-                    Vyplňte náš jednoduchý online formulář. Následně vás
-                    kontaktujeme pro potvrzení objednávky.
+                    Fill out our simple online form. We will contact you to
+                    confirm the order.
                   </div>
                 </div>
               </div>
@@ -195,12 +199,12 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <div className="text-lg text-ellipsis">
                     <div className="text-lg text-center font-semibold text-ellipsis">
-                      Zadejte objednávku
+                      Place an order
                     </div>
                   </div>
                   <div className="text-lg text-center font-extralight text-ellipsis">
-                    Ověřený instalatér dorazí ve vámi zvolený termín a
-                    profesionálně provede požadovanou práci.
+                    A verified plumber will arrive at your chosen time and
+                    professionally perform the requested work.
                   </div>
                 </div>
               </div>
@@ -209,12 +213,13 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <div className="text-lg text-ellipsis">
                     <div className="text-lg text-center font-semibold text-ellipsis">
-                      Hodnoťte a užívejte si
+                      Rate and enjoy
                     </div>
                   </div>
                   <div className="text-lg text-center font-extralight text-ellipsis">
-                    Po dokončení práce jen převezmete a ohodnotíte našeho
-                    odborníka. Platíte až po úspěšném dokončení zakázky.
+                    After the work is completed, simply accept and rate our
+                    expert. You pay only after the successful completion of the
+                    job.
                   </div>
                 </div>
               </div>
@@ -233,12 +238,12 @@ export default function Home() {
                     <div className="flex flex-col gap-2">
                       <div className="text-lg text-ellipsis">
                         <div className="text-lg text-center font-semibold text-ellipsis">
-                          Zadejte objednávku
+                          Place an order
                         </div>
                       </div>
                       <div className="text-lg text-center font-extralight text-ellipsis">
-                        Vyplňte náš jednoduchý online formulář. Následně vás
-                        kontaktujeme pro potvrzení objednávky.
+                        Fill out our simple online form. We will contact you to
+                        confirm the order.
                       </div>
                     </div>
                   </div>
@@ -249,12 +254,12 @@ export default function Home() {
                     <div className="flex flex-col gap-2">
                       <div className="text-lg text-ellipsis">
                         <div className="text-lg text-center font-semibold text-ellipsis">
-                          Zadejte objednávku
+                          Place an order
                         </div>
                       </div>
                       <div className="text-lg text-center font-extralight text-ellipsis">
-                        Ověřený instalatér dorazí ve vámi zvolený termín a
-                        profesionálně provede požadovanou práci.
+                        A verified plumber will arrive at your chosen time and
+                        professionally perform the requested work.
                       </div>
                     </div>
                   </div>
@@ -265,12 +270,13 @@ export default function Home() {
                     <div className="flex flex-col gap-2">
                       <div className="text-lg text-ellipsis">
                         <div className="text-lg text-center font-semibold text-ellipsis">
-                          Hodnodnoťte a užívejte si
+                          Rate and enjoy
                         </div>
                       </div>
                       <div className="text-lg text-center font-extralight text-ellipsis">
-                        Po dokončení práce jen převezmete a ohodnotíte našeho
-                        odborníka. Platíte až po úspěšném dokončení zakázky.
+                        After the work is completed, simply accept and rate our
+                        expert. You pay only after the successful completion of
+                        the job.
                       </div>
                     </div>
                   </div>
@@ -281,7 +287,7 @@ export default function Home() {
         </div>
         <div className="bg-[#D1CFC5] md:bg-white md:border-[#D1CFC5] md:border-4">
           <div className="justify-center flex text-2xl font-bold py-4">
-            Proč s Plumber Prague
+            Why choose Plumber Prague
           </div>
           <div className="px-8 pb-4 grid gap-4">
             <div className="flex flex-col gap-4 items-center">
@@ -289,12 +295,12 @@ export default function Home() {
               <div className="flex flex-col gap-2">
                 <div className="text-lg text-ellipsis">
                   <div className="text-lg text-center font-semibold text-ellipsis">
-                    Bezpečnost
+                    Security
                   </div>
                 </div>
                 <div className="text-lg text-center font-extralight text-ellipsis">
-                  Všichni instalatéři jsou ověřeni a hodnoceni zákazníky.
-                  Garantujeme, že platíte jen za kvalitně odvedenou práci.
+                  All plumbers are verified and rated by customers. We guarantee
+                  that you only pay for quality work done.
                 </div>
               </div>
             </div>
@@ -303,11 +309,12 @@ export default function Home() {
               <div className="flex flex-col gap-2">
                 <div className="text-lg text-ellipsis">
                   <div className="text-lg text-center font-semibold text-ellipsis">
-                    Rychlost
+                    Speed
                   </div>
                 </div>
                 <div className="text-lg text-center font-extralight text-ellipsis">
-                  Šetříme váš čas. Objednejte dnes, práce může začít už zítra.
+                  We save your time. Order today, work can start as early as
+                  tomorrow.
                 </div>
               </div>
             </div>
@@ -316,12 +323,12 @@ export default function Home() {
               <div className="flex flex-col gap-2">
                 <div className="text-lg text-ellipsis">
                   <div className="text-lg text-center font-semibold text-ellipsis">
-                    Podpora
+                    Support
                   </div>
                 </div>
                 <div className="text-lg text-center font-extralight text-ellipsis">
-                  Náš manažer vás provede celým procesem a je vám k dispozici od
-                  zadání objednávky až po dokončení práce.
+                  Our manager will guide you through the entire process and is
+                  available from placing the order to completing the work.
                 </div>
               </div>
             </div>
@@ -329,11 +336,11 @@ export default function Home() {
         </div>
         <div className="px-8 grid gap-4">
           <div className="justify-center flex text-2xl font-bold pb-4">
-            Kde působíme
+            Where we operate
           </div>
           <div className="justify-center flex text-lg font-extralight pb-4">
-            Praha 1 | Praha 2 | Praha 3 | Praha 4 | Praha 5 | Praha 6 | Praha 7
-            | Praha 8 | Praha 9 | Praha 10
+            Prague 1 | Prague 2 | Prague 3 | Prague 4 | Prague 5 | Prague 6 |
+            Prague 7 | Prague 8 | Prague 9 | Prague 10
           </div>
         </div>
       </main>
@@ -376,7 +383,7 @@ export default function Home() {
             </a>
           </div>
           <div className="text-xs text-center">
-            Copyright © 2024 Plumber Prague s.r.o. — všechna práva vyhrazena.
+            Copyright © 2024 Plumber Prague s.r.o. — all rights reserved.
           </div>
         </div>
       </footer>
