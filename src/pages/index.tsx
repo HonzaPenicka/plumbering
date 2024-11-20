@@ -73,9 +73,8 @@ export default function Home() {
           content="Plumber Prague nabízí ověřené instalatéry v Praze. Kvalitní služby, dostupnost během hodiny, bezplatný odhad ceny."
         />
         <meta property="og:image" content="/img/hero/desktop.webp" />
-        <meta property="og:url" content="https://www.plumberprague.com" />
+        <meta property="og:url" content="https://www.plumberprague.cz" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.plumberprague.cz" />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -89,6 +88,17 @@ export default function Home() {
         <meta name="twitter:image" content="/img/hero/desktop.webp" />
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
+        {/* Security */}
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.plumberprague.cz;"
+        />
+        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+        <meta httpEquiv="X-Frame-Options" content="DENY" />
+        <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.www.plumberprague.cz" />
       </Head>
       <div
         className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto items-center pb-4 font-[family-name:var(--font-geist-sans)]`}
