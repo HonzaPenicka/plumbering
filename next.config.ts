@@ -1,6 +1,8 @@
-import type { NextConfig } from 'next';
+// next.config.js
 
-const nextConfig: NextConfig = {
+const isDev = process.env.NODE_ENV !== 'production';
+
+const nextConfig = {
   reactStrictMode: true,
   async headers() {
     return [
@@ -9,8 +11,29 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: 'Content-Security-Policy',
-            value:
-              "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.yourwebsite.com;",
+            value: isDev
+              ? `
+                default-src 'self';
+                script-src 'self' 'unsafe-inline' 'unsafe-eval';
+                style-src 'self' 'unsafe-inline' fonts.googleapis.com;
+                font-src 'self' data: fonts.gstatic.com;
+                img-src 'self' data: https:;
+                connect-src 'self' ws://localhost:3000;
+                frame-src 'self' https://maps.google.com https://www.google.com https://www.youtube.com https://player.vimeo.com;
+              `
+                  .replace(/\s{2,}/g, ' ')
+                  .trim()
+              : `
+                default-src 'self';
+                script-src 'self';
+                style-src 'self' 'unsafe-inline' fonts.googleapis.com;
+                font-src 'self' data: fonts.gstatic.com;
+                img-src 'self' data: https:;
+                connect-src 'self';
+                frame-src 'self' https://maps.google.com https://www.google.com https://www.youtube.com https://player.vimeo.com;
+              `
+                  .replace(/\s{2,}/g, ' ')
+                  .trim(),
           },
           {
             key: 'X-Content-Type-Options',
@@ -18,7 +41,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'X-Frame-Options',
-            value: 'DENY',
+            value: 'SAMEORIGIN',
           },
           {
             key: 'X-XSS-Protection',
@@ -42,4 +65,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

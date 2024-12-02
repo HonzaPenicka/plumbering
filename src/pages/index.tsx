@@ -89,13 +89,6 @@ export default function Home() {
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
         {/* Security */}
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.plumberprague.cz;"
-        />
-        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
-        <meta httpEquiv="X-Frame-Options" content="DENY" />
-        <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
         <meta name="referrer" content="no-referrer-when-downgrade" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.www.plumberprague.cz" />
