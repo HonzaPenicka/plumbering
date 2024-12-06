@@ -103,22 +103,21 @@ export default function Home() {
         <main className="grid gap-4 lg:gap-8 items-left lg:items-center">
           <div>
             <section
-              className="px-4 py-4 lg:py-8 bg-[url('/img/hero/mobile.webp')] md:bg-[url('/img/hero/desktop.webp')] lg:bg-bottom"
+              className="px-4 py-4 lg:py-8 bg-[url('/img/hero/mobile.png')] md:bg-[url('/img/hero/desktop.png')] bg-cover md:bg-contain bg-bottom lg:bg-center"
               style={{
-                backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
               }}
               aria-label="Hero Section"
             >
-              <h1 className="justify-center flex text-2xl md:text-4xl lg:text-6xl font-bold text-white pt-4 pb-8 lg:pt-8 lg:pb-16">
+              <h1 className="justify-center flex text-2xl md:text-4xl lg:text-6xl font-bold text-black pt-4 pb-8 lg:pt-8 lg:pb-16">
                 Verified Prague plumber
               </h1>
 
-              <div className="text-xl grid gap-8 lg:gap-12 px-4 md:px-8">
+              <div className="text-xl grid gap-8 lg:gap-16">
                 <div className="flex gap-4 items-center">
                   <BulpIcon />
 
-                  <div className="text-black font-semibold lg:text-2xl">
+                  <div className="text-black font-semibold lg:text-3xl backdrop-blur-sm rounded-3xl">
                     Qualified plumbers
                   </div>
                 </div>
@@ -126,7 +125,7 @@ export default function Home() {
                 <div className="flex gap-4 items-center">
                   <BulpIcon />
 
-                  <div className="text-black font-semibold lg:text-2xl">
+                  <div className="text-black font-semibold lg:text-3xl backdrop-blur-sm rounded-3xl">
                     Availability within 1 hour <br />
                     from booking
                   </div>
@@ -135,7 +134,7 @@ export default function Home() {
                 <div className="flex gap-4 items-center">
                   <BulpIcon />
 
-                  <div className="text-black font-semibold lg:text-2xl">
+                  <div className="text-black font-semibold lg:text-3xl backdrop-blur-sm rounded-3xl">
                     Free price estimate
                   </div>
                 </div>
@@ -143,8 +142,8 @@ export default function Home() {
               <div className="flex items-center justify-center py-24">
                 <button
                   onClick={scrollToForm}
-                  className={`backdrop-blur-sm text-white font-bold text-2xl lg:text-4xl py-4 px-8 lg:py-8 lg:px-32 rounded-xl ring-2 ring-white hover:ring-[#3B82F6] ${
-                    isClicked ? 'ring-[#3B82F6]' : ''
+                  className={`backdrop-blur-sm text-yellow-400 uppercase font-bold text-2xl lg:text-4xl py-4 px-8 lg:py-8 lg:px-32 rounded-xl ring-2 ring-yellow-400 hover:ring-yellow-400 ${
+                    isClicked ? 'ring-[#33CC99]' : ''
                   } transition duration-300`}
                   aria-label="Contact us"
                 >
@@ -198,7 +197,7 @@ export default function Home() {
                 </div>
               </div>
             </section>
-            <section className="bg-[#D1CFC5] md:bg-white md:border-[#D1CFC5] md:border-4">
+            <section className="bg-[#D1CFC5] md:bg-white md:border-[#FFCC33] md:border-4">
               <h2 className="justify-center flex text-2xl font-bold pb-4 pt-8">
                 Verified Prague plumber
               </h2>
@@ -351,7 +350,7 @@ export default function Home() {
               </div>
             </>
           </section>
-          <section className="bg-[#D1CFC5] md:bg-white md:border-[#D1CFC5] md:border-4 text-pretty">
+          <section className="bg-[#D1CFC5] md:bg-white md:border-[#FFCC33] md:border-4 text-pretty">
             <h2 className="justify-center flex text-2xl font-bold py-8">
               Why choose Plumber Prague
             </h2>
@@ -416,7 +415,7 @@ export default function Home() {
             </div>
           </section>
         </main>
-        <footer className="px-8 grid md:block gap-2 items-center justify-center border-t border-t-[#D1CFC5]">
+        <footer className="px-8 grid md:block gap-2 items-center justify-center border-t border-t-[#FFCC33]">
           <div className="flex justify-between bg-white pt-8 pb-4 items-center text-black font-bold text-3xl">
             <div>PLUMBER</div>
             <div>PRAGUE</div>

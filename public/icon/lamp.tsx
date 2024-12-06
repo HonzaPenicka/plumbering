@@ -28,7 +28,7 @@ export const LampIcon: FunctionComponent = () => {
         d="M18,12,16.44,3.81a1,1,0,0,0-1-.81H8.54a1,1,0,0,0-1,.81L6,12Zm-2,0v3"
         style={{
           fill: 'none',
-          stroke: 'rgb(59, 130, 246)',
+          stroke: 'rgb(51, 204, 153)',
           strokeLinecap: 'round',
           strokeLinejoin: 'round',
           strokeWidth: 2,

@@ -15,7 +15,7 @@ export const NumberThreeIcon: FunctionComponent = () => {
         width="36"
         height="36"
         rx="3"
-        fill="#2F88FF"
+        fill="#33CC99"
         stroke="#000000"
         strokeWidth="4"
         strokeLinecap="round"
