@@ -20,9 +20,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { BulpIcon } from '../../public/icon/bulp';
-import { ContactForm } from '@/components/form';
-import { useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import Head from 'next/head';
+import { FaPhone } from 'react-icons/fa';
+import { MdMailOutline } from 'react-icons/md';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -38,6 +40,11 @@ const geistMono = localFont({
 export default function Home() {
   const formRef = useRef<HTMLDivElement>(null);
   const [isClicked, setIsClicked] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleIsMenuOpen = useCallback(() => {
+    setIsMenuOpen((state) => !state);
+  }, []);
 
   const scrollToForm = () => {
     if (formRef.current) {
@@ -97,9 +104,35 @@ export default function Home() {
         className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto items-center pb-4 font-[family-name:var(--font-geist-sans)]`}
       >
         <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl border-b-2 border-b-[#FFCC33]">
-          <div>PLUMBER</div>
-          <div>PRAGUE</div>
+          <a href="/">
+            <h1>PLUMBER PRAGUE</h1>
+          </a>
+          <button onClick={handleIsMenuOpen}>
+            <GiHamburgerMenu className="flex justify-start items-start" />
+          </button>
         </header>
+        {isMenuOpen && (
+          <nav className="p-4 absolute bg-white top-14 z-10 font-semibold text-xl container border-2 border-[#FFCC33] uppercase mx-auto">
+            <ul className="flex flex-col gap-4 text-right">
+              <li>
+                <a
+                  href="/"
+                  className="hover:underline-offset-2 hover:underline"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/price-list"
+                  className="hover:underline-offset-2 hover:underline"
+                >
+                  Price List
+                </a>
+              </li>
+            </ul>
+          </nav>
+        )}
         <main className="grid gap-4 lg:gap-8 items-left lg:items-center">
           <div>
             <section
@@ -109,7 +142,7 @@ export default function Home() {
               }}
               aria-label="Hero Section"
             >
-              <h1 className="justify-center flex text-2xl md:text-4xl lg:text-6xl font-bold text-black pt-4 pb-8 lg:pt-8 lg:pb-16">
+              <h1 className="justify-center flex text-2xl md:text-4xl lg:text-6xl font-bold text-black pt-4 pb-8 lg:pt-0 lg:pb-16 uppercase">
                 Verified Prague plumber
               </h1>
 
@@ -198,7 +231,7 @@ export default function Home() {
               </div>
             </section>
             <section className="bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4">
-              <h2 className="justify-center flex text-2xl font-bold pb-4 pt-8">
+              <h2 className="justify-center flex text-2xl font-bold pb-4 pt-8 uppercase">
                 Verified Prague plumber
               </h2>
               <div className="px-8 pb-8 grid md:grid-cols-3 gap-4">
@@ -240,7 +273,7 @@ export default function Home() {
             </section>
           </div>
           <section>
-            <h2 className="justify-center flex text-2xl font-bold pb-8 pt-4">
+            <h2 className="justify-center flex text-2xl font-bold pb-8 pt-4 uppercase">
               How it works
             </h2>
             <>
@@ -351,7 +384,7 @@ export default function Home() {
             </>
           </section>
           <section className="bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4 text-pretty">
-            <h2 className="justify-center flex text-2xl font-bold py-8">
+            <h2 className="justify-center flex text-2xl font-bold py-8 uppercase">
               Why choose Plumber Prague
             </h2>
             <div className="px-8 pb-8 grid gap-4">
@@ -400,7 +433,7 @@ export default function Home() {
             </div>
           </section>
           <section className="px-4 grid gap-4">
-            <h2 className="justify-center flex text-2xl font-bold pb-4 pt-4">
+            <h2 className="justify-center flex text-2xl font-bold pb-4 pt-4 uppercase">
               Where we operate
             </h2>
             <p className="justify-center flex text-lg font-extralight pb-4 text-pretty">
@@ -408,7 +441,7 @@ export default function Home() {
               Prague 7 | Prague 8 | Prague 9 | Prague 10
             </p>
             <div className="grid justify-center pb-8 gap-4" ref={formRef}>
-              <h2 className="justify-center flex text-2xl font-bold pb-4 text-center text-pretty">
+              <h2 className="justify-center flex text-2xl font-bold pb-4 text-center text-pretty uppercase">
                 Click to text your problem on WhatsApp!
               </h2>
               <a
@@ -425,9 +458,8 @@ export default function Home() {
           </section>
         </main>
         <footer className="px-4 grid md:block gap-2 border-t-2 border-t-[#FFCC33]">
-          <div className="flex justify-between bg-white py-4 items-center text-black font-bold text-3xl">
-            <div>PLUMBER</div>
-            <div>PRAGUE</div>
+          <div className="bg-white py-4 items-center text-black font-bold text-3xl">
+            <div>PLUMBER PRAGUE</div>
           </div>
           <div className="grid gap-4">
             <div className="flex flex-col md:flex-row gap-2 md:justify-between">
@@ -438,14 +470,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 aria-label="Email us"
               >
-                <Image
-                  aria-hidden
-                  src="/file.svg"
-                  alt="File icon"
-                  width={16}
-                  height={16}
-                  loading="lazy"
-                />
+                <MdMailOutline height={16} width={16} />
                 plumberprague@gmail.com
               </a>
               <a
@@ -455,15 +480,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 aria-label="Call us"
               >
-                <Image
-                  aria-hidden
-                  src="/window.svg"
-                  alt="Window icon"
-                  width={16}
-                  height={16}
-                  loading="lazy"
-                />
-                + 420 123 456 789
+                <FaPhone height={16} width={16} />+ 420 123 456 789
               </a>
             </div>
             <div className="text-xs text-center py-4">

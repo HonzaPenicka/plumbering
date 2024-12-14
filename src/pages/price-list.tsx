@@ -1,10 +1,14 @@
 import Image from 'next/image';
+import Head from 'next/head';
 import localFont from 'next/font/local';
+import { useCallback, useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { useRef, useState } from 'react';
-import Head from 'next/head';
+
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { MdMailOutline } from 'react-icons/md';
+import { FaPhone } from 'react-icons/fa';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -20,6 +24,11 @@ const geistMono = localFont({
 export default function PriceList() {
   const formRef = useRef<HTMLDivElement>(null);
   const [isClicked, setIsClicked] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleIsMenuOpen = useCallback(() => {
+    setIsMenuOpen((state) => !state);
+  }, []);
 
   const scrollToForm = () => {
     if (formRef.current) {
@@ -82,18 +91,44 @@ export default function PriceList() {
         className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto items-center pb-4 font-[family-name:var(--font-geist-sans)]`}
       >
         <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl border-b-2 border-b-[#FFCC33]">
-          <div>PLUMBER</div>
-          <div>PRAGUE</div>
+          <a href="/">
+            <h1>PLUMBER PRAGUE</h1>
+          </a>
+          <button onClick={handleIsMenuOpen}>
+            <GiHamburgerMenu className="flex justify-start items-start" />
+          </button>
         </header>
+        {isMenuOpen && (
+          <nav className="p-4 absolute bg-white top-14 z-10 font-semibold text-xl container border-2 border-[#FFCC33] uppercase mx-auto">
+            <ul className="flex flex-col gap-4 text-right">
+              <li>
+                <a
+                  href="/"
+                  className="hover:underline-offset-2 hover:underline"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/price-list"
+                  className="hover:underline-offset-2 hover:underline"
+                >
+                  Price List
+                </a>
+              </li>
+            </ul>
+          </nav>
+        )}
         <main className="grid gap-4 lg:gap-8 items-left lg:items-center">
           <section className="px-4 grid gap-4 md:gap-8">
-            <h2 className="text-2xl md:text-4xl md:justify-center md:flex font-bold pt-4 md:pt-8">
+            <h2 className="text-2xl md:text-4xl md:justify-center md:flex font-bold pt-4 md:pt-8 uppercase">
               Price List
             </h2>
             <div className="overflow-x-auto ">
-              <table className="min-w-full border-collapse border border-[#FFCC33]  text-sm text-black md:border-4 text-pretty">
+              <table className="min-w-full border-collapse border border-[#FFCC33] text-sm md:text-base text-black md:border-4 text-pretty">
                 <thead>
-                  <tr className="bg-[#33CC99] text-black">
+                  <tr className="bg-[#33CC99] md:text-lg lg:text-xl">
                     <th className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4 text-left font-semibold rounded-tl-lg">
                       Type of Work
                     </th>
@@ -422,7 +457,7 @@ export default function PriceList() {
 
           <section className="pt-4">
             <div className="px-4">
-              <h2 className="text-2xl font-bold text-center mb-8">
+              <h2 className="text-2xl font-bold text-center mb-8 uppercase">
                 Payment Methods
               </h2>
               <div className="grid md:grid-cols-3 gap-4 md:gap-8">
@@ -491,7 +526,7 @@ export default function PriceList() {
 
           <section className="px-4 grid gap-4 pt-4">
             <div className="grid justify-center pb-8 gap-4" ref={formRef}>
-              <h2 className="justify-center flex text-2xl font-bold pb-4 text-center">
+              <h2 className="justify-center flex text-2xl font-bold pb-4 text-center uppercase">
                 Click to text your problem on WhatsApp!
               </h2>
               <a
@@ -508,9 +543,8 @@ export default function PriceList() {
           </section>
         </main>
         <footer className="px-4 grid md:block gap-2 border-t-2 border-t-[#FFCC33]">
-          <div className="flex justify-between bg-white py-4 items-center text-black font-bold text-3xl">
-            <div>PLUMBER</div>
-            <div>PRAGUE</div>
+          <div className="bg-white py-4 items-center text-black font-bold text-3xl">
+            <div>PLUMBER PRAGUE</div>
           </div>
           <div className="grid gap-4">
             <div className="flex flex-col md:flex-row gap-2 md:justify-between">
@@ -521,14 +555,7 @@ export default function PriceList() {
                 rel="noopener noreferrer"
                 aria-label="Email us"
               >
-                <Image
-                  aria-hidden
-                  src="/file.svg"
-                  alt="File icon"
-                  width={16}
-                  height={16}
-                  loading="lazy"
-                />
+                <MdMailOutline height={16} width={16} />
                 plumberprague@gmail.com
               </a>
               <a
@@ -538,15 +565,7 @@ export default function PriceList() {
                 rel="noopener noreferrer"
                 aria-label="Call us"
               >
-                <Image
-                  aria-hidden
-                  src="/window.svg"
-                  alt="Window icon"
-                  width={16}
-                  height={16}
-                  loading="lazy"
-                />
-                + 420 123 456 789
+                <FaPhone height={16} width={16} />+ 420 123 456 789
               </a>
             </div>
             <div className="text-xs text-center py-4">
