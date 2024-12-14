@@ -96,7 +96,7 @@ export default function Home() {
       <div
         className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto items-center pb-4 font-[family-name:var(--font-geist-sans)]`}
       >
-        <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl">
+        <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl border-b-2 border-b-[#FFCC33]">
           <div>PLUMBER</div>
           <div>PRAGUE</div>
         </header>
@@ -424,8 +424,8 @@ export default function Home() {
             </div>
           </section>
         </main>
-        <footer className="px-4 grid md:block gap-2 border-t border-t-[#FFCC33]">
-          <div className="flex justify-between bg-white pt-8 pb-4 items-center text-black font-bold text-3xl">
+        <footer className="px-4 grid md:block gap-2 border-t-2 border-t-[#FFCC33]">
+          <div className="flex justify-between bg-white py-4 items-center text-black font-bold text-3xl">
             <div>PLUMBER</div>
             <div>PRAGUE</div>
           </div>

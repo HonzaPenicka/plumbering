@@ -1,26 +1,8 @@
 import Image from 'next/image';
 import localFont from 'next/font/local';
-import { PragueIcon } from '../../public/icon/prague';
-import { PlumberIcon } from '../../public/icon/plumber';
-import { RationgIcon } from '../../public/icon/rating';
-import { WorkerIcon } from '../../public/icon/worker';
-import { PipeIcon } from '../../public/icon/pipe';
-import { KeyIcon } from '../../public/icon/key';
-import { FurnitureIcon } from '../../public/icon/furniture';
-import { LampIcon } from '../../public/icon/lamp';
-import { NumberOneIcon } from '../../public/icon/number-one';
-import { NumberTwoIcon } from '../../public/icon/number-two';
-import { NumberThreeIcon } from '../../public/icon/number-three';
-import { ShakingHandsIcon } from '../../public/icon/shaking-hands';
-import { TimeIcon } from '../../public/icon/time';
-import { SupportIcon } from '../../public/icon/support';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { BulpIcon } from '../../public/icon/bulp';
-import { ContactForm } from '@/components/form';
 import { useRef, useState } from 'react';
 import Head from 'next/head';
 
@@ -99,13 +81,13 @@ export default function PriceList() {
       <div
         className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto items-center pb-4 font-[family-name:var(--font-geist-sans)]`}
       >
-        <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl">
+        <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl border-b-2 border-b-[#FFCC33]">
           <div>PLUMBER</div>
           <div>PRAGUE</div>
         </header>
         <main className="grid gap-4 lg:gap-8 items-left lg:items-center">
           <section className="px-4 grid gap-4 md:gap-8">
-            <h2 className="text-2xl md:text-4xl md:justify-center md:flex font-bold pt-4">
+            <h2 className="text-2xl md:text-4xl md:justify-center md:flex font-bold pt-4 md:pt-8">
               Price List
             </h2>
             <div className="overflow-x-auto ">
@@ -525,8 +507,8 @@ export default function PriceList() {
             </div>
           </section>
         </main>
-        <footer className="px-4 grid md:block gap-2 border-t border-t-[#FFCC33]">
-          <div className="flex justify-between bg-white pt-8 pb-4 items-center text-black font-bold text-3xl">
+        <footer className="px-4 grid md:block gap-2 border-t-2 border-t-[#FFCC33]">
+          <div className="flex justify-between bg-white py-4 items-center text-black font-bold text-3xl">
             <div>PLUMBER</div>
             <div>PRAGUE</div>
           </div>
