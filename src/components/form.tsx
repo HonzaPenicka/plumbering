@@ -25,7 +25,7 @@ export const ContactForm: FunctionComponent<ContactFormProps> = ({
   return (
     <form
       onSubmit={handleSubmit}
-      className="border-2 p-4 gap-4 mb-8 bg-[#D1CFC5] md:bg-white md:border-[#FFCC33] md:border-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:max-w-screen-lg lg:items-center"
+      className="border-2 p-4 gap-4 mb-8 bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:max-w-screen-lg lg:items-center"
       aria-labelledby="contact-form-title"
     >
       <div className="col-span-1">

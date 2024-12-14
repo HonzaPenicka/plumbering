@@ -197,7 +197,7 @@ export default function Home() {
                 </div>
               </div>
             </section>
-            <section className="bg-[#D1CFC5] md:bg-white md:border-[#FFCC33] md:border-4">
+            <section className="bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4">
               <h2 className="justify-center flex text-2xl font-bold pb-4 pt-8">
                 Verified Prague plumber
               </h2>
@@ -350,7 +350,7 @@ export default function Home() {
               </div>
             </>
           </section>
-          <section className="bg-[#D1CFC5] md:bg-white md:border-[#FFCC33] md:border-4 text-pretty">
+          <section className="bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4 text-pretty">
             <h2 className="justify-center flex text-2xl font-bold py-8">
               Why choose Plumber Prague
             </h2>
@@ -399,7 +399,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="px-8 grid gap-4">
+          <section className="px-4 grid gap-4">
             <h2 className="justify-center flex text-2xl font-bold pb-4 pt-4">
               Where we operate
             </h2>
@@ -407,21 +407,30 @@ export default function Home() {
               Prague 1 | Prague 2 | Prague 3 | Prague 4 | Prague 5 | Prague 6 |
               Prague 7 | Prague 8 | Prague 9 | Prague 10
             </p>
-            <div className="grid justify-center" ref={formRef}>
-              <h2 className="justify-center flex text-2xl font-bold pb-4">
-                Fill out the form
+            <div className="grid justify-center pb-8 gap-4" ref={formRef}>
+              <h2 className="justify-center flex text-2xl font-bold pb-4 text-center text-pretty">
+                Click to text your problem on WhatsApp!
               </h2>
-              <ContactForm onSuccess={handleFormSuccess} />
+              <a
+                href="https://chat.whatsapp.com/CjPS5uDuFGp5IeX4gHhKZK"
+                className="flex flex-col items-center justify-center gap-8"
+              >
+                <button className="uppercase text-2xl font-bold border-2 border-[#33CC99] rounded-lg p-4 text-[#33CC99] hover:text-[#FFCC33]">
+                  Contact us!
+                </button>
+
+                <img src="/qr/whatsapp.png" loading="lazy" width="25%" />
+              </a>
             </div>
           </section>
         </main>
-        <footer className="px-8 grid md:block gap-2 items-center justify-center border-t border-t-[#FFCC33]">
+        <footer className="px-4 grid md:block gap-2 border-t border-t-[#FFCC33]">
           <div className="flex justify-between bg-white pt-8 pb-4 items-center text-black font-bold text-3xl">
             <div>PLUMBER</div>
             <div>PRAGUE</div>
           </div>
           <div className="grid gap-4">
-            <div className="flex flex-col gap-2 md:justify-between">
+            <div className="flex flex-col md:flex-row gap-2 md:justify-between">
               <a
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl"
                 href=""
