@@ -126,16 +126,16 @@ export default function PriceList() {
               Price List
             </h2>
             <div className="overflow-x-auto ">
-              <table className="min-w-full border-collapse border border-[#FFCC33] text-sm md:text-base text-black md:border-4 text-pretty">
+              <table className="min-w-full border-collapse border-4 border-[#FFCC33] text-sm md:text-base text-black md:border-4 text-pretty">
                 <thead>
                   <tr className="bg-[#33CC99] md:text-lg lg:text-xl">
-                    <th className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4 text-left font-semibold rounded-tl-lg">
+                    <th className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
                       Type of Work
                     </th>
                     <th className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
                       Task
                     </th>
-                    <th className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4 text-left font-semibold rounded-tr-lg">
+                    <th className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
                       Price without VAT
                     </th>
                   </tr>
@@ -432,13 +432,13 @@ export default function PriceList() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4 rounded-bl-lg">
+                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
                       Seasonal maintenance
                     </td>
                     <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
                       Moving heavy objects
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4 rounded-br-lg">
+                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
                       600 CZK/hour
                     </td>
                   </tr>
