@@ -462,7 +462,7 @@ export default function PriceList() {
               </h2>
               <div className="grid md:grid-cols-3 gap-4 md:gap-8">
                 {/* Cash in CZK and EUR */}
-                <div className="p-4 flex flex-col border-[#FFCC33] border-4">
+                <div className="p-4 flex flex-col bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4">
                   <h3 className="text-xl font-semibold mb-2 md:text-center">
                     Cash (CZK & EUR)
                   </h3>
@@ -473,7 +473,7 @@ export default function PriceList() {
                 </div>
 
                 {/* Bank Transfer */}
-                <div className="p-4  flex flex-col border-[#FFCC33] border-4">
+                <div className="p-4 flex flex-col bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4">
                   <h3 className="text-xl font-semibold mb-2 md:text-center">
                     Bank Transfer
                   </h3>
@@ -484,7 +484,7 @@ export default function PriceList() {
                 </div>
 
                 {/* Payment on Invoice */}
-                <div className="p-4  flex flex-col border-[#FFCC33] border-4">
+                <div className="p-4 flex flex-col bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4">
                   <h3 className="text-xl font-semibold mb-2 md:text-center">
                     Payment on Invoice
                   </h3>
@@ -495,7 +495,7 @@ export default function PriceList() {
                 </div>
 
                 {/* Credit/Debit Card */}
-                <div className="p-4  flex flex-col border-[#FFCC33] border-4">
+                <div className="p-4 flex flex-col bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4">
                   <h3 className="text-xl font-semibold mb-2 md:text-center">
                     Credit/Debit Card
                   </h3>
@@ -506,7 +506,7 @@ export default function PriceList() {
                 </div>
 
                 {/* QR Payment */}
-                <div className="p-4  flex flex-col border-[#FFCC33] border-4">
+                <div className="p-4 flex flex-col bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4">
                   <h3 className="text-xl font-semibold mb-2 md:text-center">
                     QR Payment
                   </h3>
