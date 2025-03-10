@@ -92,7 +92,7 @@ export default function PriceList() {
       >
         <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl border-b-2 border-b-blue-500">
           <a href="/">
-            <h1>PLUMBER PRAGUE</h1>
+            <h1>YOUR BOB</h1>
           </a>
           <button onClick={handleIsMenuOpen}>
             <GiHamburgerMenu className="flex justify-start items-start" />
