@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react';
 export const BulpIcon: FunctionComponent = () => {
   return (
     <svg
-      fill="#000000"
+      fill="#2b7fff"
       width="40"
       height="40"
       viewBox="-2 0 15.998 15.998"

@@ -17,7 +17,7 @@ export const KeyIcon: FunctionComponent = () => {
         d="M13.52,13.59l.24,1.21a1,1,0,0,1-1,1.2H11.22a1,1,0,0,1-1-1.2l.24-1.21a3,3,0,1,1,3,0Z"
         style={{
           fill: 'none',
-          stroke: 'rgb(51, 204, 153)',
+          stroke: 'rgb(43, 127, 255)',
           strokeLinecap: 'round',
           strokeLinejoin: 'round',
           strokeWidth: 2,

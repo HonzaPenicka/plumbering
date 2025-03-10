@@ -15,7 +15,7 @@ export const NumberTwoIcon: FunctionComponent = () => {
         width="36"
         height="36"
         rx="3"
-        fill="#33CC99"
+        fill="#2b7fff"
         stroke="#000000"
         strokeWidth="4"
         strokeLinecap="round"

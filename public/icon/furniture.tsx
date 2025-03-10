@@ -17,7 +17,7 @@ export const FurnitureIcon: FunctionComponent = () => {
         d="M5,9V7A4,4,0,0,1,9,3h6a4,4,0,0,1,4,4V9"
         style={{
           fill: 'none',
-          stroke: 'rgb(51, 204, 153)',
+          stroke: 'rgb(43, 127, 255)',
           strokeLinecap: 'round',
           strokeLinejoin: 'round',
           strokeWidth: 2,
@@ -29,7 +29,7 @@ export const FurnitureIcon: FunctionComponent = () => {
         d="M17,21V19M7,21V19"
         style={{
           fill: 'none',
-          stroke: 'rgb(51, 204, 153)',
+          stroke: 'rgb(43, 127, 255)',
           strokeLinecap: 'round',
           strokeLinejoin: 'round',
           strokeWidth: 2,
