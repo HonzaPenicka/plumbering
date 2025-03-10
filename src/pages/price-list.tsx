@@ -138,7 +138,6 @@ export default function PriceList() {
                 <thead>
                   <tr className="bg-blue-100 md:text-lg lg:text-xl">
                     <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
-                      Type of Work
                     </th>
                     <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
                       Task
@@ -151,173 +150,171 @@ export default function PriceList() {
                 <tbody>
                   {/* Installation work */}
                   <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installation work
+                    <td className="border-b border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Instalace - výměna hadic pro vanové baterie - umyvadla - dřezu.png" alt="" />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Furniture assembly
+                      Replacement / instalation of hoses for tub faucets, sinks and basins
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1300 CZK/item
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installation work
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Mounting shelves, mirrors, paintings
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      600 CZK/item
+                      790 CZK
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installation work
+                    <td className="border-0 border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Instalace pisoaru .png" alt="" />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Hanging a TV on the wall
+                      Installation of urinals
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1500 CZK
+                      1890 CZK
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installation work
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Instalace toalety.png" alt="" />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Hanging curtain rods and curtains
+                      Toilet installation
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      700 CZK/rod
+                      1890 CZK
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Položení dlažby m2.png" alt="" />
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Laying tiles / m2
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      1580 CZK
                     </td>
                   </tr>
 
                   {/* Plumbing work */}
                   <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Plumbing work
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Montáž  obkladů m2.png" alt="" />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Repairing a leaking toilet
+                      Installation of cladding / m2
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1200 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Plumbing work
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Fixing a dripping faucet
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      800 CZK
+                      1580 CZK
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Plumbing work
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Instalace - výměna syfonu u umyvadla.png" alt="" />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installing a washing machine or dishwasher
+                      Installing / replacing the siphon at the sink
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1500 CZK/item
+                      550 CZK
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Plumbing work
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Instalace závěsných obrazů - tabulí.png" alt="" />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Cleaning traps (siphons)
+                      Installing of hanging pictures, boards, etc.
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      600 CZK/item
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Oprava a seřízení dveří.png" alt="" />
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Door reapir and adjustment
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                     </td>
                   </tr>
 
                   {/* Electrical work */}
                   <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Electrical work
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Výroba klíč.png" alt="" />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Replacing a bulb, outlet, switch
+                      Production of the key to the door 1pc
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      400 CZK/item
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Electrical work
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installing light fixtures
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1300 CZK/item
+                      790 CZK
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Electrical work
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Montáž podlahy (pvc, lino, koberec).png" alt="" />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Connecting appliances
+                      Floor dismantling (PVC, linoleum, carpet) / m2
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1000 CZK/appliance
+                      158 CZK
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Demontáž podlady (pvc, lino, koberec).png" alt="" />
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Floor installation (PVC, linoleum, carpet) / m2
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      630 CZK
                     </td>
                   </tr>
 
                   {/* Painting and decorating work */}
                   <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Painting and decorating work
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Instalace umyvadla.png" alt="" />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Wall repair and painting
+                      Sink installation
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      500 CZK/repair
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Painting and decorating work
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Local painting
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      200 CZK/m²
+                      1890 CZK
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Painting and decorating work
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Instalace pračky - sušičky.png" alt="" />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Painting doors and window frames
+                      Washer / dryer installation
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1000 CZK/item
+                      1580 CZK
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Instalace myčky nádobí.png" alt="" />
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Dishwasher installation
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      1580 CZK
                     </td>
                   </tr>
 
                   {/* Locksmith work */}
                   <tr>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Locksmith work
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <img className='w-12 justify-center' src="/img/hero/Instalace myčky nádobí.png" alt="" />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Lock replacement
+                      Installation a fan in the bathroom
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       1000 CZK
