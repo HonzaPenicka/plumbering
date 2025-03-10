@@ -90,7 +90,7 @@ export default function PriceList() {
       <div
         className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto items-center pb-4 font-[family-name:var(--font-geist-sans)]`}
       >
-        <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl border-b-2 border-b-[#FFCC33]">
+        <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl border-b-2 border-b-blue-500">
           <a href="/">
             <h1>PLUMBER PRAGUE</h1>
           </a>
@@ -99,12 +99,12 @@ export default function PriceList() {
           </button>
         </header>
         {isMenuOpen && (
-          <nav className="p-4 absolute bg-white top-14 z-10 font-semibold text-xl container border-2 border-[#FFCC33] uppercase mx-auto">
+          <nav className="p-4 absolute bg-white top-14 z-10 font-semibold text-xl container border-2 border-blue-500 uppercase mx-auto">
             <ul className="flex flex-col gap-4 text-right">
               <li>
                 <a
                   href="/"
-                  className="hover:underline-offset-2 hover:underline"
+                  className="hover:underline-offset-2 hover:underline hover:decoration-red-500"
                 >
                   Home
                 </a>
@@ -112,9 +112,17 @@ export default function PriceList() {
               <li>
                 <a
                   href="/price-list"
-                  className="hover:underline-offset-2 hover:underline"
+                  className="hover:underline-offset-2 hover:underline hover:decoration-red-500"
                 >
                   Price List
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  className="hover:underline-offset-2 hover:underline hover:decoration-red-500"
+                >
+                  About
                 </a>
               </li>
             </ul>
@@ -126,16 +134,16 @@ export default function PriceList() {
               Price List
             </h2>
             <div className="overflow-x-auto ">
-              <table className="min-w-full border-collapse border-4 border-[#FFCC33] text-sm md:text-base text-black md:border-4 text-pretty">
+              <table className="min-w-full border-collapse border-2 border-blue-500 text-sm md:text-base text-black md:border-2 text-pretty">
                 <thead>
-                  <tr className="bg-[#33CC99] md:text-lg lg:text-xl">
-                    <th className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                  <tr className="bg-blue-100 md:text-lg lg:text-xl">
+                    <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
                       Type of Work
                     </th>
-                    <th className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                    <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
                       Task
                     </th>
-                    <th className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                    <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
                       Price without VAT
                     </th>
                   </tr>
@@ -143,302 +151,302 @@ export default function PriceList() {
                 <tbody>
                   {/* Installation work */}
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Furniture assembly
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       1300 CZK/item
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Mounting shelves, mirrors, paintings
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       600 CZK/item
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Hanging a TV on the wall
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       1500 CZK
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Hanging curtain rods and curtains
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       700 CZK/rod
                     </td>
                   </tr>
 
                   {/* Plumbing work */}
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Plumbing work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Repairing a leaking toilet
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       1200 CZK
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Plumbing work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Fixing a dripping faucet
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       800 CZK
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Plumbing work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installing a washing machine or dishwasher
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       1500 CZK/item
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Plumbing work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Cleaning traps (siphons)
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       600 CZK/item
                     </td>
                   </tr>
 
                   {/* Electrical work */}
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Electrical work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Replacing a bulb, outlet, switch
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       400 CZK/item
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Electrical work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installing light fixtures
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       1300 CZK/item
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Electrical work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Connecting appliances
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       1000 CZK/appliance
                     </td>
                   </tr>
 
                   {/* Painting and decorating work */}
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Painting and decorating work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Wall repair and painting
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       500 CZK/repair
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Painting and decorating work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Local painting
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       200 CZK/m²
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Painting and decorating work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Painting doors and window frames
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       1000 CZK/item
                     </td>
                   </tr>
 
                   {/* Locksmith work */}
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Locksmith work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Lock replacement
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       1000 CZK
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Locksmith work
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installing a security chain
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       600 CZK
                     </td>
                   </tr>
 
                   {/* Garden and outdoor maintenance */}
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Garden and outdoor maintenance
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Mowing lawns, trimming bushes
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       600 CZK/hour
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Garden and outdoor maintenance
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Minor flowerbed maintenance
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       600 CZK/hour
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Garden and outdoor maintenance
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Fence and gate repairs
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       1000 CZK/task
                     </td>
                   </tr>
 
                   {/* Minor indoor repairs */}
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Minor indoor repairs
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Repairing doors and hinges
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       600 CZK/item
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Minor indoor repairs
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Replacing seals
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       400 CZK/window/door
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Minor indoor repairs
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Kitchen cabinet door maintenance
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       600 CZK/door
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Minor indoor repairs
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Floor repairs
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       700 CZK/m²
                     </td>
                   </tr>
 
                   {/* Seasonal maintenance */}
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Seasonal maintenance
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Gutter cleaning and maintenance
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       1000 CZK
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Seasonal maintenance
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Christmas decoration installation
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       1000 CZK/hour
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Seasonal maintenance
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Moving heavy objects
                     </td>
-                    <td className="border border-[#FFCC33] px-2 py-2 md:px-4 md:py-4">
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       600 CZK/hour
                     </td>
                   </tr>
@@ -462,7 +470,7 @@ export default function PriceList() {
               </h2>
               <div className="grid md:grid-cols-3 gap-4 md:gap-8">
                 {/* Cash in CZK and EUR */}
-                <div className="p-4 flex flex-col bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4">
+                <div className="p-4 flex flex-col bg-blue-100 md:bg-white md:border-blue-500 md:border-2">
                   <h3 className="text-xl font-semibold mb-2 md:text-center">
                     Cash (CZK & EUR)
                   </h3>
@@ -473,7 +481,7 @@ export default function PriceList() {
                 </div>
 
                 {/* Bank Transfer */}
-                <div className="p-4 flex flex-col bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4">
+                <div className="p-4 flex flex-col bg-blue-100 md:bg-white md:border-blue-500 md:border-2">
                   <h3 className="text-xl font-semibold mb-2 md:text-center">
                     Bank Transfer
                   </h3>
@@ -484,7 +492,7 @@ export default function PriceList() {
                 </div>
 
                 {/* Payment on Invoice */}
-                <div className="p-4 flex flex-col bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4">
+                <div className="p-4 flex flex-col bg-blue-100 md:bg-white md:border-blue-500 md:border-2">
                   <h3 className="text-xl font-semibold mb-2 md:text-center">
                     Payment on Invoice
                   </h3>
@@ -495,7 +503,7 @@ export default function PriceList() {
                 </div>
 
                 {/* Credit/Debit Card */}
-                <div className="p-4 flex flex-col bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4">
+                <div className="p-4 flex flex-col bg-blue-100 md:bg-white md:border-blue-500 md:border-2">
                   <h3 className="text-xl font-semibold mb-2 md:text-center">
                     Credit/Debit Card
                   </h3>
@@ -506,7 +514,7 @@ export default function PriceList() {
                 </div>
 
                 {/* QR Payment */}
-                <div className="p-4 flex flex-col bg-[#FFCC33] md:bg-white md:border-[#FFCC33] md:border-4">
+                <div className="p-4 flex flex-col bg-blue-100 md:bg-white md:border-blue-500 md:border-2">
                   <h3 className="text-xl font-semibold mb-2 md:text-center">
                     QR Payment
                   </h3>
@@ -524,16 +532,16 @@ export default function PriceList() {
             </p>
           </section>
 
-          <section className="px-4 grid gap-4 pt-4">
+          <section className="px-4 grid gap-4">
             <div className="grid justify-center pb-8 gap-4" ref={formRef}>
-              <h2 className="justify-center flex text-2xl font-bold pb-4 text-center uppercase">
+              <h2 className="justify-center flex text-2xl font-bold pb-4 text-center text-pretty uppercase">
                 Click to text your problem on WhatsApp!
               </h2>
               <a
-                href="https://chat.whatsapp.com/CjPS5uDuFGp5IeX4gHhKZK"
+                href="https://wa.me/message/O2XFDY6ZCZHYD1"
                 className="flex flex-col items-center justify-center gap-8"
               >
-                <button className="uppercase text-2xl font-bold border-2 border-[#33CC99] rounded-lg p-4 text-[#33CC99] hover:text-[#FFCC33]">
+                <button className="uppercase text-2xl font-bold border-2 border-blue-500 rounded-lg p-4 text-blue-500 hover:text-red-500 hover:border-red-500">
                   Contact us!
                 </button>
 
@@ -542,9 +550,9 @@ export default function PriceList() {
             </div>
           </section>
         </main>
-        <footer className="px-4 grid md:block gap-2 border-t-2 border-t-[#FFCC33]">
+        <footer className="px-4 grid md:block gap-2 border-t-2 border-blue-500">
           <div className="bg-white py-4 items-center text-black font-bold text-3xl">
-            <div>PLUMBER PRAGUE</div>
+            <div>YOUR BOB</div>
           </div>
           <div className="grid gap-4">
             <div className="flex flex-col md:flex-row gap-2 md:justify-between">
@@ -556,8 +564,9 @@ export default function PriceList() {
                 aria-label="Email us"
               >
                 <MdMailOutline height={16} width={16} />
-                plumberprague@gmail.com
+                Info@yourbob.cz
               </a>
+              <p className=' hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl'>IČ: 04383257</p>
               <a
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl"
                 href=""
@@ -565,11 +574,11 @@ export default function PriceList() {
                 rel="noopener noreferrer"
                 aria-label="Call us"
               >
-                <FaPhone height={16} width={16} />+ 420 123 456 789
+                <FaPhone height={16} width={16} />+420 704 901 902
               </a>
             </div>
             <div className="text-xs text-center py-4">
-              &copy; 2024 Plumber Prague s.r.o. — All rights reserved.
+              &copy; 2024 Your Bob s.r.o. — All rights reserved.
             </div>
           </div>
         </footer>
