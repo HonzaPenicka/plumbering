@@ -10,6 +10,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdMailOutline } from 'react-icons/md';
 import { FaPhone } from 'react-icons/fa';
 import { PolozeniDlazby } from '../../public/icon/polozeni-dlazby';
+import { Hadice } from '../../public/icon/hadice';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
