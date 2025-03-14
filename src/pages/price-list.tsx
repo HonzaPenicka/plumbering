@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdMailOutline } from 'react-icons/md';
 import { FaPhone } from 'react-icons/fa';
+import { PolozeniDlazby } from '../../public/icon/polozeni-dlazby';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -184,7 +185,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Položení dlažby m2.svg" alt="" />
+                      <PolozeniDlazby />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Laying tiles / m2
