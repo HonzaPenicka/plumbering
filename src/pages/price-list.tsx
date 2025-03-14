@@ -152,6 +152,7 @@ export default function PriceList() {
                   {/* Installation work */}
                   <tr>
                     <td className="border-b border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Hadice />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Replacement / instalation of hoses for tub faucets, sinks and basins
