@@ -161,6 +161,7 @@ export default function PriceList() {
                       790 CZK
                     </td>
                   </tr>
+                  
                   <tr>
                     <td className="border-0 border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       <img className='w-12 justify-center' src="/img/hero/Instalace bidetu.svg" alt="" />
