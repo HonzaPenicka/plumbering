@@ -19,6 +19,12 @@ import { Syfon } from '../../public/icon/syfon';
 import { Obraz } from '../../public/icon/obraz';
 import { Serdvere } from '../../public/icon/serdvere';
 import { Klic } from '../../public/icon/klic';
+import { Demontaz } from '../../public/icon/demontaz';
+import { Montaz } from '../../public/icon/montaz';
+import { Umyvadlo } from '../../public/icon/umyvadlo';
+import { Susicka } from '../../public/icon/susicka';
+import { Mycka } from '../../public/icon/mycka';
+import { Ventilator } from '../../public/icon/ventilator';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -262,7 +268,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Montáž podlahy (pvc, lino, koberec).svg" alt="" />
+                      <Demontaz />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Floor dismantling (PVC, linoleum, carpet) / m2
@@ -273,7 +279,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Demontáž podlady (pvc, lino, koberec).svg" alt="" />
+                      <Montaz />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Floor installation (PVC, linoleum, carpet) / m2
@@ -286,7 +292,7 @@ export default function PriceList() {
                   {/* Painting and decorating work */}
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace umyvadla.svg" alt="" />
+                      <Umyvadlo />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Sink installation
@@ -297,7 +303,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace pračky - sušičky.svg" alt="" />
+                      <Susicka />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Washer / dryer installation
@@ -308,7 +314,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace myčky nádobí.svg" alt="" />
+                      <Mycka />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Dishwasher installation
@@ -321,7 +327,7 @@ export default function PriceList() {
                   {/* Locksmith work */}
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace myčky nádobí.svg" alt="" />
+                      <Ventilator />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation a fan in the bathroom
