@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Head from 'next/head';
 import localFont from 'next/font/local';
 import { useCallback, useRef, useState } from 'react';
@@ -11,8 +10,15 @@ import { MdMailOutline } from 'react-icons/md';
 import { FaPhone } from 'react-icons/fa';
 import { PolozeniDlazby } from '../../public/icon/polozeni-dlazby';
 import { Hadice } from '../../public/icon/hadice';
+import { Pisoar } from '../../public/icon/pisoar';
 import { Trouba } from '../../public/icon/trouba';
 import { NewSvgComponent } from '../../public/icon/indvere';
+import { Toaleta } from '../../public/icon/toaleta';
+import { Obklady } from '../../public/icon/obklady';
+import { Syfon } from '../../public/icon/syfon';
+import { Obraz } from '../../public/icon/obraz';
+import { Serdvere } from '../../public/icon/serdvere';
+import { Klic } from '../../public/icon/klic';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -164,10 +170,9 @@ export default function PriceList() {
                       790 CZK
                     </td>
                   </tr>
-                  
                   <tr>
                     <td className="border-0 border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace bidetu.svg" alt="" />
+                      <Pisoar />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation of urinals
@@ -178,7 +183,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace toalety.svg" alt="" />
+                      <Toaleta />                   
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Toilet installation
@@ -202,7 +207,7 @@ export default function PriceList() {
                   {/* Plumbing work */}
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Montáž  obkladů m2.svg" alt="" />
+                      <Obklady />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation of cladding / m2
@@ -213,7 +218,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace - výměna syfonu u umyvadla.svg" alt="" />
+                      <Syfon />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installing / replacing the siphon at the sink
@@ -224,7 +229,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace závěsných obrazů - tabulí.svg" alt="" />
+                      <Obraz />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installing of hanging pictures, boards, etc.
@@ -234,7 +239,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Oprava a seřízení dveří.svg" alt="" />
+                      <Serdvere />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Door reapir and adjustment
@@ -246,7 +251,7 @@ export default function PriceList() {
                   {/* Electrical work */}
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Výroba klíč.svg" alt="" />
+                      <Klic />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Production of the key to the door 1pc
