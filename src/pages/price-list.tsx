@@ -418,7 +418,7 @@ export default function PriceList() {
                   {/* Seasonal maintenance */}
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace TV.svg" alt="" />
+                      <img className='w-12 justify-center' src="/img/hero/MY BOB - icons_Instalace TV.svg" alt="" />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       TV installation
