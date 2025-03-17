@@ -2,34 +2,34 @@ import { FunctionComponent } from 'react';
 
 export const Hadice: FunctionComponent = () => {
   return (
-    <svg id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" style={{width: "48px"}}>
+    <svg id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" style={{ width: "48px" }}>
       <defs>
         <style>
-            {`
-          .cls-1 {
-            fill: #757575;
-          }
-    
-          .cls-2 {
-            fill: #00adef;
-          }
-    
-          .cls-3 {
-            fill: #a0a0a0;
-          }
-    
-          .cls-4 {
-            fill: #bdbdbd;
-          }
-    
-          .cls-5 {
-            fill: #c4c4c4;
-          }
-    
-          .cls-6 {
-            fill: #ddd;
-          }
-            `}
+          {`
+            .cls-1 {
+              fill: #757575;
+            }
+
+            .cls-2 {
+              fill: #00adef;
+            }
+
+            .cls-3 {
+              fill: #a0a0a0;
+            }
+
+            .cls-4 {
+              fill: #bdbdbd;
+            }
+
+            .cls-5 {
+              fill: #c4c4c4;
+            }
+
+            .cls-6 {
+              fill: #ddd;
+            }
+          `}
         </style>
       </defs>
       <path className="cls-4" d="M275.57,106.43v.59c0,6.26-5.08,11.33-11.34,11.34H47.49c-6.26,0-11.33-5.08-11.34-11.34v-.59c0-6.26,5.08-11.33,11.34-11.34h216.75c6.26,0,11.33,5.08,11.34,11.34Z"/>
