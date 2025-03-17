@@ -12,6 +12,7 @@ import { FaPhone } from 'react-icons/fa';
 import { PolozeniDlazby } from '../../public/icon/polozeni-dlazby';
 import { Hadice } from '../../public/icon/hadice';
 import { Trouba } from '../../public/icon/trouba';
+import { NewSvgComponent } from '../../public/icon/indvere';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -485,7 +486,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Výměna vnitřních dveří do pokoje.svg" alt="" />
+                      <NewSvgComponent />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Replacing interior doors to a room
