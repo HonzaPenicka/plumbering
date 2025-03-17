@@ -11,6 +11,7 @@ import { MdMailOutline } from 'react-icons/md';
 import { FaPhone } from 'react-icons/fa';
 import { PolozeniDlazby } from '../../public/icon/polozeni-dlazby';
 import { Hadice } from '../../public/icon/hadice';
+import { Trouba } from '../../public/icon/trouba';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
