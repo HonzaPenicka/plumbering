@@ -161,7 +161,7 @@ export default function PriceList() {
         )}
         <main className="grid gap-4 lg:gap-8 items-left lg:items-center">
           <section className="px-4 grid gap-4 md:gap-8">
-            <h2 className="text-2xl md:text-4xl justify-center md:flex font-bold pt-4 md:pt-8 uppercase">
+            <h2 className="text-2xl md:text-4xl text-center md:justify-center md:flex font-bold pt-4 md:pt-8 uppercase">
               Price List
             </h2>
             <div className="overflow-x-auto ">
