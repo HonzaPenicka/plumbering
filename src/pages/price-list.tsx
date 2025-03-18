@@ -25,6 +25,21 @@ import { Umyvadlo } from '../../public/icon/umyvadlo';
 import { Susicka } from '../../public/icon/susicka';
 import { Mycka } from '../../public/icon/mycka';
 import { Ventilator } from '../../public/icon/ventilator';
+import { Bidet } from '../../public/icon/bidet';
+import { Schranka } from '../../public/icon/schranka';
+import { KoupelSkrin } from '../../public/icon/koupelskrin';
+import { BilaTechnika } from '../../public/icon/bilatechnika';
+import { SprchKout } from '../../public/icon/sprchkout';
+import { ElZebrik } from '../../public/icon/elzebrik';
+import { Boiler } from '../../public/icon/boiler';
+import { Lustr } from '../../public/icon/lustr';
+import { TV } from '../../public/icon/tv';
+import { Deska } from '../../public/icon/deska';
+import { Router } from '../../public/icon/router';
+import { Police } from '../../public/icon/police';
+import { VchodDvere } from '../../public/icon/vchoddvere';
+import { Klika } from '../../public/icon/klika';
+import { Zamek } from '../../public/icon/zamek';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -338,7 +353,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace bidetu.svg" alt="" />
+                      <Bidet />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Bidet installation
@@ -351,7 +366,7 @@ export default function PriceList() {
                   {/* Garden and outdoor maintenance */}
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace bidetu.svg" alt="" />
+                      <Schranka />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Replacing the mailbox lock
@@ -361,7 +376,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace koupelnové skříňky.svg" alt="" />
+                      <KoupelSkrin />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Bathroom cabinet installation
@@ -372,7 +387,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Výnos bíle techniky 1ks.svg" alt="" />
+                      <BilaTechnika />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Yield of white technology 1pc
@@ -385,7 +400,7 @@ export default function PriceList() {
                   {/* Minor indoor repairs */}
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace sprchového koutu.svg" alt="" />
+                      <SprchKout />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Shower enclosure installation
@@ -396,7 +411,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace topného elektro žebříku.svg" alt="" />
+                      <ElZebrik />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation of electric heating ladder
@@ -407,7 +422,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Výměna boileru.svg" alt="" />
+                      <Boiler />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Boiler replacement
@@ -418,7 +433,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Výměna lustru.svg" alt="" />
+                      <Lustr />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Chandelier replacement
@@ -431,7 +446,7 @@ export default function PriceList() {
                   {/* Seasonal maintenance */}
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/MY BOB - icons_Instalace TV.svg" alt="" />
+                      <TV />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       TV installation
@@ -442,7 +457,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace varné eletrické desky .png" alt="" />
+                      <Deska />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation of kitchen electric hob
@@ -464,7 +479,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace a přenos routeru.svg" alt="" />
+                      <Router />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Router installation and transfer
@@ -475,7 +490,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Montáž police 1ks.svg" alt="" />
+                      <Police />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation of shelves, mirrors 1pc
@@ -486,7 +501,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Výměna vchodových dveří.svg" alt="" />
+                      <VchodDvere />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Replacement of entrance doors
@@ -508,7 +523,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace - oprava - výměna dveřních klik.svg" alt="" />
+                      <Klika />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation / repair / replacement of door handles
@@ -518,7 +533,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Instalace - výměna zámku od dveří.svg" alt="" />
+                      <Zamek />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installing / replacing the door lock insert
@@ -529,7 +544,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Montáž police 1ks.svg" alt="" />
+                      <Police />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation of curtains rails
@@ -539,7 +554,7 @@ export default function PriceList() {
                   </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <img className='w-12 justify-center' src="/img/hero/Výměna boileru.svg" alt="" />
+                      <Boiler />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Kitchen / bathroom tap replacement
