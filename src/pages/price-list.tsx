@@ -657,7 +657,7 @@ export default function PriceList() {
                   Contact us!
                 </button>
 
-                <img src="/qr/whatsapp.svg" loading="lazy" width="25%" />
+                <img src="/qr/whatsapp.png" loading="lazy" width="25%" />
               </a>
             </div>
           </section>
