@@ -433,7 +433,7 @@ export default function Home() {
                   Contact us!
                 </button>
 
-                <img src="/qr/whatsapp.png" loading="lazy" width="25%" />
+                <img src="/qr/qr.png" loading="lazy" width="25%" />
               </a>
             </div>
           </section>
