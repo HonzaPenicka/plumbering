@@ -72,6 +72,52 @@ export default function PriceList() {
     setIsClicked(false);
   };
 
+  const [isConstructionOpen, setIsConstructionOpen] = useState(false);
+  const handleIsConstructionOpen = useCallback(() => {
+    setIsConstructionOpen((state) => !state);
+  }, []);
+
+  const [isPlumberingServicesOpen, setIsPlumberingServicesOpen] =
+    useState(false);
+  const handleIsPlumberingServicesOpen = useCallback(() => {
+    setIsPlumberingServicesOpen((state) => !state);
+  }, []);
+
+  const [isElectroOpen, setIsElectroOpen] = useState(false);
+  const handleIsElectroOpen = useCallback(() => {
+    setIsElectroOpen((state) => !state);
+  }, []);
+
+  const [isAppliancesOpen, setIsAppliancesOpen] = useState(false);
+  const handleIsAppliancesOpen = useCallback(() => {
+    setIsAppliancesOpen((state) => !state);
+  }, []);
+
+  const [isLocksmithOpen, setIsLocksmithOpen] = useState(false);
+  const handleIsLocksmithOpen = useCallback(() => {
+    setIsLocksmithOpen((state) => !state);
+  }, []);
+
+  const [isPaintingOpen, setIsPaintingOpen] = useState(false);
+  const handleIsPaintingOpen = useCallback(() => {
+    setIsPaintingOpen((state) => !state);
+  }, []);
+
+  const [isFlooringOpen, setIsFlooringOpen] = useState(false);
+  const handleIsFlooringOpen = useCallback(() => {
+    setIsFlooringOpen((state) => !state);
+  }, []);
+
+  const [isThrobbingOpen, setIsThrobbingOpen] = useState(false);
+  const handleIsThrobbingOpen = useCallback(() => {
+    setIsThrobbingOpen((state) => !state);
+  }, []);
+
+  const [isTransportOpen, setIsTransportOpen] = useState(false);
+  const handleIsTransportOpen = useCallback(() => {
+    setIsTransportOpen((state) => !state);
+  }, []);
+
   return (
     <>
       <Head>
@@ -113,10 +159,7 @@ export default function PriceList() {
         {/* Security */}
         <meta name="referrer" content="no-referrer-when-downgrade" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="canonical"
-          href="https://www.yourbob.cz/price-list"
-        />
+        <link rel="canonical" href="https://www.yourbob.cz/price-list" />
       </Head>
       <div
         className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto items-center pb-4 font-[family-name:var(--font-geist-sans)]`}
@@ -164,167 +207,628 @@ export default function PriceList() {
             <h2 className="text-2xl md:text-4xl text-center md:justify-center md:flex font-bold pt-4 md:pt-8 uppercase">
               Price List
             </h2>
-            <div className="overflow-x-auto ">
-              <table className="min-w-full border-collapse border-2 border-blue-500 text-sm md:text-base text-black md:border-2 text-pretty">
-                <thead>
-                  <tr className="bg-blue-100 md:text-lg lg:text-xl">
-                    <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
-                    </th>
-                    <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
-                      Task
-                    </th>
-                    <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
-                      Price without VAT
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {/* Installation work */}
-                  <tr>
-                    <td className="border-b border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Hadice />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Replacement / instalation of hoses for tub faucets, sinks and basins
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      790 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-0 border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Pisoar />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installation of urinals
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1890 CZK
-                    </td>
-                  </tr>
-                  <tr>
+
+            <button
+              onClick={handleIsConstructionOpen}
+              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+            >
+              <div className='flex justify-between items-center'>
+                <p>Construction work</p>
+                <p className='font-bold text-xl'>&rarr;</p>
+              </div>
+            </button>
+
+            {isConstructionOpen && (
+              <div className="overflow-x-auto ">
+                <table className="min-w-full border-collapse border-2 border-blue-500 text-sm md:text-base text-black md:border-2 text-pretty">
+                  <thead>
+                    <tr className="bg-blue-100 md:text-lg lg:text-xl">
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold"></th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Task
+                      </th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Price without VAT
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <PolozeniDlazby />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Laying paving tiles (per m²)
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        1499 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Tiling installation (per m²)
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        1499 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <VchodDvere />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Replacement of entrance doors
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        3699 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <NewSvgComponent />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Replacement of interior room door
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        2199 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Serdvere />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Door repair and adjustment, handle replacement
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        1499 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Shelf installation (per piece)
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        599 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Police />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Mirror installation (per piece)
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        599 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Obraz />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Installing of hanging pictures, boards, etc.
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        599 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Police />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Installation of curtain rails (per meter)
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        299 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Door adjustment - trimming
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        729 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Repair of shelves (per piece)
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        149 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Adjustment of cabinet doors
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        219 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Replacement of worktop
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        2999 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Cornice repair
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        959 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Wall sealing / levelling (per m²) incl. primer
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        369 CZK
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            <button
+              onClick={handleIsPlumberingServicesOpen}
+              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+            >
+
+              <div className='flex justify-between items-center'>
+                <p>Plumbing services</p>
+                <p className='font-bold text-xl'>&rarr;</p>
+              </div>
+            </button>
+
+            {isPlumberingServicesOpen && (
+              <div className="overflow-x-auto ">
+                <table className="min-w-full border-collapse border-2 border-blue-500 text-sm md:text-base text-black md:border-2 text-pretty">
+                  <thead>
+                    <tr className="bg-blue-100 md:text-lg lg:text-xl">
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold"></th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Task
+                      </th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Price without VAT
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td className="border-b border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Hadice />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Installation / replacement of hoses for bathtub faucets
+                        / sinks / kitchen sinks
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        599 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-0 border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Pisoar />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Installation of urinals
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        1499 CZK
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Toaleta />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Toilet installation
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        1499 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Umyvadlo />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Installation of sink
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        1499 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Bidet />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Installation of bidet
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        1499 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Syfon />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Installing / replacing the siphon at the sink
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        509 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <KoupelSkrin />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Installation of bathroom cabinet - disposal of the old
+                        one
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        1199 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <SprchKout />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Installation of shower corner
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        2909 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <ElZebrik />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Installation of electric towel radiator
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        1099 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Boiler />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Water heater replacement + removal of old one
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        2909 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Faucet replacement
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        729 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Boiler repair
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        2909 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Silicone replacement (per meter)
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        109 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Drain cleaning
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        439 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Toilet repair
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        879 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        WC flush button replacement
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        509 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Toilet seat replacement
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        509 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Toilet flushing system repair
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        729 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Showerhead replacement
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        219 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Shower hose replacement
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        219 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Washing machine repair - call-out and diagnostics
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        1749 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Dryer repair - call-out and diagnostics
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        1749 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Dishwasher repair - call-out and diagnostics
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        1749 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Dismantling of existing sink
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        589 CZK
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            <button
+              onClick={handleIsElectroOpen}
+              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+            >
+
+              <div className='flex justify-between items-center'>
+                <p>Electro</p>
+                <p className='font-bold text-xl'>&rarr;</p>
+              </div>
+            </button>
+
+            {isElectroOpen && (
+              <div className="overflow-x-auto ">
+                <table className="min-w-full border-collapse border-2 border-blue-500 text-sm md:text-base text-black md:border-2 text-pretty">
+                  <thead>
+                    <tr className="bg-blue-100 md:text-lg lg:text-xl">
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold"></th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Task
+                      </th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Price without VAT
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Ventilator />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Bathroom fan installation
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        999 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Lustr />
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        Chandelier replacement
+                      </td>
+                      <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        799 CZK
+                      </td>
+                    </tr>
+
+                    <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Toaleta />                   
+                      <TV />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Toilet installation
+                      TV installation
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1890 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <PolozeniDlazby />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Laying tiles / m2
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1580 CZK
+                      899 CZK
                     </td>
                   </tr>
 
-                  {/* Plumbing work */}
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Obklady />
+                      <Router />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installation of cladding / m2
+                      Router installation and relocation
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1580 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Syfon />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installing / replacing the siphon at the sink
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      550 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Obraz />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installing of hanging pictures, boards, etc.
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Serdvere />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Door reapir and adjustment
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      899 CZK
                     </td>
                   </tr>
 
-                  {/* Electrical work */}
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Klic />
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Socket replacement
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Production of the key to the door 1pc
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      790 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Demontaz />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Floor dismantling (PVC, linoleum, carpet) / m2
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      158 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Montaz />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Floor installation (PVC, linoleum, carpet) / m2
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      630 CZK
+                      369 CZK
                     </td>
                   </tr>
 
-                  {/* Painting and decorating work */}
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Umyvadlo />
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Switch replacement
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Sink installation
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1890 CZK
+                      369 CZK
                     </td>
                   </tr>
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            <button
+              onClick={handleIsAppliancesOpen}
+              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+            >
+
+              <div className='flex justify-between items-center'>
+                <p>Installation of appliances</p>
+                <p className='font-bold text-xl'>&rarr;</p>
+              </div>
+            </button>
+
+            {isAppliancesOpen && (
+              <div className="overflow-x-auto ">
+                <table className="min-w-full border-collapse border-2 border-blue-500 text-sm md:text-base text-black md:border-2 text-pretty">
+                  <thead>
+                    <tr className="bg-blue-100 md:text-lg lg:text-xl">
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold"></th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Task
+                      </th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Price without VAT
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       <Susicka />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Washer / dryer installation
+                      Washing machine / dryer installation
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1580 CZK
+                      1499 CZK
                     </td>
                   </tr>
                   <tr>
@@ -335,135 +839,29 @@ export default function PriceList() {
                       Dishwasher installation
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1580 CZK
+                      1499 CZK
                     </td>
                   </tr>
 
-                  {/* Locksmith work */}
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Ventilator />
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Delivery of large appliances (per item)
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installation a fan in the bathroom
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      790 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Bidet />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Bidet installation
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1890 CZK
+                      899 CZK
                     </td>
                   </tr>
 
-                  {/* Garden and outdoor maintenance */}
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Schranka />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Replacing the mailbox lock
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <KoupelSkrin />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Bathroom cabinet installation
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      630 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <BilaTechnika />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Yield of white technology 1pc
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      950 CZK
-                    </td>
-                  </tr>
-
-                  {/* Minor indoor repairs */}
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <SprchKout />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Shower enclosure installation
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1890 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <ElZebrik />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installation of electric heating ladder
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      950 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Boiler />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Boiler replacement
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      2360 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Lustr />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Chandelier replacement
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      790 CZK
-                    </td>
-                  </tr>
-
-                  {/* Seasonal maintenance */}
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <TV />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      TV installation
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      950 CZK
-                    </td>
-                  </tr>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       <Deska />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installation of kitchen electric hob
+                      Installation of electric hob
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      950 CZK
+                      879 CZK
                     </td>
                   </tr>
                   <tr>
@@ -471,100 +869,428 @@ export default function PriceList() {
                       <Trouba />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Electric/gas oven installation
+                      Installation of electric / gas oven
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      950 CZK
+                      879 CZK
                     </td>
                   </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Router />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Router installation and transfer
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      950 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Police />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installation of shelves, mirrors 1pc
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      630 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <VchodDvere />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Replacement of entrance doors
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      3 950 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <NewSvgComponent />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Replacing interior doors to a room
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      2360 CZK
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Klika />
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installation / repair / replacement of door handles
-                    </td>
-                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                    </td>
-                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            <button
+              onClick={handleIsLocksmithOpen}
+              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+            >
+              <div className='flex justify-between items-center'>
+                <p>Locksmith work</p>
+                <p className='font-bold text-xl'>&rarr;</p>
+              </div>
+            </button>
+
+            {isLocksmithOpen && (
+              <div className="overflow-x-auto ">
+                <table className="min-w-full border-collapse border-2 border-blue-500 text-sm md:text-base text-black md:border-2 text-pretty">
+                  <thead>
+                    <tr className="bg-blue-100 md:text-lg lg:text-xl">
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold"></th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Task
+                      </th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Price without VAT
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       <Zamek />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installing / replacing the door lock insert
+                      Installation / replacement of door lock
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      480 CZK
+                      439 CZK
                     </td>
                   </tr>
+
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Police />
+                      <Klic />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Installation of curtains rails
+                      Key production - pickup - production - handover
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      369 CZK
                     </td>
                   </tr>
+
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Boiler />
+                      <Schranka />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      Kitchen / bathroom tap replacement
+                      Mailbox lock replacement
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      369 CZK
                     </td>
                   </tr>
-                </tbody>
-              </table>
-            </div>
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            <button
+              onClick={handleIsPaintingOpen}
+              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+            >
+              <div className='flex justify-between items-center'>
+                <p>Painting work</p>
+                <p className='font-bold text-xl'>&rarr;</p>
+              </div>
+            </button>
+
+            {isPaintingOpen && (
+              <div className="overflow-x-auto ">
+                <table className="min-w-full border-collapse border-2 border-blue-500 text-sm md:text-base text-black md:border-2 text-pretty">
+                  <thead>
+                    <tr className="bg-blue-100 md:text-lg lg:text-xl">
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold"></th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Task
+                      </th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Price without VAT
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Painting (per m²) incl. covering
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      149 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Wallpapering (per m²)
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      149 CZK
+                    </td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            <button
+              onClick={handleIsFlooringOpen}
+              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+            >
+              <div className='flex justify-between items-center'>
+                <p>Flooring work</p>
+                <p className='font-bold text-xl'>&rarr;</p>
+              </div>
+            </button>
+
+            {isFlooringOpen && (
+              <div className="overflow-x-auto ">
+                <table className="min-w-full border-collapse border-2 border-blue-500 text-sm md:text-base text-black md:border-2 text-pretty">
+                  <thead>
+                    <tr className="bg-blue-100 md:text-lg lg:text-xl">
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold"></th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Task
+                      </th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Price without VAT
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Removal of laminate / vinyl flooring / per m²
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      59 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Removal of carpet / linoleum / per m²
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      49 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Removal of glued carpet / glued linoleum / per m²
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      89 CZK
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Removal of glued vinyl flooring / per m²
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      79 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Installation of glued flooring / per m²
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      329 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Installation of floating floor / per m²
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      279 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Montaz />
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Installation of loose-laid PVC flooring / per m²
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      239 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Installation of loose-laid carpet / per m²
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      139 CZK
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            <button
+              onClick={handleIsThrobbingOpen}
+              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+            >
+              <div className='flex justify-between items-center'>
+                <p>Throbbing</p>
+                <p className='font-bold text-xl'>&rarr;</p>
+              </div>
+            </button>
+
+            {isThrobbingOpen && (
+              <div className="overflow-x-auto ">
+                <table className="min-w-full border-collapse border-2 border-blue-500 text-sm md:text-base text-black md:border-2 text-pretty">
+                  <thead>
+                    <tr className="bg-blue-100 md:text-lg lg:text-xl">
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold"></th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Task
+                      </th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Price without VAT
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Upholstery cleaning - 2-seater sofa
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      879 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Upholstery cleaning - 3-seater sofa
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      1099 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Upholstery cleaning - L-shaped sofa
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      1309 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Upholstery cleaning - U-shaped sofa
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      1749 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Pillow cleaning
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      49 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Chair cleaning
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      149 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Armchair cleaning
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      509 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Mattress cleaning 90x200
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      659 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Mattress cleaning 180x200
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      1019 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Carpet cleaning (per m²)
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      149 CZK
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Long-pile carpet cleaning (per m²)
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      219 CZK
+                    </td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            <button
+              onClick={handleIsTransportOpen}
+              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+            >
+              <div className='flex justify-between items-center'>
+                <p>Transport</p>
+                <p className='font-bold text-xl'>&rarr;</p>
+              </div>
+            </button>
+
+            {isTransportOpen && (
+              <div className="overflow-x-auto ">
+                <table className="min-w-full border-collapse border-2 border-blue-500 text-sm md:text-base text-black md:border-2 text-pretty">
+                  <thead>
+                    <tr className="bg-blue-100 md:text-lg lg:text-xl">
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold"></th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Task
+                      </th>
+                      <th className="border border-blue-500 px-2 py-2 md:px-4 md:py-4 text-left font-semibold">
+                        Price without VAT
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+
+                  <tr>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      Purchase of various appliances + delivery = 6% + delivery
+                    </td>
+                    <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            )}
 
             <p className="pt-4 md:pt-0 text-sm">
               * The listed prices are indicative and may vary depending on
@@ -663,7 +1389,7 @@ export default function PriceList() {
           </section>
         </main>
         <footer className="px-4 grid md:block gap-2 border-t-2 border-blue-500">
-          <div className="bg-white py-4 items-center text-black font-bold text-3xl">
+          <div className="bg-white py-4 items-center text-black font-bold text-3xl text-center lg:text-left">
             <div>YOUR BOB</div>
           </div>
           <div className="grid gap-4">
@@ -678,7 +1404,6 @@ export default function PriceList() {
                 <MdMailOutline height={16} width={16} />
                 Info@yourbob.cz
               </a>
-              <p className=' hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl'>IČ: 04383257</p>
               <a
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl"
                 href=""
@@ -686,8 +1411,18 @@ export default function PriceList() {
                 rel="noopener noreferrer"
                 aria-label="Call us"
               >
-                <FaPhone height={16} width={16} />+420 704 901 902
+                <FaPhone height={16} width={16} />
+                +420 704 901 902
               </a>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-2 md:justify-between">
+              <p className="hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl">
+                sídlo: Ječná 548/7, 120 00 Praha
+              </p>
+              <p className="hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl">
+                IČ: 04383257
+              </p>
             </div>
             <div className="text-xs text-center py-4">
               &copy; 2024 Your Bob s.r.o. — All rights reserved.

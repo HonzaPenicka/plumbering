@@ -439,7 +439,7 @@ export default function Home() {
           </section>
         </main>
         <footer className="px-4 grid md:block gap-2 border-t-2 border-blue-500">
-          <div className="bg-white py-4 items-center text-black font-bold text-3xl">
+          <div className="bg-white py-4 items-center text-black font-bold text-3xl text-center lg:text-left">
             <div>YOUR BOB</div>
           </div>
           <div className="grid gap-4">
@@ -454,7 +454,6 @@ export default function Home() {
                 <MdMailOutline height={16} width={16} />
                 Info@yourbob.cz
               </a>
-              <p className=' hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl'>IČ: 04383257</p>
               <a
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl"
                 href=""
@@ -462,8 +461,18 @@ export default function Home() {
                 rel="noopener noreferrer"
                 aria-label="Call us"
               >
-                <FaPhone height={16} width={16} />+420 704 901 902
+                <FaPhone height={16} width={16} />
+                +420 704 901 902
               </a>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-2 md:justify-between">
+              <p className="hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl">
+                sídlo: Ječná 548/7, 120 00 Praha
+              </p>
+              <p className="hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl">
+                IČ: 04383257
+              </p>
             </div>
             <div className="text-xs text-center py-4">
               &copy; 2024 Your Bob s.r.o. — All rights reserved.

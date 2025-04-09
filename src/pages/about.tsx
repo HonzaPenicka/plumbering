@@ -133,18 +133,28 @@ export default function PriceList() {
             <h2 className="text-2xl md:text-4xl text-center font-bold pt-4 md:pt-8 uppercase">
               About
             </h2>
-            
-            <div className='grid gap-4 lg:gap-16 p-4 md:px-8 lg:px-48 bg-blue-100 md:bg-white md:border-2 md:border-blue-500'>
-                <p className="pt-4 md:pt-0 text-lg lg:text-xl">
-                You Bob was created to make your life easier. No more wasting time searching for tradespeople, checking their availability, and figuring out prices.
-                </p>
 
-                <p className="pt-4 md:pt-0 text-lg lg:text-xl">
-                Our plumbing service works simply – just send us a message on <b>WhatsApp</b>, and we’ll <b>respond immediately</b>. We focus on <b>fast communication</b> so you can be sure someone is taking care of your request and providing you with the necessary information as quickly as possible.
-                </p>
-                <p className="pt-4 md:pt-0 text-lg lg:text-xl">
-                All our <b>prices are transparent</b> – you always know the cost in advance. In the future, we plan to expand our services to include <b>leaning, upholstery and mattress cleaning, painting</b>, and much more.
-                </p>
+            <div className="grid gap-4 lg:gap-16 p-4 md:px-8 lg:px-48 bg-blue-100 md:bg-white md:border-2 md:border-blue-500">
+              <p className="pt-4 md:pt-0 text-lg lg:text-xl">
+                You Bob was created to make your life easier. No more wasting
+                time searching for tradespeople, checking their availability,
+                and figuring out prices.
+              </p>
+
+              <p className="pt-4 md:pt-0 text-lg lg:text-xl">
+                Our plumbing service works simply – just send us a message on{' '}
+                <b>WhatsApp</b>, and we’ll <b>respond immediately</b>. We focus
+                on <b>fast communication</b> so you can be sure someone is
+                taking care of your request and providing you with the necessary
+                information as quickly as possible.
+              </p>
+              <p className="pt-4 md:pt-0 text-lg lg:text-xl">
+                All our <b>prices are transparent</b> – you always know the cost
+                in advance. In the future, we plan to expand our services to
+                include{' '}
+                <b>leaning, upholstery and mattress cleaning, painting</b>, and
+                much more.
+              </p>
             </div>
           </section>
 
@@ -167,7 +177,7 @@ export default function PriceList() {
           </section>
         </main>
         <footer className="px-4 grid md:block gap-2 border-t-2 border-blue-500">
-          <div className="bg-white py-4 items-center text-black font-bold text-3xl">
+          <div className="bg-white py-4 items-center text-black font-bold text-3xl text-center lg:text-left">
             <div>YOUR BOB</div>
           </div>
           <div className="grid gap-4">
@@ -182,7 +192,6 @@ export default function PriceList() {
                 <MdMailOutline height={16} width={16} />
                 Info@yourbob.cz
               </a>
-              <p className=' hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl'>IČ: 04383257</p>
               <a
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl"
                 href=""
@@ -190,8 +199,18 @@ export default function PriceList() {
                 rel="noopener noreferrer"
                 aria-label="Call us"
               >
-                <FaPhone height={16} width={16} />+420 704 901 902
+                <FaPhone height={16} width={16} />
+                +420 704 901 902
               </a>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-2 md:justify-between">
+              <p className="hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl">
+                sídlo: Ječná 548/7, 120 00 Praha
+              </p>
+              <p className="hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl">
+                IČ: 04383257
+              </p>
             </div>
             <div className="text-xs text-center py-4">
               &copy; 2024 Your Bob s.r.o. — All rights reserved.
