@@ -210,11 +210,11 @@ export default function PriceList() {
 
             <button
               onClick={handleIsConstructionOpen}
-              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+              className="border-2 border-blue-500 text-left p-4 lg:p-8 font-bold hover:bg-blue-100 focus:bg-blue-100"
             >
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-between items-center text-xl lg:text-2xl'>
                 <p>Construction work</p>
-                <p className='font-bold text-xl'>&rarr;</p>
+                <p className='font-bold'>&rarr;</p>
               </div>
             </button>
 
@@ -242,7 +242,7 @@ export default function PriceList() {
                         Laying paving tiles (per m²)
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        1499 CZK
+                        1349 CZK
                       </td>
                     </tr>
 
@@ -252,7 +252,7 @@ export default function PriceList() {
                         Tiling installation (per m²)
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        1499 CZK
+                        1349 CZK
                       </td>
                     </tr>
 
@@ -264,7 +264,7 @@ export default function PriceList() {
                         Replacement of entrance doors
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        3699 CZK
+                        3369 CZK
                       </td>
                     </tr>
 
@@ -276,7 +276,7 @@ export default function PriceList() {
                         Replacement of interior room door
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        2199 CZK
+                        2099 CZK
                       </td>
                     </tr>
 
@@ -288,7 +288,7 @@ export default function PriceList() {
                         Door repair and adjustment, handle replacement
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        1499 CZK
+                        1349 CZK
                       </td>
                     </tr>
 
@@ -298,7 +298,7 @@ export default function PriceList() {
                         Shelf installation (per piece)
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        599 CZK
+                        539 CZK
                       </td>
                     </tr>
 
@@ -310,7 +310,7 @@ export default function PriceList() {
                         Mirror installation (per piece)
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        599 CZK
+                        539 CZK
                       </td>
                     </tr>
 
@@ -322,7 +322,7 @@ export default function PriceList() {
                         Installing of hanging pictures, boards, etc.
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        599 CZK
+                        539 CZK
                       </td>
                     </tr>
 
@@ -334,7 +334,7 @@ export default function PriceList() {
                         Installation of curtain rails (per meter)
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        299 CZK
+                        269 CZK
                       </td>
                     </tr>
 
@@ -344,7 +344,7 @@ export default function PriceList() {
                         Door adjustment - trimming
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        729 CZK
+                        679 CZK
                       </td>
                     </tr>
 
@@ -354,7 +354,7 @@ export default function PriceList() {
                         Repair of shelves (per piece)
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        149 CZK
+                        139 CZK
                       </td>
                     </tr>
 
@@ -364,7 +364,7 @@ export default function PriceList() {
                         Adjustment of cabinet doors
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        219 CZK
+                        209 CZK
                       </td>
                     </tr>
 
@@ -374,7 +374,7 @@ export default function PriceList() {
                         Replacement of worktop
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        2999 CZK
+                        2699 CZK
                       </td>
                     </tr>
 
@@ -384,7 +384,7 @@ export default function PriceList() {
                         Cornice repair
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        959 CZK
+                        609 CZK
                       </td>
                     </tr>
 
@@ -394,7 +394,7 @@ export default function PriceList() {
                         Wall sealing / levelling (per m²) incl. primer
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        369 CZK
+                        339 CZK
                       </td>
                     </tr>
                   </tbody>
@@ -404,12 +404,12 @@ export default function PriceList() {
 
             <button
               onClick={handleIsPlumberingServicesOpen}
-              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+              className="border-2 border-blue-500 text-left p-4 lg:p-8 font-bold hover:bg-blue-100 focus:bg-blue-100"
             >
 
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-between items-center text-xl lg:text-2xl'>
                 <p>Plumbing services</p>
-                <p className='font-bold text-xl'>&rarr;</p>
+                <p className='font-bold'>&rarr;</p>
               </div>
             </button>
 
@@ -438,7 +438,7 @@ export default function PriceList() {
                         / sinks / kitchen sinks
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        599 CZK
+                        539 CZK
                       </td>
                     </tr>
 
@@ -450,7 +450,7 @@ export default function PriceList() {
                         Installation of urinals
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        1499 CZK
+                        1349 CZK
                       </td>
                     </tr>
                     <tr>
@@ -461,7 +461,7 @@ export default function PriceList() {
                         Toilet installation
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        1499 CZK
+                        1349 CZK
                       </td>
                     </tr>
 
@@ -473,7 +473,7 @@ export default function PriceList() {
                         Installation of sink
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        1499 CZK
+                        1349 CZK
                       </td>
                     </tr>
 
@@ -485,7 +485,7 @@ export default function PriceList() {
                         Installation of bidet
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        1499 CZK
+                        1349 CZK
                       </td>
                     </tr>
 
@@ -497,7 +497,7 @@ export default function PriceList() {
                         Installing / replacing the siphon at the sink
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        509 CZK
+                        479 CZK
                       </td>
                     </tr>
 
@@ -510,7 +510,7 @@ export default function PriceList() {
                         one
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        1199 CZK
+                        1099 CZK
                       </td>
                     </tr>
 
@@ -522,7 +522,7 @@ export default function PriceList() {
                         Installation of shower corner
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        2909 CZK
+                        2699 CZK
                       </td>
                     </tr>
 
@@ -546,7 +546,7 @@ export default function PriceList() {
                         Water heater replacement + removal of old one
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        2909 CZK
+                        2699 CZK
                       </td>
                     </tr>
 
@@ -556,7 +556,7 @@ export default function PriceList() {
                         Faucet replacement
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        729 CZK
+                        679 CZK
                       </td>
                     </tr>
 
@@ -566,7 +566,7 @@ export default function PriceList() {
                         Boiler repair
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        2909 CZK
+                        2699 CZK
                       </td>
                     </tr>
 
@@ -586,7 +586,7 @@ export default function PriceList() {
                         Drain cleaning
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        439 CZK
+                        409 CZK
                       </td>
                     </tr>
 
@@ -596,7 +596,7 @@ export default function PriceList() {
                         Toilet repair
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        879 CZK
+                        809 CZK
                       </td>
                     </tr>
 
@@ -606,7 +606,7 @@ export default function PriceList() {
                         WC flush button replacement
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        509 CZK
+                        479 CZK
                       </td>
                     </tr>
 
@@ -616,7 +616,7 @@ export default function PriceList() {
                         Toilet seat replacement
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        509 CZK
+                        479 CZK
                       </td>
                     </tr>
 
@@ -626,7 +626,7 @@ export default function PriceList() {
                         Toilet flushing system repair
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        729 CZK
+                        679 CZK
                       </td>
                     </tr>
 
@@ -636,7 +636,7 @@ export default function PriceList() {
                         Showerhead replacement
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        219 CZK
+                        209 CZK
                       </td>
                     </tr>
 
@@ -646,7 +646,7 @@ export default function PriceList() {
                         Shower hose replacement
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        219 CZK
+                        209 CZK
                       </td>
                     </tr>
 
@@ -656,7 +656,7 @@ export default function PriceList() {
                         Washing machine repair - call-out and diagnostics
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        1749 CZK
+                        1619 CZK
                       </td>
                     </tr>
 
@@ -666,7 +666,7 @@ export default function PriceList() {
                         Dryer repair - call-out and diagnostics
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        1749 CZK
+                        1619 CZK
                       </td>
                     </tr>
 
@@ -676,7 +676,7 @@ export default function PriceList() {
                         Dishwasher repair - call-out and diagnostics
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        1749 CZK
+                        1619 CZK
                       </td>
                     </tr>
 
@@ -686,7 +686,7 @@ export default function PriceList() {
                         Dismantling of existing sink
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        589 CZK
+                        539 CZK
                       </td>
                     </tr>
                   </tbody>
@@ -696,12 +696,12 @@ export default function PriceList() {
 
             <button
               onClick={handleIsElectroOpen}
-              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+              className="border-2 border-blue-500 text-left p-4 lg:p-8 font-bold hover:bg-blue-100 focus:bg-blue-100"
             >
 
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-between items-center text-xl lg:text-2xl'>
                 <p>Electro</p>
-                <p className='font-bold text-xl'>&rarr;</p>
+                <p className='font-bold'>&rarr;</p>
               </div>
             </button>
 
@@ -729,7 +729,7 @@ export default function PriceList() {
                         Bathroom fan installation
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        999 CZK
+                        949 CZK
                       </td>
                     </tr>
 
@@ -741,7 +741,7 @@ export default function PriceList() {
                         Chandelier replacement
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        799 CZK
+                        679 CZK
                       </td>
                     </tr>
 
@@ -753,7 +753,7 @@ export default function PriceList() {
                       TV installation
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      899 CZK
+                      809 CZK
                     </td>
                   </tr>
 
@@ -765,7 +765,7 @@ export default function PriceList() {
                       Router installation and relocation
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      899 CZK
+                      809 CZK
                     </td>
                   </tr>
 
@@ -775,7 +775,7 @@ export default function PriceList() {
                       Socket replacement
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      369 CZK
+                      339 CZK
                     </td>
                   </tr>
 
@@ -785,7 +785,7 @@ export default function PriceList() {
                       Switch replacement
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      369 CZK
+                      339 CZK
                     </td>
                   </tr>
                   </tbody>
@@ -795,12 +795,12 @@ export default function PriceList() {
 
             <button
               onClick={handleIsAppliancesOpen}
-              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+              className="border-2 border-blue-500 text-left p-4 lg:p-8 font-bold hover:bg-blue-100 focus:bg-blue-100"
             >
 
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-between items-center text-xl lg:text-2xl'>
                 <p>Installation of appliances</p>
-                <p className='font-bold text-xl'>&rarr;</p>
+                <p className='font-bold'>&rarr;</p>
               </div>
             </button>
 
@@ -828,7 +828,7 @@ export default function PriceList() {
                       Washing machine / dryer installation
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1499 CZK
+                      1349 CZK
                     </td>
                   </tr>
                   <tr>
@@ -839,7 +839,7 @@ export default function PriceList() {
                       Dishwasher installation
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1499 CZK
+                      1349 CZK
                     </td>
                   </tr>
 
@@ -849,7 +849,7 @@ export default function PriceList() {
                       Delivery of large appliances (per item)
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      899 CZK
+                      809 CZK
                     </td>
                   </tr>
 
@@ -861,7 +861,7 @@ export default function PriceList() {
                       Installation of electric hob
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      879 CZK
+                      809 CZK
                     </td>
                   </tr>
                   <tr>
@@ -872,7 +872,7 @@ export default function PriceList() {
                       Installation of electric / gas oven
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      879 CZK
+                      809 CZK
                     </td>
                   </tr>
                   </tbody>
@@ -882,11 +882,11 @@ export default function PriceList() {
 
             <button
               onClick={handleIsLocksmithOpen}
-              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+              className="border-2 border-blue-500 text-left p-4 lg:p-8 font-bold hover:bg-blue-100 focus:bg-blue-100"
             >
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-between items-center text-xl lg:text-2xl'>
                 <p>Locksmith work</p>
-                <p className='font-bold text-xl'>&rarr;</p>
+                <p className='font-bold'>&rarr;</p>
               </div>
             </button>
 
@@ -914,7 +914,7 @@ export default function PriceList() {
                       Installation / replacement of door lock
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      439 CZK
+                      409 CZK
                     </td>
                   </tr>
 
@@ -926,7 +926,7 @@ export default function PriceList() {
                       Key production - pickup - production - handover
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      369 CZK
+                      339 CZK
                     </td>
                   </tr>
 
@@ -938,7 +938,7 @@ export default function PriceList() {
                       Mailbox lock replacement
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      369 CZK
+                      339 CZK
                     </td>
                   </tr>
                   </tbody>
@@ -948,11 +948,11 @@ export default function PriceList() {
 
             <button
               onClick={handleIsPaintingOpen}
-              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+              className="border-2 border-blue-500 text-left p-4 lg:p-8 font-bold hover:bg-blue-100 focus:bg-blue-100"
             >
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-between items-center text-xl lg:text-2xl'>
                 <p>Painting work</p>
-                <p className='font-bold text-xl'>&rarr;</p>
+                <p className='font-bold'>&rarr;</p>
               </div>
             </button>
 
@@ -979,7 +979,7 @@ export default function PriceList() {
                       Painting (per m²) incl. covering
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      149 CZK
+                      119 CZK
                     </td>
                   </tr>
 
@@ -989,7 +989,7 @@ export default function PriceList() {
                       Wallpapering (per m²)
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      149 CZK
+                      119 CZK
                     </td>
                   </tr>
 
@@ -1000,11 +1000,11 @@ export default function PriceList() {
 
             <button
               onClick={handleIsFlooringOpen}
-              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+              className="border-2 border-blue-500 text-left p-4 lg:p-8 font-bold hover:bg-blue-100 focus:bg-blue-100"
             >
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-between items-center text-xl lg:text-2xl'>
                 <p>Flooring work</p>
-                <p className='font-bold text-xl'>&rarr;</p>
+                <p className='font-bold'>&rarr;</p>
               </div>
             </button>
 
@@ -1060,7 +1060,7 @@ export default function PriceList() {
                       Removal of glued vinyl flooring / per m²
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      79 CZK
+                      69 CZK
                     </td>
                   </tr>
 
@@ -1070,7 +1070,7 @@ export default function PriceList() {
                       Installation of glued flooring / per m²
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      329 CZK
+                      299 CZK
                     </td>
                   </tr>
 
@@ -1080,7 +1080,7 @@ export default function PriceList() {
                       Installation of floating floor / per m²
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      279 CZK
+                      259 CZK
                     </td>
                   </tr>
 
@@ -1092,7 +1092,7 @@ export default function PriceList() {
                       Installation of loose-laid PVC flooring / per m²
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      239 CZK
+                      219 CZK
                     </td>
                   </tr>
 
@@ -1102,7 +1102,7 @@ export default function PriceList() {
                       Installation of loose-laid carpet / per m²
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      139 CZK
+                      129 CZK
                     </td>
                   </tr>
                   </tbody>
@@ -1112,11 +1112,11 @@ export default function PriceList() {
 
             <button
               onClick={handleIsThrobbingOpen}
-              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+              className="border-2 border-blue-500 text-left p-4 lg:p-8 font-bold hover:bg-blue-100 focus:bg-blue-100"
             >
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-between items-center text-xl lg:text-2xl'>
                 <p>Throbbing</p>
-                <p className='font-bold text-xl'>&rarr;</p>
+                <p className='font-bold'>&rarr;</p>
               </div>
             </button>
 
@@ -1143,7 +1143,7 @@ export default function PriceList() {
                       Upholstery cleaning - 2-seater sofa
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      879 CZK
+                      809 CZK
                     </td>
                   </tr>
 
@@ -1153,7 +1153,7 @@ export default function PriceList() {
                       Upholstery cleaning - 3-seater sofa
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1099 CZK
+                      1009 CZK
                     </td>
                   </tr>
 
@@ -1163,7 +1163,7 @@ export default function PriceList() {
                       Upholstery cleaning - L-shaped sofa
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1309 CZK
+                      1219 CZK
                     </td>
                   </tr>
 
@@ -1173,7 +1173,7 @@ export default function PriceList() {
                       Upholstery cleaning - U-shaped sofa
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1749 CZK
+                      1619 CZK
                     </td>
                   </tr>
 
@@ -1193,7 +1193,7 @@ export default function PriceList() {
                       Chair cleaning
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      149 CZK
+                      139 CZK
                     </td>
                   </tr>
 
@@ -1203,7 +1203,7 @@ export default function PriceList() {
                       Armchair cleaning
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      509 CZK
+                      479 CZK
                     </td>
                   </tr>
 
@@ -1213,7 +1213,7 @@ export default function PriceList() {
                       Mattress cleaning 90x200
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      659 CZK
+                      609 CZK
                     </td>
                   </tr>
 
@@ -1223,7 +1223,7 @@ export default function PriceList() {
                       Mattress cleaning 180x200
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      1019 CZK
+                      949 CZK
                     </td>
                   </tr>
 
@@ -1233,7 +1233,7 @@ export default function PriceList() {
                       Carpet cleaning (per m²)
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      149 CZK
+                      139 CZK
                     </td>
                   </tr>
 
@@ -1243,7 +1243,7 @@ export default function PriceList() {
                       Long-pile carpet cleaning (per m²)
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      219 CZK
+                      209 CZK
                     </td>
                   </tr>
 
@@ -1254,11 +1254,11 @@ export default function PriceList() {
 
             <button
               onClick={handleIsTransportOpen}
-              className="border-2 border-blue-500 text-left p-4 font-bold hover:bg-blue-100 focus:bg-blue-100"
+              className="border-2 border-blue-500 text-left p-4 lg:p-8 font-bold hover:bg-blue-100 focus:bg-blue-100"
             >
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-between items-center text-xl lg:text-2xl'>
                 <p>Transport</p>
-                <p className='font-bold text-xl'>&rarr;</p>
+                <p className='font-bold'>&rarr;</p>
               </div>
             </button>
 
