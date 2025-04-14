@@ -40,6 +40,42 @@ import { Police } from '../../public/icon/police';
 import { VchodDvere } from '../../public/icon/vchoddvere';
 import { Klika } from '../../public/icon/klika';
 import { Zamek } from '../../public/icon/zamek';
+import { SerizeniDvere } from '../../public/icon/serizeniDvere';
+import { Zaclony } from '../../public/icon/zaclony';
+import { OpravaPolice } from '../../public/icon/opravaPolic';
+import { DvirkaSkrin } from '../../public/icon/dvirkaSkrin';
+import { PracDeska } from '../../public/icon/pracDeska';
+import { Stena } from '../../public/icon/stena';
+import { Kohout } from '../../public/icon/kohout';
+import { OpravaBoiler } from '../../public/icon/opravaBoiler';
+import { Odtok } from '../../public/icon/odtok';
+import { OpravaZachod } from '../../public/icon/opravaZachod';
+import { Splchovadlo } from '../../public/icon/splachovadlo';
+import { Prkynko } from '../../public/icon/prkynko';
+import { Tlacitko } from '../../public/icon/tlacitko';
+import { Hlavice } from '../../public/icon/hlavice';
+import { SprchHadice } from '../../public/icon/sprchHadice';
+import { Drez } from '../../public/icon/drez';
+import { Zasuvka } from '../../public/icon/zasuvka';
+import { Vypinac } from '../../public/icon/vypinac';
+import { Dodavka } from '../../public/icon/dodavka';
+import { Tapetovani } from '../../public/icon/tapetovani';
+import { Vinyl } from '../../public/icon/vinyl';
+import { Koberec } from '../../public/icon/koberec';
+import { LepenyKoberec } from '../../public/icon/lepenyKoberec';
+import { OdstVinyl } from '../../public/icon/odstVinyl';
+import { NakejKoberec } from '../../public/icon/nakejKoberec';
+import { DveMista } from '../../public/icon/2mista';
+import { TriMista } from '../../public/icon/3mista';
+import { Lmista } from '../../public/icon/Lmista';
+import { Umista } from '../../public/icon/Umista';
+import { Zidle } from '../../public/icon/zidle';
+import { Sedacka } from '../../public/icon/sedacka';
+import { JednaMatrace } from '../../public/icon/matrace1';
+import { DveMatrace } from '../../public/icon/matrace2';
+import { TepKob } from '../../public/icon/tepkob';
+import { DlouhyChlup } from '../../public/icon/tepdlouhy';
+import { ShoppingCart } from '../../public/icon/nakup';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -247,7 +283,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Obklady />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Tiling installation (per m²)
                       </td>
@@ -293,7 +331,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Police />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Shelf installation (per piece)
                       </td>
@@ -304,7 +344,6 @@ export default function PriceList() {
 
                     <tr>
                       <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        <Police />
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Mirror installation (per piece)
@@ -328,7 +367,7 @@ export default function PriceList() {
 
                     <tr>
                       <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        <Police />
+                        <Zaclony />
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Installation of curtain rails (per meter)
@@ -339,7 +378,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <SerizeniDvere />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Door adjustment - trimming
                       </td>
@@ -349,7 +390,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <OpravaPolice />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Repair of shelves (per piece)
                       </td>
@@ -359,7 +402,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <DvirkaSkrin />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Adjustment of cabinet doors
                       </td>
@@ -369,7 +414,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <PracDeska />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Replacement of worktop
                       </td>
@@ -379,7 +426,8 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Cornice repair
                       </td>
@@ -389,7 +437,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Stena />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Wall sealing / levelling (per m²) incl. primer
                       </td>
@@ -551,7 +601,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Kohout />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Faucet replacement
                       </td>
@@ -561,7 +613,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <OpravaBoiler />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Boiler repair
                       </td>
@@ -571,7 +625,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Silicone replacement (per meter)
                       </td>
@@ -581,7 +637,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Odtok />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Drain cleaning
                       </td>
@@ -591,7 +649,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <OpravaZachod />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Toilet repair
                       </td>
@@ -601,7 +661,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Splchovadlo />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         WC flush button replacement
                       </td>
@@ -611,7 +673,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Prkynko />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Toilet seat replacement
                       </td>
@@ -621,7 +685,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Tlacitko />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Toilet flushing system repair
                       </td>
@@ -631,7 +697,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Hlavice />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Showerhead replacement
                       </td>
@@ -641,7 +709,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <SprchHadice />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Shower hose replacement
                       </td>
@@ -681,7 +751,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Drez />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Dismantling of existing sink
                       </td>
@@ -770,7 +842,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Zasuvka />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Socket replacement
                     </td>
@@ -780,7 +854,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Vypinac />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Switch replacement
                     </td>
@@ -844,7 +920,8 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Delivery of large appliances (per item)
                     </td>
@@ -984,7 +1061,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Tapetovani />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Wallpapering (per m²)
                     </td>
@@ -1025,7 +1104,9 @@ export default function PriceList() {
 
                   <tbody>
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Vinyl />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Removal of laminate / vinyl flooring / per m²
                     </td>
@@ -1035,7 +1116,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Koberec />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Removal of carpet / linoleum / per m²
                     </td>
@@ -1045,7 +1128,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <LepenyKoberec />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Removal of glued carpet / glued linoleum / per m²
                     </td>
@@ -1055,7 +1140,8 @@ export default function PriceList() {
                   </tr>
                   
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Removal of glued vinyl flooring / per m²
                     </td>
@@ -1065,7 +1151,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <OdstVinyl />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation of glued flooring / per m²
                     </td>
@@ -1097,7 +1185,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <NakejKoberec />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation of loose-laid carpet / per m²
                     </td>
@@ -1138,7 +1228,9 @@ export default function PriceList() {
                   <tbody>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <DveMista />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Upholstery cleaning - 2-seater sofa
                     </td>
@@ -1148,7 +1240,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <TriMista />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Upholstery cleaning - 3-seater sofa
                     </td>
@@ -1158,7 +1252,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Lmista />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Upholstery cleaning - L-shaped sofa
                     </td>
@@ -1168,7 +1264,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Umista />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Upholstery cleaning - U-shaped sofa
                     </td>
@@ -1188,7 +1286,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Zidle />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Chair cleaning
                     </td>
@@ -1198,7 +1298,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Sedacka />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Armchair cleaning
                     </td>
@@ -1208,7 +1310,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <JednaMatrace />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Mattress cleaning 90x200
                     </td>
@@ -1218,7 +1322,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <DveMatrace />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Mattress cleaning 180x200
                     </td>
@@ -1228,7 +1334,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <TepKob />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Carpet cleaning (per m²)
                     </td>
@@ -1238,7 +1346,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <DlouhyChlup />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Long-pile carpet cleaning (per m²)
                     </td>
@@ -1280,7 +1390,9 @@ export default function PriceList() {
                   <tbody>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <ShoppingCart />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Purchase of various appliances + delivery = 6% + delivery
                     </td>
