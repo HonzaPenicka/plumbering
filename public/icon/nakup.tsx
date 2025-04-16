@@ -5,6 +5,7 @@ export const ShoppingCart = ({ className = "" }) => (
     className={className}
     viewBox="0 0 300 300"
     xmlns="http://www.w3.org/2000/svg"
+    style={{ width: '48px' }}
   >
     <defs>
       <style>

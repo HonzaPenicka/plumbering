@@ -134,7 +134,7 @@ export default function PriceList() {
               About
             </h2>
 
-            <div className="grid gap-4 lg:gap-16 p-4 md:px-8 lg:px-48 bg-blue-100 md:bg-white md:border-2 md:border-blue-500">
+            <div className="grid gap-4 lg:gap-16 p-4 md:mx-8 bg-blue-100 md:bg-white md:border-2 md:border-blue-500">
               <p className="pt-4 md:pt-0 text-lg lg:text-xl">
                 You Bob was created to make your life easier. No more wasting
                 time searching for tradespeople, checking their availability,

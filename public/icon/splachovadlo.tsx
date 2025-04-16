@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 
 export const Splchovadlo: FunctionComponent = () => {
   return (
-    <svg id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+    <svg id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" style={{ width: '48px' }}>
       <defs>
         <style>
           {`

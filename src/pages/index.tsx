@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import localFont from 'next/font/local';
 import { PragueIcon } from '../../public/icon/prague';
 import { PlumberIcon } from '../../public/icon/plumber';
@@ -19,7 +18,6 @@ import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { BulpIcon } from '../../public/icon/bulp';
 import { useCallback, useRef, useState } from 'react';
 import Head from 'next/head';
 import { FaPhone } from 'react-icons/fa';

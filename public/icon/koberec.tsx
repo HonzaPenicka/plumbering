@@ -6,6 +6,7 @@ export const Koberec = ({ className }: { className?: string }) => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 300 300"
     fill="none"
+    style={{ width: '48px' }}
   >
     {/* Styly přepsané do JSX tříd */}
     <style>{`

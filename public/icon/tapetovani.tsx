@@ -5,6 +5,7 @@ export const Tapetovani = ({ className }: { className?: string }) => (
     className={className}
     viewBox="0 0 300 300"
     xmlns="http://www.w3.org/2000/svg"
+    style={{ width: '48px' }}
   >
     <g>
       <path fill="#ec3a8f" d="M229.21,42.06v225.7h-89.25V62.66h68.65c5.69,0,10.3-4.61,10.3-10.3s-4.61-10.3-10.3-10.3h-20.6c0-11.37,9.22-20.6,20.6-20.6s20.6,9.22,20.6,20.6Z" />

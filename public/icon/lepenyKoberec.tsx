@@ -5,6 +5,7 @@ export const LepenyKoberec = ({ className = "" }) => (
     className={className}
     viewBox="0 0 300 300"
     xmlns="http://www.w3.org/2000/svg"
+    style={{ width: '48px' }}
   >
     {/* Paths with styles mapped inline */}
     <path d="M232.29,229.71l2.18-99.94c0-3.25-2.63-5.89-5.89-5.89l-2.35-1.81h-113.79l-6.16,2.23-13.52-2.23-18.98,105.68,158.5,1.96Z" fill="#e0e0e0" />
