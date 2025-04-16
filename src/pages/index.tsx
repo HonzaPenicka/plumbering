@@ -23,6 +23,10 @@ import Head from 'next/head';
 import { FaPhone } from 'react-icons/fa';
 import { MdMailOutline } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { Lustr } from '../../public/icon/lustr';
+import { TriMista } from '../../public/icon/3mista';
+import { Zamek } from '../../public/icon/zamek';
+import { Hadice } from '../../public/icon/hadice';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -103,10 +107,10 @@ export default function Home() {
       >
         <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl border-b-2 border-b-blue-500">
           <a href="/">
-            <h1>YOUR BOB</h1>
+            <h1 className='hover:text-red-300'>YOUR BOB</h1>
           </a>
           <button onClick={handleIsMenuOpen}>
-            <GiHamburgerMenu className="flex justify-start items-start" />
+            <GiHamburgerMenu className="flex justify-start items-start hover:fill-red-300" />
           </button>
         </header>
         {isMenuOpen && (
@@ -115,7 +119,7 @@ export default function Home() {
               <li>
                 <a
                   href="/"
-                  className="hover:underline-offset-2 hover:underline hover:decoration-red-500"
+                  className="hover:underline-offset-2 hover:underline hover:decoration-red-300"
                 >
                   Home
                 </a>
@@ -123,7 +127,7 @@ export default function Home() {
               <li>
                 <a
                   href="/price-list"
-                  className="hover:underline-offset-2 hover:underline hover:decoration-red-500"
+                  className="hover:underline-offset-2 hover:underline hover:decoration-red-300"
                 >
                   Price List
                 </a>
@@ -131,7 +135,7 @@ export default function Home() {
               <li>
                 <a
                   href="/about"
-                  className="hover:underline-offset-2 hover:underline hover:decoration-red-500"
+                  className="hover:underline-offset-2 hover:underline hover:decoration-red-300"
                 >
                   About
                 </a>
@@ -154,7 +158,7 @@ export default function Home() {
               <div className="flex items-center justify-center py-24">
                 <button
                   onClick={scrollToForm}
-                  className={`backdrop-blur-sm text-white uppercase font-bold text-2xl lg:text-4xl py-4 px-8 lg:py-8 lg:px-32 rounded-xl ring-2 ring-white hover:ring-red-500 hover:text-red-500 ${
+                  className={`backdrop-blur-sm text-white uppercase font-bold text-2xl lg:text-4xl py-4 px-8 lg:py-8 lg:px-32 rounded-xl ring-2 ring-white hover:ring-red-300 hover:text-red-300 ${
                     isClicked ? 'ring-blue-500' : ''
                   } transition duration-300`}
                   aria-label="Contact us"
@@ -215,7 +219,7 @@ export default function Home() {
               </h2>
               <div className="px-8 pb-8 grid md:grid-cols-3 gap-4">
                 <div className="flex gap-4 items-center">
-                  <PipeIcon />
+                  <Hadice />
                   <div className="flex flex-col gap-2">
                     <h3 className="text-lg text-pretty">
                       Repair and maintenance of water pipes, drain cleaning
@@ -223,7 +227,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex gap-4 items-center">
-                  <KeyIcon />
+                  <Zamek />
                   <div className="flex flex-col gap-2">
                     <h3 className="text-lg text-ellipsis">
                       Replacement and installation of security locks and inserts
@@ -231,7 +235,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex gap-4 items-center">
-                  <FurnitureIcon />
+                  <TriMista />
                   <div className="flex flex-col gap-2">
                     <h3 className="text-lg font-medium">
                       Installation of home accessories (shelves, holders,
@@ -240,7 +244,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex gap-4 items-center">
-                  <LampIcon />
+                  <Lustr />
                   <div className="flex flex-col gap-2">
                     <h3 className="text-lg font-medium">
                       Bulb replacement and minor electrical installation
@@ -427,7 +431,7 @@ export default function Home() {
                 href="https://wa.me/message/O2XFDY6ZCZHYD1"
                 className="flex flex-col items-center justify-center gap-8"
               >
-                <button className="uppercase text-2xl font-bold border-2 border-blue-500 rounded-lg p-4 text-blue-500 hover:text-red-500 hover:border-red-500">
+                <button className="uppercase text-2xl font-bold border-2 border-blue-500 rounded-lg p-4 text-blue-500 hover:text-red-300 hover:border-red-300">
                   Contact us!
                 </button>
 

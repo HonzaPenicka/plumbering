@@ -92,10 +92,10 @@ export default function PriceList() {
       >
         <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl border-b-2 border-b-blue-500">
           <a href="/">
-            <h1>YOUR BOB</h1>
+            <h1 className='hover:text-red-300'>YOUR BOB</h1>
           </a>
           <button onClick={handleIsMenuOpen}>
-            <GiHamburgerMenu className="flex justify-start items-start" />
+            <GiHamburgerMenu className="flex justify-start items-start hover:fill-red-300" />
           </button>
         </header>
         {isMenuOpen && (
@@ -104,7 +104,7 @@ export default function PriceList() {
               <li>
                 <a
                   href="/"
-                  className="hover:underline-offset-2 hover:underline hover:decoration-red-500"
+                  className="hover:underline-offset-2 hover:underline hover:decoration-red-300"
                 >
                   Home
                 </a>
@@ -112,7 +112,7 @@ export default function PriceList() {
               <li>
                 <a
                   href="/price-list"
-                  className="hover:underline-offset-2 hover:underline hover:decoration-red-500"
+                  className="hover:underline-offset-2 hover:underline hover:decoration-red-300"
                 >
                   Price List
                 </a>
@@ -120,7 +120,7 @@ export default function PriceList() {
               <li>
                 <a
                   href="/about"
-                  className="hover:underline-offset-2 hover:underline hover:decoration-red-500"
+                  className="hover:underline-offset-2 hover:underline hover:decoration-red-300"
                 >
                   About
                 </a>
@@ -167,7 +167,7 @@ export default function PriceList() {
                 href="https://wa.me/message/O2XFDY6ZCZHYD1"
                 className="flex flex-col items-center justify-center gap-8"
               >
-                <button className="uppercase text-2xl font-bold border-2 border-blue-500 rounded-lg p-4 text-blue-500 hover:text-red-500 hover:border-red-500">
+                <button className="uppercase text-2xl font-bold border-2 border-blue-500 rounded-lg p-4 text-blue-500 hover:text-red-300 hover:border-red-300">
                   Contact us!
                 </button>
 

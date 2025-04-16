@@ -72,6 +72,14 @@ import { DveMatrace } from '../../public/icon/matrace2';
 import { TepKob } from '../../public/icon/tepkob';
 import { DlouhyChlup } from '../../public/icon/tepdlouhy';
 import { ShoppingCart } from '../../public/icon/nakup';
+import { Zrcadlo } from '../../public/icon/zrcadlo';
+import { Rimsa } from '../../public/icon/rimsa';
+import { Pracka } from '../../public/icon/pracka';
+import { BilaTechnika } from '../../public/icon/bilatechnika';
+import { Zamek2 } from '../../public/icon/zamek2';
+import { Lustr2 } from '../../public/icon/lustr2';
+import { TriMista2 } from '../../public/icon/3mista2';
+import { Hadice2 } from '../../public/icon/hadice2';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -198,10 +206,10 @@ export default function PriceList() {
       >
         <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl border-b-2 border-b-blue-500">
           <a href="/">
-            <h1>YOUR BOB</h1>
+            <h1 className='hover:text-red-300'>YOUR BOB</h1>
           </a>
           <button onClick={handleIsMenuOpen}>
-            <GiHamburgerMenu className="flex justify-start items-start" />
+            <GiHamburgerMenu className="flex justify-start items-start hover:fill-red-300" />
           </button>
         </header>
         {isMenuOpen && (
@@ -210,7 +218,7 @@ export default function PriceList() {
               <li>
                 <a
                   href="/"
-                  className="hover:underline-offset-2 hover:underline hover:decoration-red-500"
+                  className="hover:underline-offset-2 hover:underline hover:decoration-red-300"
                 >
                   Home
                 </a>
@@ -218,7 +226,7 @@ export default function PriceList() {
               <li>
                 <a
                   href="/price-list"
-                  className="hover:underline-offset-2 hover:underline hover:decoration-red-500"
+                  className="hover:underline-offset-2 hover:underline hover:decoration-red-300"
                 >
                   Price List
                 </a>
@@ -226,7 +234,7 @@ export default function PriceList() {
               <li>
                 <a
                   href="/about"
-                  className="hover:underline-offset-2 hover:underline hover:decoration-red-500"
+                  className="hover:underline-offset-2 hover:underline hover:decoration-red-300"
                 >
                   About
                 </a>
@@ -340,6 +348,7 @@ export default function PriceList() {
 
                     <tr>
                       <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Zrcadlo />
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Mirror installation (per piece)
@@ -423,6 +432,7 @@ export default function PriceList() {
 
                     <tr>
                       <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Rimsa />
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Cornice repair
@@ -477,7 +487,7 @@ export default function PriceList() {
                   <tbody>
                     <tr>
                       <td className="border-b border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        <Hadice />
+                        <Hadice2 />
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Installation / replacement of hoses for bathtub faucets
@@ -622,7 +632,7 @@ export default function PriceList() {
 
                     <tr>
                       <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-
+                        <Stena />
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Silicone replacement (per meter)
@@ -717,7 +727,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Pracka />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Washing machine repair - call-out and diagnostics
                       </td>
@@ -727,7 +739,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Susicka />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Dryer repair - call-out and diagnostics
                       </td>
@@ -737,7 +751,9 @@ export default function PriceList() {
                     </tr>
 
                     <tr>
-                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                      <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                        <Mycka />
+                      </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Dishwasher repair - call-out and diagnostics
                       </td>
@@ -803,7 +819,7 @@ export default function PriceList() {
 
                     <tr>
                       <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                        <Lustr />
+                        <Lustr2 />
                       </td>
                       <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                         Chandelier replacement
@@ -917,6 +933,7 @@ export default function PriceList() {
 
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <BilaTechnika />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Delivery of large appliances (per item)
@@ -981,7 +998,7 @@ export default function PriceList() {
                   <tbody>
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <Zamek />
+                      <Zamek2 />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation / replacement of door lock
@@ -1047,7 +1064,9 @@ export default function PriceList() {
                   <tbody>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Rimsa />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Painting (per m²) incl. covering
                     </td>
@@ -1137,6 +1156,7 @@ export default function PriceList() {
                   
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <Vinyl />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Removal of glued vinyl flooring / per m²
@@ -1159,7 +1179,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <OdstVinyl />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Installation of floating floor / per m²
                     </td>
@@ -1237,7 +1259,7 @@ export default function PriceList() {
 
                   <tr>
                     <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
-                      <TriMista />
+                      <TriMista2 />
                     </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Upholstery cleaning - 3-seater sofa
@@ -1272,7 +1294,9 @@ export default function PriceList() {
                   </tr>
 
                   <tr>
-                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4"></td>
+                    <td className="border-t border-blue-500 px-2 py-2 md:px-4 md:py-4">
+                      <JednaMatrace />
+                    </td>
                     <td className="border border-blue-500 px-2 py-2 md:px-4 md:py-4">
                       Pillow cleaning
                     </td>
@@ -1487,7 +1511,7 @@ export default function PriceList() {
                 href="https://wa.me/message/O2XFDY6ZCZHYD1"
                 className="flex flex-col items-center justify-center gap-8"
               >
-                <button className="uppercase text-2xl font-bold border-2 border-blue-500 rounded-lg p-4 text-blue-500 hover:text-red-500 hover:border-red-500">
+                <button className="uppercase text-2xl font-bold border-2 border-blue-500 rounded-lg p-4 text-blue-500 hover:text-red-300 hover:border-red-300">
                   Contact us!
                 </button>
 
