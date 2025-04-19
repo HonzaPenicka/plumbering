@@ -2,10 +2,8 @@ import localFont from 'next/font/local';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useCallback, useRef, useState } from 'react';
-import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import type { GetStaticProps } from 'next';
 import nextI18NextConfig from '../../next-i18next.config.js';
 
 // -----------------------------------------------------------------------------
@@ -40,6 +38,8 @@ import 'swiper/css/navigation';
 // flags css (pure‑css tiny dependency – ca 3 kB)
 import 'flag-icons/css/flag-icons.min.css';
 import { PragueIcon } from 'public/icon/prague';
+import { useRouter } from 'next/router.js';
+import { GetStaticProps } from 'next/types/index.js';
 
 // -----------------------------------------------------------------------------
 //  Local variable fonts (Geist) – one import, two variants
@@ -147,7 +147,7 @@ export default function Home() {
           {/* -------- PLUMBER SECTION -------- */}
           <SectionBox bg>
             <SectionTitle textKey="plumberSection.title" />
-            <div className="px-8 pb-8 grid md:grid-cols-3 gap-4">
+            <div className="px-8 pb-8 grid md:grid-cols-3 gap-8 text-pretty">
               <PlumberJob icon={<Hadice />} textKey="plumberSection.jobs.pipes"       />
               <PlumberJob icon={<Zamek />}  textKey="plumberSection.jobs.locks"       />
               <PlumberJob icon={<TriMista />} textKey="plumberSection.jobs.accessories" />

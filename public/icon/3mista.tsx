@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 
 export const TriMista: FunctionComponent = () => {
   return (
-    <svg id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" style={{ width: '120px' }}>
+    <svg id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" style={{ width: '72px' }}>
       <defs>
         <style>
           {`
