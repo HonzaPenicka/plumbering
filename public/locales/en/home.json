@@ -1,0 +1,93 @@
+{
+    "meta": {
+      "title": "Your BOB – Professional plumbers in Prague",
+      "description": "Your Bob offers verified plumbers in Prague. High‑quality services, arrival within an hour, free price estimate."
+    },
+  
+    "menu": {
+      "home": "Home",
+      "priceList": "Price list",
+      "about": "About"
+    },
+  
+    "hero": {
+      "headline": "Verified Your Bob",
+      "cta": "Contact us"
+    },
+  
+    "highlights": {
+      "localService": {
+        "title": "Successful local service",
+        "text": "We operate throughout Prague."
+      },
+      "hoursWorked": {
+        "title": "Thousands of hours of professional work",
+        "text": "We continuously raise quality standards."
+      },
+      "happyClients": {
+        "title": "Hundreds of satisfied customers",
+        "text": "We solve your needs precisely to measure."
+      },
+      "verifiedPros": {
+        "title": "Plumbers verified by you",
+        "text": "Recommended by satisfied customers."
+      }
+    },
+  
+    "plumberSection": {
+      "title": "Verified Prague plumber",
+      "jobs": {
+        "pipes": "Repair and maintenance of water pipes, drain cleaning",
+        "locks": "Replacement and installation of security locks and inserts",
+        "accessories": "Installation of home accessories (shelves, holders, hangers, …)",
+        "bulb": "Bulb replacement and minor electrical installation assistance"
+      }
+    },
+  
+    "howItWorks": {
+      "title": "How it works",
+      "step1": {
+        "title": "Place an order",
+        "text": "Fill out our simple online form. We will contact you to confirm the order."
+      },
+      "step2": {
+        "title": "Execution",
+        "text": "A verified plumber will arrive at your chosen time and professionally perform the requested work."
+      },
+      "step3": {
+        "title": "Rate and enjoy",
+        "text": "After the work is completed, simply accept and rate our expert. You pay only after the successful completion of the job."
+      }
+    },
+  
+    "whyChoose": {
+      "title": "Why choose YOUR BOB",
+      "security": {
+        "title": "Security",
+        "text": "All plumbers are verified and rated by customers. We guarantee that you only pay for quality work done."
+      },
+      "speed": {
+        "title": "Speed",
+        "text": "We save your time. Order today, work can start as early as tomorrow."
+      },
+      "support": {
+        "title": "Support",
+        "text": "Our manager will guide you through the entire process and is available from placing the order to completing the work."
+      }
+    },
+  
+    "coverage": {
+      "title": "Where we operate",
+      "districts": "Prague 1 | Prague 2 | Prague 3 | Prague 4 | Prague 5 | Prague 6 | Prague 7 | Prague 8 | Prague 9 | Prague 10"
+    },
+  
+    "whatsapp": {
+      "headline": "Click to text your problem on WhatsApp!",
+      "button": "Contact us!"
+    },
+  
+    "footer": {
+      "rights": "© 2024 Your Bob s.r.o. — All rights reserved."
+    }
+  }
+  

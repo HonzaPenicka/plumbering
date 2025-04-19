@@ -4,6 +4,38 @@ const isDev = process.env.NODE_ENV !== 'production';
 
 const nextConfig = {
   reactStrictMode: true,
+  // 1) i18n
+  i18n: {
+    locales: ['en','cs'],
+    defaultLocale: 'en',
+    localeDetection: false,
+  },
+
+  async redirects() {
+    return [
+      /* /  → /en  – POZOR: locale: false, aby se nekonečně nevracelo! */
+      { source: '/', destination: '/en', locale: false, permanent: false },
+
+      /* aliasy pro EN */
+      { source: '/about',      destination: '/en/about',      permanent: true, locale: false },
+      { source: '/price-list', destination: '/en/price-list', permanent: true, locale: false },
+
+      /* aliasy pro CS */
+      { source: '/o-nas', destination: '/cs/o-nas', permanent: true, locale: false },
+      { source: '/cenik', destination: '/cs/cenik', permanent: true, locale: false },
+    ];
+  },
+
+  async rewrites() {
+    return [
+      /* český o‑nás → pages/about.tsx */
+      { source: '/cs/o-nas', destination: '/about', locale: false },
+
+      /* český ceník  → pages/price-list.tsx */
+      { source: '/cs/cenik', destination: '/price-list', locale: false },
+    ];
+  },
+
   async headers() {
     return [
       {

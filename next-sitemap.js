@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://www.plumberprague.cz/',
+  siteUrl: 'https://www.yourbob.cz/',
   generateRobotsTxt: true,
 };

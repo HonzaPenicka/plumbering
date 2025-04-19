@@ -1,0 +1,93 @@
+{
+    "meta": {
+      "title": "Your BOB – Profesionální instalatéři v Praze",
+      "description": "Your Bob nabízí ověřené instalatéry v Praze. Kvalitní služby, příjezd do hodiny, bezplatný odhad ceny."
+    },
+  
+    "menu": {
+      "home": "Domů",
+      "priceList": "Ceník",
+      "about": "O nás"
+    },
+  
+    "hero": {
+      "headline": "Ověřený Your Bob",
+      "cta": "Kontaktujte nás"
+    },
+  
+    "highlights": {
+      "localService": {
+        "title": "Úspěšná lokální služba",
+        "text": "Působíme po celé Praze."
+      },
+      "hoursWorked": {
+        "title": "Tisíce hodin profesionální práce",
+        "text": "Neustále zvyšujeme standardy kvality."
+      },
+      "happyClients": {
+        "title": "Stovky spokojených zákazníků",
+        "text": "Řešíme vaše potřeby na míru."
+      },
+      "verifiedPros": {
+        "title": "Instalatéři ověření vámi",
+        "text": "Doporučují spokojení zákazníci."
+      }
+    },
+  
+    "plumberSection": {
+      "title": "Ověřený instalatér Praha",
+      "jobs": {
+        "pipes": "Opravy a údržba vodovodů, čištění odpadů",
+        "locks": "Výměna a montáž bezpečnostních zámků a vložek",
+        "accessories": "Montáž domácích doplňků (poličky, držáky, věšáky, …)",
+        "bulb": "Výměna žárovek a drobné elektroinstalační práce"
+      }
+    },
+  
+    "howItWorks": {
+      "title": "Jak to funguje",
+      "step1": {
+        "title": "Zadejte objednávku",
+        "text": "Vyplňte náš jednoduchý online formulář. Ozveme se vám pro potvrzení."
+      },
+      "step2": {
+        "title": "Realizace",
+        "text": "Ověřený instalatér přijede v domluvený čas a odborně provede požadovanou práci."
+      },
+      "step3": {
+        "title": "Ohodnoťte a užívejte",
+        "text": "Po dokončení práce ji přijmete a ohodnotíte. Platíte až po úspěšném dokončení."
+      }
+    },
+  
+    "whyChoose": {
+      "title": "Proč si vybrat YOUR BOB",
+      "security": {
+        "title": "Bezpečnost",
+        "text": "Všichni instalatéři jsou ověření a hodnocení zákazníky. Platíte pouze za kvalitně odvedenou práci."
+      },
+      "speed": {
+        "title": "Rychlost",
+        "text": "Šetříme váš čas. Objednejte dnes, práce může začít už zítra."
+      },
+      "support": {
+        "title": "Podpora",
+        "text": "Náš manažer vás provede celým procesem a je k dispozici od objednávky po dokončení."
+      }
+    },
+  
+    "coverage": {
+      "title": "Kde působíme",
+      "districts": "Praha 1 | Praha 2 | Praha 3 | Praha 4 | Praha 5 | Praha 6 | Praha 7 | Praha 8 | Praha 9 | Praha 10"
+    },
+  
+    "whatsapp": {
+      "headline": "Klikněte a napište svůj problém na WhatsApp!",
+      "button": "Kontaktujte nás!"
+    },
+  
+    "footer": {
+      "rights": "© 2024 Your Bob s.r.o. — Všechna práva vyhrazena."
+    }
+  }
+  
