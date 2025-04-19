@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Head from 'next/head';
 import localFont from 'next/font/local';
 import { useCallback, useRef, useState } from 'react';
@@ -9,215 +8,170 @@ import 'swiper/css/pagination';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdMailOutline } from 'react-icons/md';
 import { FaPhone } from 'react-icons/fa';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
+import Link from 'next/link';
+
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import nextI18NextConfig from '../../next-i18next.config.js';
+import { GetStaticProps } from 'next/types/index.js';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
   variable: '--font-geist-sans',
-  weight: '100 900',
+  weight: '100 900'
 });
 const geistMono = localFont({
   src: './fonts/GeistMonoVF.woff',
   variable: '--font-geist-mono',
-  weight: '100 900',
+  weight: '100 900'
 });
 
-export default function PriceList() {
+export default function About() {
+  const { locale } = useRouter();
+  const { t } = useTranslation('about');          // ⬅️  používáme namespace "about"
+
   const formRef = useRef<HTMLDivElement>(null);
   const [isClicked, setIsClicked] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleIsMenuOpen = useCallback(() => {
-    setIsMenuOpen((state) => !state);
-  }, []);
-
+  const toggleMenu = useCallback(() => setIsMenuOpen(prev => !prev), []);
   const scrollToForm = () => {
-    if (formRef.current) {
-      formRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
+    formRef.current?.scrollIntoView({ behavior: 'smooth' });
     setIsClicked(true);
-  };
-
-  const handleFormSuccess = () => {
-    setIsClicked(false);
   };
 
   return (
     <>
+      {/* ---------- HEAD ---------- */}
       <Head>
-        <title>Plumber Prague - Profesionální instalatéři v Praze</title>
-        <meta
-          name="description"
-          content="Plumber Prague nabízí ověřené instalatéry v Praze. Kvalitní služby, dostupnost během hodiny, bezplatný odhad ceny."
-        />
-        <meta
-          name="keywords"
-          content="instalatéři Praha, plumber Prague, vodoinstalace, oprava potrubí, montáž bezpečnostních zámků, výměna žárovek"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* Open Graph Meta Tags */}
-        <meta
-          property="og:title"
-          content="Plumber Prague - Profesionální instalatéři v Praze"
-        />
-        <meta
-          property="og:description"
-          content="Plumber Prague nabízí ověřené instalatéry v Praze. Kvalitní služby, dostupnost během hodiny, bezplatný odhad ceny."
-        />
-        <meta property="og:image" content="/img/hero/desktop.webp" />
-        <meta property="og:url" content="https://www.plumberprague.cz" />
-        <meta property="og:type" content="website" />
-        {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Plumber Prague - Profesionální instalatéři v Praze"
-        />
-        <meta
-          name="twitter:description"
-          content="Plumber Prague nabízí ověřené instalatéry v Praze. Kvalitní služby, dostupnost během hodiny, bezplatný odhad ceny."
-        />
-        <meta name="twitter:image" content="/img/hero/desktop.webp" />
-        {/* Favicon */}
+        <title>{t('meta.title')}</title>
+        <meta name="description" content={t('meta.description')} />
+        {/* Social tags */}
+        <meta property="og:title"       content={t('meta.title')} />
+        <meta property="og:description" content={t('meta.description')} />
+        <meta property="og:image"       content="/img/hero/yourbob.jpeg" />
+        <meta property="og:url"         content="https://www.yourbob.cz/about" />
+        <meta property="og:type"        content="website" />
+        <meta name="twitter:card"        content="summary_large_image" />
+        <meta name="twitter:title"       content={t('meta.title')} />
+        <meta name="twitter:description" content={t('meta.description')} />
+        <meta name="twitter:image"       content="/img/hero/yourbob.jpeg" />
         <link rel="icon" href="/favicon.ico" />
-        {/* Security */}
-        <meta name="referrer" content="no-referrer-when-downgrade" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="canonical"
-          href="https://www.www.plumberprague.cz/price-list"
-        />
       </Head>
+
+      {/* ---------- PAGE ---------- */}
       <div
-        className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto items-center pb-4 font-[family-name:var(--font-geist-sans)]`}
+        className={`${geistSans.variable} ${geistMono.variable} grid container mx-auto font-[var(--font-geist-sans)]`}
       >
-        <header className="flex justify-between bg-white py-4 px-4 items-center text-black font-bold text-3xl border-b-2 border-b-blue-500">
-          <a href="/">
-            <h1 className='hover:text-red-300'>YOUR BOB</h1>
-          </a>
-          <button onClick={handleIsMenuOpen}>
-            <GiHamburgerMenu className="flex justify-start items-start hover:fill-red-300" />
+        {/* HEADER */}
+        <header className="flex justify-between items-center py-4 px-4 text-3xl font-bold border-b-2 border-blue-500 bg-white">
+          <Link href="/" locale={locale} className="hover:text-red-300">
+            YOUR&nbsp;BOB
+          </Link>
+          <button onClick={toggleMenu} aria-label="Toggle menu">
+            <GiHamburgerMenu className="hover:fill-red-300" />
           </button>
         </header>
+
         {isMenuOpen && (
-          <nav className="p-4 absolute bg-white top-14 z-10 font-semibold text-xl container border-2 border-blue-500 uppercase mx-auto">
-            <ul className="flex flex-col gap-4 text-right">
-              <li>
-                <a
-                  href="/"
-                  className="hover:underline-offset-2 hover:underline hover:decoration-red-300"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/price-list"
-                  className="hover:underline-offset-2 hover:underline hover:decoration-red-300"
-                >
-                  Price List
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  className="hover:underline-offset-2 hover:underline hover:decoration-red-300"
-                >
-                  About
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <nav className="absolute top-14 z-10 bg-white container border-2 border-blue-500 p-4 font-semibold text-xl w-full">
+          <ul className="flex flex-col gap-4 text-right uppercase">
+            <li><NavItem href="/"          labelKey="menu.home"  /></li>
+            <li><NavItem href="/price-list" labelKey="menu.priceList" /></li>
+            <li><NavItem href="/about" labelKey="menu.about" /></li>
+            <li className="flex justify-end gap-4 pt-2">
+              <LocaleSwitcher />
+            </li>
+          </ul>
+        </nav>
         )}
+
+        {/* MAIN */}
         <main className="grid gap-4 lg:gap-8 items-left lg:items-center">
           <section className="px-4 grid gap-4 md:gap-8">
             <h2 className="text-2xl md:text-4xl text-center font-bold pt-4 md:pt-8 uppercase">
-              About
+              {t('headline')}
             </h2>
 
             <div className="grid gap-4 lg:gap-16 p-4 md:mx-8 bg-blue-100 md:bg-white md:border-2 md:border-blue-500">
-              <p className="pt-4 md:pt-0 text-lg lg:text-xl">
-                You Bob was created to make your life easier. No more wasting
-                time searching for tradespeople, checking their availability,
-                and figuring out prices.
-              </p>
-
-              <p className="pt-4 md:pt-0 text-lg lg:text-xl">
-                Our plumbing service works simply – just send us a message on{' '}
-                <b>WhatsApp</b>, and we’ll <b>respond immediately</b>. We focus
-                on <b>fast communication</b> so you can be sure someone is
-                taking care of your request and providing you with the necessary
-                information as quickly as possible.
-              </p>
-              <p className="pt-4 md:pt-0 text-lg lg:text-xl">
-                All our <b>prices are transparent</b> – you always know the cost
-                in advance. In the future, we plan to expand our services to
-                include{' '}
-                <b>leaning, upholstery and mattress cleaning, painting</b>, and
-                much more.
-              </p>
+              <p className="pt-4 md:pt-0 text-lg lg:text-xl">{t('content.p1')}</p>
+              <p className="pt-4 md:pt-0 text-lg lg:text-xl">{t('content.p2')}</p>
+              <p className="pt-4 md:pt-0 text-lg lg:text-xl">{t('content.p3')}</p>
             </div>
           </section>
 
+          {/* CTA */}
           <section className="px-4 grid gap-4">
-            <div className="grid justify-center pb-8 gap-4" ref={formRef}>
-              <h2 className="justify-center flex text-2xl font-bold pb-4 text-center text-pretty uppercase">
-                Click to text your problem on WhatsApp!
+            <div ref={formRef} className="grid justify-center pb-8 gap-4">
+              <h2 className="flex justify-center text-2xl font-bold pb-4 text-center uppercase text-pretty">
+                {t('cta.headline')}
               </h2>
               <a
                 href="https://wa.me/message/O2XFDY6ZCZHYD1"
-                className="flex flex-col items-center justify-center gap-8"
+                className="flex flex-col items-center gap-8"
               >
                 <button className="uppercase text-2xl font-bold border-2 border-blue-500 rounded-lg p-4 text-blue-500 hover:text-red-300 hover:border-red-300">
-                  Contact us!
+                  {t('cta.button')}
                 </button>
-
-                <img src="/qr/qr.png" loading="lazy" width="25%" />
+                <img src="/qr/qr.png" loading="lazy" width="25%" alt="WhatsApp QR" />
               </a>
             </div>
           </section>
         </main>
-        <footer className="px-4 grid md:block gap-2 border-t-2 border-blue-500">
-          <div className="bg-white py-4 items-center text-black font-bold text-3xl text-center lg:text-left">
-            <div>YOUR BOB</div>
-          </div>
+
+        {/* FOOTER */}
+        <footer className="px-4 grid gap-2 border-t-2 border-blue-500">
+          <div className="py-4 text-3xl font-bold text-center lg:text-left">YOUR BOB</div>
           <div className="grid gap-4">
             <div className="flex flex-col md:flex-row gap-2 md:justify-between">
-              <a
-                className="flex items-center gap-2 hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Email us"
-              >
-                <MdMailOutline height={16} width={16} />
-                Info@yourbob.cz
-              </a>
-              <a
-                className="flex items-center gap-2 hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Call us"
-              >
-                <FaPhone height={16} width={16} />
-                +420 704 901 902
-              </a>
+              <FooterLink href="mailto:info@yourbob.cz" icon={<MdMailOutline />} text="Info@yourbob.cz" />
+              <FooterLink href="tel:+420704901902" icon={<FaPhone />} text="+420 704 901 902" />
             </div>
-
-            <div className="flex flex-col md:flex-row gap-2 md:justify-between">
-              <p className="hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl">
-                sídlo: Ječná 548/7, 120 00 Praha
-              </p>
-              <p className="hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl">
-                IČ: 04383257
-              </p>
+            <div className="flex flex-col md:flex-row gap-2 md:justify-between text-xl">
+              <p className="hover:underline">sídlo: Ječná 548/7, 120 00 Praha</p>
+              <p className="hover:underline">IČ: 04383257</p>
             </div>
-            <div className="text-xs text-center py-4">
-              &copy; 2024 Your Bob s.r.o. — All rights reserved.
-            </div>
+            <div className="text-xs text-center py-4">{t('footer.rights')}</div>
           </div>
         </footer>
       </div>
     </>
   );
 }
+
+function NavItem({ href, labelKey }: { href: string; labelKey: string }) {
+  const { t } = useTranslation('about');
+  const { locale } = useRouter();
+  return (
+    <Link href={href} locale={locale}>
+      {t(labelKey)}
+    </Link>
+  );
+}
+
+function LocaleSwitcher() {
+  return (
+    <>
+      <Link href="/" locale="en" aria-label="English" className="hover:shadow-xl hover:shadow-red-300"><span className="fi fi-us" /></Link>
+      <Link href="/" locale="cs" aria-label="Čeština" className="hover:shadow-xl hover:shadow-red-300"><span className="fi fi-cz" /></Link>
+    </>
+  );
+}
+
+function FooterLink({ href, icon, text }: { href: string; icon: JSX.Element; text: string }) {
+  return (
+    <a href={href} className="flex items-center gap-2 hover:underline hover:underline-offset-4" target="_blank" rel="noopener noreferrer">
+      {icon}
+      {text}
+    </a>
+  );
+}
+
+/* ---------- getStaticProps ---------- */
+export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['about'], nextI18NextConfig))
+  }
+});
+

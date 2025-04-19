@@ -1,0 +1,25 @@
+{
+    "meta": {
+      "title": "About — Your Bob",
+      "description": "Learn who we are and how we make your life easier with fast and transparent plumbing services."
+    },
+    "menu": {
+      "home": "Home",
+      "priceList": "Price list",
+      "about": "About"
+    },
+    "headline": "About",
+    "content": {
+      "p1": "Your Bob was created to make your life easier. No more wasting time searching for tradespeople, checking their availability, and figuring out prices.",
+      "p2": "Our plumbing service works simply – just send us a message on WhatsApp, and we’ll respond immediately. We focus on fast communication so you can be sure someone is taking care of your request and providing you with the necessary information as quickly as possible.",
+      "p3": "All our prices are transparent – you always know the cost in advance. In the future, we plan to expand our services to include cleaning, upholstery and mattress cleaning, painting, and much more."
+    },
+    "cta": {
+      "headline": "Click to text your problem on WhatsApp!",
+      "button": "Contact us!"
+    },
+    "footer": {
+      "rights": "© 2024 Your Bob s.r.o. — All rights reserved."
+    }
+  }
+  

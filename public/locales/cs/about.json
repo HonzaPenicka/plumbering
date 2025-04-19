@@ -1,0 +1,25 @@
+{
+    "meta": {
+      "title": "O nás — Your Bob",
+      "description": "Zjistěte, kdo jsme a jak vám usnadňujeme život rychlými a transparentními instalatérskými službami."
+    },
+    "menu": {
+      "home": "Domů",
+      "priceList": "Ceník",
+      "about": "O nás"
+    },
+    "headline": "O nás",
+    "content": {
+      "p1": "Your Bob vznikl, aby vám usnadnil život. Už žádné zdlouhavé hledání řemeslníků, zjišťování jejich dostupnosti a kalkulování cen.",
+      "p2": "Naše instalatérské služby fungují jednoduše – stačí nám napsat zprávu na WhatsApp a my vám okamžitě odpovíme. Soustředíme se na rychlou komunikaci, abyste měli jistotu, že se někdo vašemu požadavku věnuje a poskytne vám potřebné informace co nejdříve.",
+      "p3": "Všechny naše ceny jsou transparentní – cenu znáte vždy předem. Do budoucna plánujeme rozšířit služby o úklid, čištění čalounění a matrací, malování a mnoho dalšího."
+    },
+    "cta": {
+      "headline": "Klikněte a napište nám svůj problém na WhatsApp!",
+      "button": "Kontaktujte nás!"
+    },
+    "footer": {
+      "rights": "© 2024 Your Bob s.r.o. — Všechna práva vyhrazena."
+    }
+  }
+  

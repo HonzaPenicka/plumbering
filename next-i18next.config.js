@@ -9,6 +9,7 @@ module.exports = {
     locales: ['en', 'cs'],
     localeDetection: false,   // MUSÍ zůstat literál false
   },
+  debug: process.env.NODE_ENV === 'development',
 
   // ---------- kde leží JSON překlady ------------
   localePath: path.resolve('./public/locales'),

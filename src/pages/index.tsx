@@ -107,9 +107,9 @@ export default function Home() {
         {isMenuOpen && (
           <nav className="absolute top-14 z-10 bg-white container border-2 border-blue-500 p-4 font-semibold text-xl w-full">
             <ul className="flex flex-col gap-4 text-right uppercase">
-              <li><NavItem href="/"                                    labelKey="menu.home"      /></li>
-              <li><NavItem href={locale === 'cs' ? '/cenik' : '/price-list'} labelKey="menu.priceList" /></li>
-              <li><NavItem href={locale === 'cs' ? '/o-nas': '/about'}       labelKey="menu.about"     /></li>
+              <li><NavItem href="/"          labelKey="menu.home"  /></li>
+              <li><NavItem href="/price-list" labelKey="menu.priceList" /></li>
+              <li><NavItem href="/about" labelKey="menu.about" /></li>
               <li className="flex justify-end gap-4 pt-2">
                 <LocaleSwitcher />
               </li>
@@ -230,13 +230,13 @@ export default function Home() {
 =============================================================================*/
 function NavItem({ href, labelKey }: { href: string; labelKey: string }) {
   const { t } = useTranslation('home');
-  const { locale } = useRouter();
   return (
-    <Link href={href} locale={locale} className="hover:underline hover:decoration-red-300">
+    <Link href={href} className="hover:underline hover:decoration-red-300">
       {t(labelKey)}
     </Link>
   );
 }
+
 
 function LocaleSwitcher() {
   return (
