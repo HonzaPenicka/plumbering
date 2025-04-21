@@ -25,7 +25,7 @@ export default function MapExample() {
     fetchCoordinates();
   }, []);
 
-  if (!position) return <p>Loading map...</p>;
+  if (!position) return <p style={{ height: '400px', width: '100%' }}>Loading map...</p>;
 
   return (
     <MapContainer
@@ -38,7 +38,16 @@ export default function MapExample() {
         attribution="&copy; OpenStreetMap"
       />
       <Marker position={position}>
-        <Popup>Here we are! 😊</Popup>
+        <Popup>
+          <div>
+            <p>Here we are! 😊</p>
+            <p><b>Ječná 547/8, Praha</b></p>
+            <div>
+              <p><b>review</b>:</p>
+              <a href='https://g.page/r/CQFYGniBi4TqEBM/review'>https://g.page/r/CQFYGniBi4TqEBM/review</a>
+            </div>
+          </div>
+        </Popup>
       </Marker>
     </MapContainer>
   );

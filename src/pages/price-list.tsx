@@ -208,12 +208,12 @@ export default function PriceList() {
               const icons = iconMap[sectionKey];
               return (
                 <div key={sectionKey}>
-                  <button onClick={() => toggleSection(sectionKey)} className="border-2 border-blue-500 w-full text-left p-4 lg:p-8 font-bold hover:bg-blue-100 focus:bg-blue-100">
+                  <button onClick={() => toggleSection(sectionKey)} className="border-2 rounded-lg border-blue-500 w-full text-left p-4 lg:p-8 font-bold hover:bg-blue-100 focus:bg-blue-100">
                     <div className="flex justify-between items-center text-xl lg:text-2xl"><p>{title}</p><p className="font-bold">&rarr;</p></div>
                   </button>
                   {openSection[sectionKey] && tasks.length > 0 && (
                     <div className="overflow-x-auto">
-                      <table className="min-w-full border-collapse border-2 border-blue-500 text-sm md:text-base text-black">
+                      <table className="min-w-full border-collapse border-2 rounded-lg mt-2 border-blue-500 text-sm md:text-base text-black">
                         <thead>
                           <tr className="bg-blue-100 md:text-lg lg:text-xl">
                             <th className="border border-blue-500 px-2 md:px-4" />
@@ -224,7 +224,7 @@ export default function PriceList() {
                         <tbody>
                           {tasks.map((row, i) => (
                             <tr key={i}>
-                              <td className="border-t border-blue-500 px-2 md:px-4">{icons[i] ?? null}</td>
+                              <td className="border border-blue-500 px-2 md:px-4">{icons[i] ?? null}</td>
                               <td className="border border-blue-500 px-2 md:px-4">{row.task}</td>
                               <td className="border border-blue-500 px-2 md:px-4">{row.price}</td>
                             </tr>
@@ -246,7 +246,7 @@ export default function PriceList() {
               <h2 className="text-2xl font-bold text-center mb-8 uppercase">{t('paymentTitle','Payment Methods')}</h2>
               <div className="grid md:grid-cols-3 gap-4 md:gap-8">
                 {paymentOrder.map(key => (
-                  <div key={key} className="p-4 flex flex-col bg-blue-100 md:bg-white md:border-blue-500 md:border-2">
+                  <div key={key} className="p-4 flex flex-col bg-blue-100 md:bg-white md:border-blue-500 md:border-2 rounded-lg">
                     <h3 className="text-xl font-semibold mb-2 md:text-center">{paymentData[key].title}</h3>
                     <p>{paymentData[key].description}</p>
                   </div>
@@ -270,20 +270,20 @@ export default function PriceList() {
           </section>
 
           {/* ---------------- FOOTER ---------------- */}
-          <footer className="px-4 grid gap-2 border-t-2 border-blue-500">
-            <div className="bg-white py-4 text-3xl font-bold text-center lg:text-left">YOUR BOB</div>
-            <div className="grid gap-4">
-              <div className="flex flex-col md:flex-row gap-2 md:justify-between">
-                <FooterLink href="mailto:info@yourbob.cz" icon={<MdMailOutline />} text="Info@yourbob.cz" />
-                <FooterLink href="tel:+420704901902" icon={<FaPhone />} text="+420 704 901 902" />
-              </div>
-              <div className="flex flex-col md:flex-row gap-2 md:justify-between">
-                <p className="hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl">{t('footer.address')}</p>
-                <p className="hover:underline hover:underline-offset-4 md:text-xl lg:text-2xl">{t('footer.ic')}</p>
-              </div>
-              <div className="text-xs text-center py-4">{t('footer.rights')}</div>
+        <footer className="px-4 grid gap-2 border-t-2 border-blue-500">
+          <div className="py-4 text-3xl font-bold text-center lg:text-left">YOUR BOB</div>
+          <div className="grid gap-4">
+            <div className="flex flex-col md:flex-row gap-2 md:justify-between">
+              <FooterLink href="mailto:info@yourbob.cz" icon={<MdMailOutline />} text="Info@yourbob.cz" />
+              <FooterLink href="tel:+420704901902" icon={<FaPhone />} text="+420 704 901 902" />
             </div>
-          </footer>
+            <div className="flex flex-col md:flex-row gap-2 md:justify-between">
+              <p className="hover:underline"><b>sídlo</b>: Ječná 548/7, 120 00 Praha</p>
+              <p className="hover:underline"><b>IČ</b>: 04383257</p>
+            </div>
+            <div className="text-xs text-center py-4">{t('footer.rights')}</div>
+          </div>
+        </footer>
         </main>
       </div>
     </>

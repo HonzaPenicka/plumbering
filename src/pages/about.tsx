@@ -94,7 +94,7 @@ export default function About() {
               {t('headline')}
             </h2>
 
-            <div className="grid gap-4 lg:gap-16 p-4 md:mx-8 bg-blue-100 md:bg-white md:border-2 md:border-blue-500">
+            <div className="grid gap-4 lg:gap-16 p-4 md:mx-8 bg-blue-100 md:bg-white md:border-2 md:border-blue-500 rounded-lg">
               <p className="pt-4 md:pt-0 text-lg lg:text-xl">{t('content.p1')}</p>
               <p className="pt-4 md:pt-0 text-lg lg:text-xl">{t('content.p2')}</p>
               <p className="pt-4 md:pt-0 text-lg lg:text-xl">{t('content.p3')}</p>
@@ -128,9 +128,9 @@ export default function About() {
               <FooterLink href="mailto:info@yourbob.cz" icon={<MdMailOutline />} text="Info@yourbob.cz" />
               <FooterLink href="tel:+420704901902" icon={<FaPhone />} text="+420 704 901 902" />
             </div>
-            <div className="flex flex-col md:flex-row gap-2 md:justify-between text-xl">
-              <p className="hover:underline">sídlo: Ječná 548/7, 120 00 Praha</p>
-              <p className="hover:underline">IČ: 04383257</p>
+            <div className="flex flex-col md:flex-row gap-2 md:justify-between">
+              <p className="hover:underline"><b>sídlo</b>: Ječná 548/7, 120 00 Praha</p>
+              <p className="hover:underline"><b>IČ</b>: 04383257</p>
             </div>
             <div className="text-xs text-center py-4">{t('footer.rights')}</div>
           </div>

@@ -143,8 +143,8 @@ export default function Home() {
           </section>
 
           {/* ------------- HIGHLIGHTS ------------- */}
-          <section className="px-8 py-8 grid md:grid-cols-3 gap-8 text-pretty">
-            <Highlight icon={<PragueIcon />}   title="highlights.localService.title"   text="highlights.localService.text"   />
+          <section className="px-8 py-8 grid md:grid-cols-3 gap-8 text-pretty lg:border-b-2">
+            <Highlight icon={<PragueIcon />}   title="highlights.localService.title"  text="highlights.localService.text"   />
             <Highlight icon={<PlumberIcon />}  title="highlights.hoursWorked.title"   text="highlights.hoursWorked.text"   />
             <Highlight icon={<RationgIcon />}  title="highlights.happyClients.title"  text="highlights.happyClients.text"  />
             <Highlight icon={<WorkerIcon />}   title="highlights.verifiedPros.title"  text="highlights.verifiedPros.text"  />
@@ -192,7 +192,9 @@ export default function Home() {
             </div>
           </SectionBox>
 
-          <MapExample />
+          <div className='mx-4 lg:mx-0 border-2 rounded-lg '>
+            <MapExample />
+          </div>
 
           {/* -------- COVERAGE & WHATSAPP -------- */}
           <section className="px-4 grid gap-4">
@@ -221,9 +223,9 @@ export default function Home() {
               <FooterLink href="mailto:info@yourbob.cz" icon={<MdMailOutline />} text="Info@yourbob.cz" />
               <FooterLink href="tel:+420704901902" icon={<FaPhone />} text="+420 704 901 902" />
             </div>
-            <div className="flex flex-col md:flex-row gap-2 md:justify-between text-xl">
-              <p className="hover:underline">sídlo: Ječná 548/7, 120 00 Praha</p>
-              <p className="hover:underline">IČ: 04383257</p>
+            <div className="flex flex-col md:flex-row gap-2 md:justify-between">
+              <p className="hover:underline"><b>sídlo</b>: Ječná 548/7, 120 00 Praha</p>
+              <p className="hover:underline"><b>IČ</b>: 04383257</p>
             </div>
             <div className="text-xs text-center py-4">{t('footer.rights')}</div>
           </div>
@@ -257,7 +259,7 @@ function LocaleSwitcher() {
 
 function SectionBox({ children, bg }: { children: React.ReactNode; bg?: boolean }) {
   return (
-    <section className={bg ? 'bg-blue-100 md:bg-white md:border-2 md:border-blue-500' : ''}>{children}</section>
+    <section className={bg ? 'bg-blue-100 md:bg-white rounded-lg lg:border-b-2 px-4 text-center' : ''}>{children}</section>
   );
 }
 
