@@ -1,0 +1,168 @@
+{
+    "meta": {
+      "title": "YOUR BOB - Price List",
+      "description": "Complete price list for plumbing and construction services in Prague",
+      "keywords": "plumbers Prague, service prices, water repairs, sanitary installations",
+      "ogTitle": "YOUR BOB - Professional Services in Prague",
+      "ogDescription": "Complete price list with transparent pricing for plumbing and construction services"
+    },
+    "menu": {
+      "home": "Home",
+      "priceList": "Price List",
+      "about": "About"
+    },
+    "sections": {
+      "construction": {
+        "title": "Construction Work",
+        "tasks": [
+          {"task": "Paving tiles installation (m²)", "price": "1 349 CZK"},
+          {"task": "Tiling installation (m²)", "price": "1 349 CZK"},
+          {"task": "Entrance door replacement", "price": "3 369 CZK"},
+          {"task": "Interior door replacement", "price": "2 099 CZK"},
+          {"task": "Door repair and adjustment", "price": "1 349 CZK"},
+          {"task": "Shelf installation (piece)", "price": "539 CZK"},
+          {"task": "Mirror installation (piece)", "price": "539 CZK"},
+          {"task": "Picture hanging", "price": "539 CZK"},
+          {"task": "Curtain rail installation (m)", "price": "269 CZK"},
+          {"task": "Door trimming", "price": "679 CZK"},
+          {"task": "Shelf repair (piece)", "price": "139 CZK"},
+          {"task": "Cabinet door adjustment", "price": "209 CZK"},
+          {"task": "Worktop replacement", "price": "2 699 CZK"},
+          {"task": "Cornice repair", "price": "609 CZK"},
+          {"task": "Wall sealing/leveling (m²)", "price": "339 CZK"}
+        ]
+      },
+      "plumbing": {
+        "title": "Plumbing Services",
+        "tasks": [
+          {"task": "Faucet hose replacement", "price": "539 CZK"},
+          {"task": "Urinal installation", "price": "1 349 CZK"},
+          {"task": "Toilet installation", "price": "1 349 CZK"},
+          {"task": "Sink installation", "price": "1 349 CZK"},
+          {"task": "Bidet installation", "price": "1 349 CZK"},
+          {"task": "Siphon replacement", "price": "479 CZK"},
+          {"task": "Bathroom cabinet installation", "price": "1 099 CZK"},
+          {"task": "Shower cabin installation", "price": "2 699 CZK"},
+          {"task": "Towel radiator installation", "price": "1 099 CZK"},
+          {"task": "Water heater replacement", "price": "2 699 CZK"},
+          {"task": "Faucet replacement", "price": "679 CZK"},
+          {"task": "Boiler repair", "price": "2 699 CZK"},
+          {"task": "Silicone replacement (m)", "price": "109 CZK"},
+          {"task": "Drain cleaning", "price": "409 CZK"},
+          {"task": "Toilet repair", "price": "809 CZK"},
+          {"task": "Flush button replacement", "price": "479 CZK"},
+          {"task": "Toilet seat replacement", "price": "479 CZK"},
+          {"task": "Flushing system repair", "price": "679 CZK"},
+          {"task": "Showerhead replacement", "price": "209 CZK"},
+          {"task": "Shower hose replacement", "price": "209 CZK"},
+          {"task": "Sink dismantling", "price": "539 CZK"}
+        ]
+      },
+      "electro": {
+        "title": "Electro",
+        "tasks": [
+          {"task": "Fan installation", "price": "949 CZK"},
+          {"task": "Chandelier replacement", "price": "679 CZK"},
+          {"task": "TV installation", "price": "809 CZK"},
+          {"task": "Router installation", "price": "809 CZK"},
+          {"task": "Socket replacement", "price": "339 CZK"},
+          {"task": "Switch replacement", "price": "339 CZK"}
+        ]
+      },
+      "appliances": {
+        "title": "Appliance Installation",
+        "tasks": [
+          {"task": "Washer/dryer installation", "price": "1 349 CZK"},
+          {"task": "Dishwasher installation", "price": "1 349 CZK"},
+          {"task": "Large appliance delivery", "price": "809 CZK"},
+          {"task": "Hob installation", "price": "809 CZK"},
+          {"task": "Oven installation", "price": "809 CZK"}
+        ]
+      },
+      "locksmith": {
+        "title": "Locksmith Work",
+        "tasks": [
+          {"task": "Lock installation", "price": "409 CZK"},
+          {"task": "Key duplication", "price": "339 CZK"},
+          {"task": "Mailbox lock replacement", "price": "339 CZK"}
+        ]
+      },
+      "painting": {
+        "title": "Painting Work",
+        "tasks": [
+          {"task": "Painting (m²)", "price": "119 CZK"},
+          {"task": "Wallpapering (m²)", "price": "119 CZK"}
+        ]
+      },
+      "flooring": {
+        "title": "Flooring Work",
+        "tasks": [
+          {"task": "Floating floor removal (m²)", "price": "59 CZK"},
+          {"task": "Carpet removal (m²)", "price": "49 CZK"},
+          {"task": "Glued carpet removal (m²)", "price": "89 CZK"},
+          {"task": "Glued vinyl removal (m²)", "price": "69 CZK"},
+          {"task": "Glued flooring installation (m²)", "price": "299 CZK"},
+          {"task": "Floating floor installation (m²)", "price": "259 CZK"},
+          {"task": "Loose PVC installation (m²)", "price": "219 CZK"},
+          {"task": "Loose carpet installation (m²)", "price": "129 CZK"}
+        ]
+      },
+      "upholstery": {
+        "title": "Upholstery Cleaning",
+        "tasks": [
+          {"task": "2-seater sofa cleaning", "price": "809 CZK"},
+          {"task": "3-seater sofa cleaning", "price": "1 009 CZK"},
+          {"task": "Corner sofa cleaning", "price": "1 219 CZK"},
+          {"task": "Pillow cleaning", "price": "49 CZK"},
+          {"task": "Chair cleaning", "price": "139 CZK"},
+          {"task": "Armchair cleaning", "price": "479 CZK"},
+          {"task": "Mattress cleaning 90x200", "price": "609 CZK"},
+          {"task": "Mattress cleaning 180x200", "price": "949 CZK"},
+          {"task": "Carpet cleaning (m²)", "price": "139 CZK"},
+          {"task": "Long-pile carpet cleaning (m²)", "price": "209 CZK"}
+        ]
+      },
+      "transport": {
+        "title": "Transport",
+        "tasks": [
+          {"task": "Appliance purchase & delivery", "price": "6% + delivery"}
+        ]
+      }
+    },
+    "paymentMethods": {
+      "cash": {
+        "title": "Cash (CZK & EUR)",
+        "description": "Exchange rate 1 EUR = 25.5 CZK"
+      },
+      "transfer": {
+        "title": "Bank Transfer",
+        "description": "Payment by invoice"
+      },
+      "invoice": {
+        "title": "Invoice Payment",
+        "description": "Suitable for businesses"
+      },
+      "card": {
+        "title": "Credit/Debit Card",
+        "description": "Secure online payment"
+      },
+      "qr": {
+        "title": "QR Payment",
+        "description": "Quick payment via QR code"
+      }
+    },
+    "notes": {
+      "general": "* Prices are indicative and may vary depending on work scope.",
+      "night": "Night surcharge (10 PM-6 AM): +50%",
+      "weekend": "Weekend surcharge: +20%"
+    },
+    "contact": {
+      "title": "Contact us via WhatsApp!",
+      "button": "Contact us"
+    },
+    "footer": {
+      "address": "Registered office: Ječná 548/7, 120 00 Prague",
+      "ic": "Business ID: 04383257",
+      "rights": "© 2024 Your Bob s.r.o. - All rights reserved."
+    }
+  }

@@ -150,6 +150,7 @@ function NavItem({ href, labelKey }: { href: string; labelKey: string }) {
   );
 }
 
+
 function LocaleSwitcher() {
   return (
     <>

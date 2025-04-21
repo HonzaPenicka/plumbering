@@ -1,0 +1,168 @@
+{
+    "meta": {
+      "title": "YOUR BOB - Ceník služeb",
+      "description": "Kompletní ceník našich instalatérských a stavebních služeb v Praze",
+      "keywords": "instalatéři Praha, ceník služeb, opravy vody, montáž sanitární techniky",
+      "ogTitle": "YOUR BOB - Profesionální služby v Praze",
+      "ogDescription": "Kompletní ceník instalatérských a stavebních služeb s transparentními cenami"
+    },
+    "menu": {
+      "home": "Domů",
+      "priceList": "Ceník",
+      "about": "O nás"
+    },
+    "sections": {
+      "construction": {
+        "title": "Stavební práce",
+        "tasks": [
+          {"task": "Pokládka dlažebních kostek (m²)", "price": "1 349 Kč"},
+          {"task": "Montáž obkladů (m²)", "price": "1 349 Kč"},
+          {"task": "Výměna vchodových dveří", "price": "3 369 Kč"},
+          {"task": "Výměna vnitřních dveří", "price": "2 099 Kč"},
+          {"task": "Oprava a seřízení dveří", "price": "1 349 Kč"},
+          {"task": "Montáž police (kus)", "price": "539 Kč"},
+          {"task": "Instalace zrcadla (kus)", "price": "539 Kč"},
+          {"task": "Zavěšování obrazů", "price": "539 Kč"},
+          {"task": "Montáž záclonových kolejniček (m)", "price": "269 Kč"},
+          {"task": "Seřízení dveří - zkrácení", "price": "679 Kč"},
+          {"task": "Oprava polic (kus)", "price": "139 Kč"},
+          {"task": "Seřízení dvířek skříní", "price": "209 Kč"},
+          {"task": "Výměna pracovní desky", "price": "2 699 Kč"},
+          {"task": "Oprava římsy", "price": "609 Kč"},
+          {"task": "Zakrytí/zarovnání stěny (m²)", "price": "339 Kč"}
+        ]
+      },
+      "plumbing": {
+        "title": "Instalatérské služby",
+        "tasks": [
+          {"task": "Výměna hadic pro baterie", "price": "539 Kč"},
+          {"task": "Instalace pisoáru", "price": "1 349 Kč"},
+          {"task": "Montáž toalety", "price": "1 349 Kč"},
+          {"task": "Instalace umyvadla", "price": "1 349 Kč"},
+          {"task": "Montáž bidetu", "price": "1 349 Kč"},
+          {"task": "Výměna sifonu", "price": "479 Kč"},
+          {"task": "Montáž koupelnové skříňky", "price": "1 099 Kč"},
+          {"task": "Instalace sprchového koutu", "price": "2 699 Kč"},
+          {"task": "Montáž elektrického sušáku", "price": "1 099 Kč"},
+          {"task": "Výměna boileru", "price": "2 699 Kč"},
+          {"task": "Výměna baterie", "price": "679 Kč"},
+          {"task": "Oprava boileru", "price": "2 699 Kč"},
+          {"task": "Výměna silikonu (m)", "price": "109 Kč"},
+          {"task": "Čištění odpadu", "price": "409 Kč"},
+          {"task": "Oprava toalety", "price": "809 Kč"},
+          {"task": "Výměna splachovacího tlačítka", "price": "479 Kč"},
+          {"task": "Výměna prkénka", "price": "479 Kč"},
+          {"task": "Oprava splachovacího mechanismu", "price": "679 Kč"},
+          {"task": "Výměna sprchové hlavice", "price": "209 Kč"},
+          {"task": "Výměna sprchové hadice", "price": "209 Kč"},
+          {"task": "Demontáž dřezu", "price": "539 Kč"}
+        ]
+      },
+      "electro": {
+        "title": "Elektro",
+        "tasks": [
+          {"task": "Montáž ventilátoru", "price": "949 Kč"},
+          {"task": "Výměna lustru", "price": "679 Kč"},
+          {"task": "Montáž TV", "price": "809 Kč"},
+          {"task": "Instalace routeru", "price": "809 Kč"},
+          {"task": "Výměna zásuvky", "price": "339 Kč"},
+          {"task": "Výměna vypínače", "price": "339 Kč"}
+        ]
+      },
+      "appliances": {
+        "title": "Montáž spotřebičů",
+        "tasks": [
+          {"task": "Instalace pračky/sušičky", "price": "1 349 Kč"},
+          {"task": "Montáž myčky", "price": "1 349 Kč"},
+          {"task": "Doprava velkých spotřebičů", "price": "809 Kč"},
+          {"task": "Instalace varné desky", "price": "809 Kč"},
+          {"task": "Montáž trouby", "price": "809 Kč"}
+        ]
+      },
+      "locksmith": {
+        "title": "Zámečnické práce",
+        "tasks": [
+          {"task": "Montáž zámku", "price": "409 Kč"},
+          {"task": "Výroba klíčů", "price": "339 Kč"},
+          {"task": "Výměna zámku schránky", "price": "339 Kč"}
+        ]
+      },
+      "painting": {
+        "title": "Malířské práce",
+        "tasks": [
+          {"task": "Malování (m²)", "price": "119 Kč"},
+          {"task": "Tapetování (m²)", "price": "119 Kč"}
+        ]
+      },
+      "flooring": {
+        "title": "Podlahové práce",
+        "tasks": [
+          {"task": "Demontáž plovoucí podlahy (m²)", "price": "59 Kč"},
+          {"task": "Odstranění koberce (m²)", "price": "49 Kč"},
+          {"task": "Odstranění lepeného koberce (m²)", "price": "89 Kč"},
+          {"task": "Odstranění lepeného vinylu (m²)", "price": "69 Kč"},
+          {"task": "Pokládka lepené podlahy (m²)", "price": "299 Kč"},
+          {"task": "Pokládka plovoucí podlahy (m²)", "price": "259 Kč"},
+          {"task": "Pokládka volně loženého PVC (m²)", "price": "219 Kč"},
+          {"task": "Pokládka volného koberce (m²)", "price": "129 Kč"}
+        ]
+      },
+      "upholstery": {
+        "title": "Čištění čalounění",
+        "tasks": [
+          {"task": "Čištění 2-místné sedačky", "price": "809 Kč"},
+          {"task": "Čištění 3-místné sedačky", "price": "1 009 Kč"},
+          {"task": "Čištění rohové sedačky", "price": "1 219 Kč"},
+          {"task": "Čištění polštáře", "price": "49 Kč"},
+          {"task": "Čištění židle", "price": "139 Kč"},
+          {"task": "Čištění křesla", "price": "479 Kč"},
+          {"task": "Čištění matrace 90x200", "price": "609 Kč"},
+          {"task": "Čištění matrace 180x200", "price": "949 Kč"},
+          {"task": "Čištění koberce (m²)", "price": "139 Kč"},
+          {"task": "Čištění dlouhého koberce (m²)", "price": "209 Kč"}
+        ]
+      },
+      "transport": {
+        "title": "Doprava",
+        "tasks": [
+          {"task": "Nákup a doprava spotřebičů", "price": "6% + doprava"}
+        ]
+      }
+    },
+    "paymentMethods": {
+      "cash": {
+        "title": "Hotovost (CZK & EUR)",
+        "description": "Kurz 1 EUR = 25,5 CZK"
+      },
+      "transfer": {
+        "title": "Bankovní převod",
+        "description": "Platba na účet po předložení faktury"
+      },
+      "invoice": {
+        "title": "Faktura",
+        "description": "Vhodné pro firmy a dlouhodobé zakázky"
+      },
+      "card": {
+        "title": "Platební karta",
+        "description": "Bezpečná online platba"
+      },
+      "qr": {
+        "title": "QR platba",
+        "description": "Rychlá platba přes QR kód"
+      }
+    },
+    "notes": {
+      "general": "* Uvedené ceny jsou orientační a mohou se lišit dle rozsahu prací.",
+      "night": "Noční příplatek (22:00-6:00): +50% k ceně",
+      "weekend": "Víkendový příplatek: +20% k ceně"
+    },
+    "contact": {
+      "title": "Napište nám přes WhatsApp!",
+      "button": "Kontaktujte nás"
+    },
+    "footer": {
+      "address": "sídlo: Ječná 548/7, 120 00 Praha",
+      "ic": "IČ: 04383257",
+      "rights": "© 2024 Your Bob s.r.o. - Všechna práva vyhrazena."
+    }
+  }
