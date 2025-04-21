@@ -5,6 +5,9 @@ import { useCallback, useRef, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import nextI18NextConfig from '../../next-i18next.config.js';
+import 'leaflet/dist/leaflet.css';
+import dynamic from 'next/dynamic';
+
 
 // -----------------------------------------------------------------------------
 //  Icons & assets – keep import paths short and tidy
@@ -59,6 +62,9 @@ const geistMono = localFont({
    Page component
 =============================================================================*/
 export default function Home() {
+  const MapExample = dynamic(() => import('../components/mapa'), {
+    ssr: false, // DŮLEŽITÉ – Leaflet funguje pouze na klientu
+  });
   const { locale }  = useRouter();
   const { t }       = useTranslation('home');
 
@@ -185,6 +191,8 @@ export default function Home() {
               <ChooseUs icon={<SupportIcon />}     titleKey="whyChoose.support.title"  textKey="whyChoose.support.text"  />
             </div>
           </SectionBox>
+
+          <MapExample />
 
           {/* -------- COVERAGE & WHATSAPP -------- */}
           <section className="px-4 grid gap-4">
