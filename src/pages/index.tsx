@@ -42,7 +42,7 @@ import 'swiper/css/navigation';
 import 'flag-icons/css/flag-icons.min.css';
 import { PragueIcon } from 'public/icon/prague';
 import { useRouter } from 'next/router.js';
-import { GetStaticProps } from 'next/types/index.js';
+import { GetStaticProps } from 'next';
 
 // -----------------------------------------------------------------------------
 //  Local variable fonts (Geist) – one import, two variants
