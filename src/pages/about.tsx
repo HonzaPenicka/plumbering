@@ -14,7 +14,7 @@ import Link from 'next/link';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import nextI18NextConfig from '../../next-i18next.config.js';
-import { GetStaticProps } from 'next/types/index.js';
+import { GetStaticProps } from 'next';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
